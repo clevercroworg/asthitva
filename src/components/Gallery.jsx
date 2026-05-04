@@ -3,11 +3,12 @@ import './Gallery.css';
 
 const Gallery = () => {
   const images = [
-    { src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop', className: 'gallery-large' },
-    { src: 'https://images.unsplash.com/photo-1522413452208-996ff3f3e740?q=80&w=2070&auto=format&fit=crop', className: 'gallery-standard' },
-    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop', className: 'gallery-tall' },
-    { src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2069&auto=format&fit=crop', className: 'gallery-wide' },
-    { src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2098&auto=format&fit=crop', className: 'gallery-standard' }
+    { src: '/images/IMG20251212184424.jpg', className: 'gallery-large' },
+    { src: '/images/IMG20251212184445.jpg', className: 'gallery-standard' },
+    { src: '/images/IMG20251212184459.jpg', className: 'gallery-tall' },
+    { src: '/images/IMG20251212184510.jpg', className: 'gallery-wide' },
+    { src: '/images/IMG20251212184523.jpg', className: 'gallery-standard' },
+    { src: '/images/IMG20251212184540.jpg', className: 'gallery-standard' }
   ];
 
   return (
