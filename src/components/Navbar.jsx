@@ -20,7 +20,7 @@ const Navbar = () => {
           <li><a href="#venues">Venues</a></li>
           <li><a href="#amenities">Amenities</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact" className="nav-cta">Book Now</a></li>
+          <li><a href="tel:+919876543210" className="nav-cta">📞 +91 98765 43210</a></li>
         </ul>
       </div>
     </nav>
