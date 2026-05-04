@@ -6,13 +6,12 @@
   padding: 1.5rem 2rem;
   z-index: 1000;
   transition: var(--transition);
-  background: transparent;
-}
-
-.navbar.scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-sm);
+}
+
+.navbar.scrolled {
   padding: 1rem 2rem;
 }
 
@@ -27,17 +26,14 @@
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: 600;
-  color: white;
+  color: var(--primary);
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .logo-highlight {
-  color: var(--primary);
+  color: var(--text-dark);
   font-weight: 400;
-}
-
-.navbar.scrolled .navbar-logo {
-  color: var(--primary);
 }
 
 .nav-links {
@@ -47,18 +43,14 @@
 }
 
 .nav-links a {
-  color: white;
+  color: var(--text-dark);
   font-weight: 400;
   font-size: 1rem;
   transition: var(--transition);
 }
 
-.navbar.scrolled .nav-links a {
-  color: var(--text-dark);
-}
-
 .nav-links a:hover {
-  color: var(--primary-light);
+  color: var(--primary);
 }
 
 .nav-cta {
@@ -76,5 +68,17 @@
 @media (max-width: 768px) {
   .nav-links {
     display: none; /* simple hidden on mobile for now */
+  }
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-logo {
+    font-size: 1.2rem;
   }
 }

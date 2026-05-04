@@ -7,16 +7,16 @@ const Venues = () => {
   const venues = [
     {
       id: 1,
-      title: 'Asthitva Teak Meadows - Venue 1',
-      description: 'Elegant open-air space surrounded by teak trees, perfect for large gatherings and evening receptions. Experience the warmth of nature combined with premium hospitality.',
-      image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2098&auto=format&fit=crop',
+      title: 'Venue 1',
+      subtitle: 'Upto 600 guests | Open venue',
+      image: '/images/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
     },
     {
       id: 2,
-      title: 'Asthitva Teak Meadows - Venue 2',
-      description: 'A beautifully structured semi-indoor setting with modern amenities. Ideal for intimate ceremonies and daytime events requiring a blend of comfort and natural beauty.',
-      image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2069&auto=format&fit=crop',
+      title: 'Venue 2',
+      subtitle: 'Upto 300 guests | Space with roof',
+      image: '/images/IMG20251212184540.jpg',
       videoId: 'dgWdi3zOOPY',
     }
   ];
@@ -35,13 +35,12 @@ const Venues = () => {
               
               {activeVideo === venue.id ? (
                 <iframe 
-                  className="venue-thumbnail"
+                  className="venue-iframe"
                   src={`https://www.youtube.com/embed/${venue.videoId}?autoplay=1&rel=0`} 
                   title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
-                  style={{ width: '100%', height: '100%', borderRadius: '16px', border: 'none' }}
                 ></iframe>
               ) : (
                 <>
@@ -51,18 +50,14 @@ const Venues = () => {
                       <span className="play-triangle"></span>
                     </button>
                   </div>
-                  <div className="video-duration">Play Video</div>
+                  <div className="video-duration">▶ Play Video</div>
                 </>
               )}
               
             </div>
             <div className="venue-info-side">
               <h3 className="venue-title-side">{venue.title}</h3>
-              <p className="venue-desc-side">{venue.description}</p>
-              <div className="venue-footer-side">
-                <a href="#contact" className="btn-explore">Explore <span className="arrow">→</span></a>
-                <span className="venue-capacity">Up to 800 guests</span>
-              </div>
+              <p className="venue-subtitle-side">{venue.subtitle}</p>
             </div>
           </div>
         ))}

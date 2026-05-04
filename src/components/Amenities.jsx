@@ -1,7 +1,7 @@
 import React from 'react';
 import './Amenities.css';
 
-const Amenities = () => {
+const Amenities = ({ venueName }) => {
   const amenities = [
     { 
       id: 1, 
@@ -30,19 +30,19 @@ const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="section amenities-split-section">
+    <section className="section amenities-split-section">
       <div className="amenities-split-container">
         
         <div className="amenities-image-side">
-          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop" alt="Elegant Venue Decoration" className="amenities-main-img" />
+          <img src="/images/IMG20251212184603.jpg" alt={`${venueName} Decoration`} className="amenities-main-img" />
           <div className="amenities-image-frame"></div>
         </div>
 
         <div className="amenities-content-side">
           <div className="amenities-header">
             <span className="overline">Exquisite Details</span>
-            <h2 className="section-title">Inclusions & Amenities</h2>
-            <p className="amenities-intro">We provide everything you need to make your special day seamless, ensuring you and your guests can focus entirely on the celebration.</p>
+            <h2 className="section-title">{venueName} — Inclusions</h2>
+            <p className="amenities-intro">We provide everything you need to make your special day seamless.</p>
           </div>
           
           <div className="amenities-list">

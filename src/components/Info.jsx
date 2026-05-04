@@ -1,7 +1,7 @@
 import React from 'react';
 import './Info.css';
 
-const Info = () => {
+const Info = ({ venueName }) => {
   return (
     <section className="section info-premium-section">
       <div className="info-bg-image"></div>
@@ -13,7 +13,7 @@ const Info = () => {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
           </div>
           <div className="info-text-content">
-            <h3 className="info-title">Location</h3>
+            <h3 className="info-title">{venueName} — Location</h3>
             <p className="info-highlight">Asthitva Teak Meadows</p>
             <p>Sriramanahalli, Karnataka</p>
             <p>Magadi Road, Bengaluru, 562130</p>
@@ -26,7 +26,7 @@ const Info = () => {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           </div>
           <div className="info-text-content">
-            <h3 className="info-title">Timing and Cost</h3>
+            <h3 className="info-title">Timing & Cost</h3>
             <p className="info-highlight">Available Slots:</p>
             <div className="timing-slots">
               <div className="slot">

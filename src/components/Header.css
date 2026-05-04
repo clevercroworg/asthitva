@@ -34,12 +34,12 @@
   font-weight: 600;
   margin-bottom: 1rem;
   text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  white-space: nowrap;
 }
 
 .header-highlight {
-  font-style: italic;
-  font-weight: 300;
-  color: #f8e5d6;
+  font-weight: 400;
+  color: var(--primary-light);
 }
 
 .header-subtitle {
@@ -51,6 +51,15 @@
 
 @media (max-width: 768px) {
   .header-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.6rem;
+  }
+  .header-subtitle {
+    font-size: 1rem;
   }
 }

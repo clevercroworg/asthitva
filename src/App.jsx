@@ -15,9 +15,23 @@ function App() {
       <Header />
       <main>
         <Venues />
-        <Gallery />
-        <Amenities />
-        <Info />
+
+        {/* Venue 1 Sections */}
+        <Gallery 
+          venueName="Venue 1" 
+          driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+        />
+        <Amenities venueName="Venue 1" />
+        <Info venueName="Venue 1" />
+
+        {/* Venue 2 Sections */}
+        <Gallery 
+          venueName="Venue 2" 
+          driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+        />
+        <Amenities venueName="Venue 2" />
+        <Info venueName="Venue 2" />
+
         <CTA />
       </main>
       <Footer />

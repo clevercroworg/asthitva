@@ -1,8 +1,8 @@
 import React from 'react';
 import './Gallery.css';
 
-const Gallery = () => {
-  const images = [
+const Gallery = ({ venueName, images, driveLink }) => {
+  const defaultImages = [
     { src: '/images/IMG20251212184424.jpg', className: 'gallery-large' },
     { src: '/images/IMG20251212184445.jpg', className: 'gallery-standard' },
     { src: '/images/IMG20251212184459.jpg', className: 'gallery-tall' },
@@ -11,16 +11,18 @@ const Gallery = () => {
     { src: '/images/IMG20251212184540.jpg', className: 'gallery-standard' }
   ];
 
+  const displayImages = images || defaultImages;
+
   return (
-    <section id="gallery" className="section gallery-section">
+    <section className="section gallery-section">
       <div className="gallery-header">
-        <h2 className="section-title">A Glimpse of Elegance</h2>
+        <h2 className="section-title">{venueName} — Gallery</h2>
         <p className="section-subtitle">Moments captured in our beautiful spaces</p>
       </div>
       <div className="gallery-masonry">
-        {images.map((item, index) => (
+        {displayImages.map((item, index) => (
           <div key={index} className={`gallery-item ${item.className}`}>
-            <img src={item.src} alt={`Gallery image ${index + 1}`} />
+            <img src={item.src} alt={`${venueName} image ${index + 1}`} />
             <div className="gallery-overlay">
               <span className="plus-icon">+</span>
             </div>
@@ -28,17 +30,19 @@ const Gallery = () => {
         ))}
       </div>
       
-      <div className="gallery-actions" style={{ textAlign: 'center', marginTop: '3rem' }}>
-        <a 
-          href="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn-gold-solid"
-          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}
-        >
-          See More in Gallery <span>→</span>
-        </a>
-      </div>
+      {driveLink && (
+        <div className="gallery-actions" style={{ textAlign: 'center', marginTop: '3rem' }}>
+          <a 
+            href={driveLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-gold-solid"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}
+          >
+            See More in Gallery <span>→</span>
+          </a>
+        </div>
+      )}
     </section>
   );
 };
