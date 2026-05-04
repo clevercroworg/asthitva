@@ -41,7 +41,7 @@ const Amenities = ({ venueName }) => {
         <div className="amenities-content-side">
           <div className="amenities-header">
             <span className="overline">Exquisite Details</span>
-            <h2 className="section-title">{venueName} — Inclusions</h2>
+            <h2 className="section-title">Inclusions & Amenities</h2>
             <p className="amenities-intro">We provide everything you need to make your special day seamless.</p>
           </div>
           

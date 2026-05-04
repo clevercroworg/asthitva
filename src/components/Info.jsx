@@ -9,7 +9,7 @@ const Info = ({ venueName }) => {
         <div className="info-map-left">
           <div className="info-map-header">
             <span className="overline">Find Us</span>
-            <h2 className="section-title info-map-title">{venueName} — Location</h2>
+            <h2 className="section-title info-map-title">Location</h2>
           </div>
           
           <div className="info-details-grid">

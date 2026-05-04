@@ -16,7 +16,7 @@ const Gallery = ({ venueName, images, driveLink }) => {
   return (
     <section id={`${venueName.toLowerCase().replace(' ', '')}-gallery`} className="section gallery-section">
       <div className="gallery-header">
-        <h2 className="section-title">{venueName} — Gallery</h2>
+        <h2 className="section-title">Gallery</h2>
         <p className="section-subtitle">Moments captured in our beautiful spaces</p>
       </div>
       <div className="gallery-masonry">
