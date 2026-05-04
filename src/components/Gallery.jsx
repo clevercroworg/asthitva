@@ -14,7 +14,7 @@ const Gallery = ({ venueName, images, driveLink }) => {
   const displayImages = images || defaultImages;
 
   return (
-    <section className="section gallery-section">
+    <section id={`${venueName.toLowerCase().replace(' ', '')}-gallery`} className="section gallery-section">
       <div className="gallery-header">
         <h2 className="section-title">{venueName} — Gallery</h2>
         <p className="section-subtitle">Moments captured in our beautiful spaces</p>

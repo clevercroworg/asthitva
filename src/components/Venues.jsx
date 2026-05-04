@@ -8,16 +8,22 @@ const Venues = () => {
     {
       id: 1,
       title: 'Venue 1',
-      subtitle: 'Upto 600 guests | Open venue',
+      tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
+      capacity: 'Upto 600 guests',
+      dining: 'Separate section with 130 seating at once',
       image: '/images/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
+      scrollTo: '#venue1-gallery',
     },
     {
       id: 2,
       title: 'Venue 2',
-      subtitle: 'Upto 300 guests | Space with roof',
+      tagline: 'Elegant space with roof, moon lights and open sides',
+      capacity: 'Upto 300 guests',
+      dining: 'Upto 60 but can be expanded',
       image: '/images/IMG20251212184540.jpg',
       videoId: 'dgWdi3zOOPY',
+      scrollTo: '#venue2-gallery',
     }
   ];
 
@@ -57,7 +63,20 @@ const Venues = () => {
             </div>
             <div className="venue-info-side">
               <h3 className="venue-title-side">{venue.title}</h3>
-              <p className="venue-subtitle-side">{venue.subtitle}</p>
+              <p className="venue-tagline">{venue.tagline}</p>
+              <div className="venue-details">
+                <div className="venue-detail-row">
+                  <span className="detail-label">Venue Capacity:</span>
+                  <span className="detail-value">{venue.capacity}</span>
+                </div>
+                <div className="venue-detail-row">
+                  <span className="detail-label">Dining Capacity:</span>
+                  <span className="detail-value">{venue.dining}</span>
+                </div>
+              </div>
+              <a href={venue.scrollTo} className="venue-see-more">
+                See More <span className="arrow">↓</span>
+              </a>
             </div>
           </div>
         ))}

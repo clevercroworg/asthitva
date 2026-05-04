@@ -128,10 +128,63 @@
   margin-bottom: 0.5rem;
 }
 
-.venue-subtitle-side {
+.venue-tagline {
   color: var(--text-light);
   font-size: 0.95rem;
   font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.venue-details {
+  background: var(--primary-ultra-light);
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.venue-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+  font-size: 0.85rem;
+}
+
+.venue-detail-row + .venue-detail-row {
+  border-top: 1px dashed var(--border-color);
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.detail-value {
+  color: var(--text-light);
+}
+
+.venue-see-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.venue-see-more:hover {
+  color: var(--primary-light);
+}
+
+.venue-see-more .arrow {
+  transition: transform 0.3s ease;
+}
+
+.venue-see-more:hover .arrow {
+  transform: translateY(3px);
 }
 
 /* Mobile: keep side-by-side but compact */
@@ -150,8 +203,24 @@
     font-size: 1rem;
   }
 
-  .venue-subtitle-side {
+  .venue-tagline {
     font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .venue-details {
+    padding: 0.5rem;
+  }
+
+  .venue-detail-row {
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.65rem;
+    text-align: center;
+  }
+
+  .venue-see-more {
+    font-size: 0.75rem;
   }
 
   .glass-play-btn {
@@ -178,7 +247,8 @@
   .venue-title-side {
     font-size: 0.85rem;
   }
-  .venue-subtitle-side {
+  .venue-tagline {
     font-size: 0.6rem;
   }
 }
+
