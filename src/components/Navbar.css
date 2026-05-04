@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem 2rem;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.navbar.scrolled .navbar-logo {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.navbar.scrolled .nav-links a {
+  color: var(--text-dark);
+}
+
+.nav-links a:hover {
+  color: var(--primary-light);
+}
+
+.nav-cta {
+  background-color: var(--primary);
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500 !important;
+}
+
+.nav-cta:hover {
+  background-color: var(--primary-light);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* simple hidden on mobile for now */
+  }
+}

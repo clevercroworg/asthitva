@@ -1,0 +1,137 @@
+.amenities-split-section {
+  padding: 6rem 2rem;
+  background-color: var(--card-bg);
+}
+
+.amenities-split-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.amenities-image-side {
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.amenities-main-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.amenities-image-frame {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.amenities-content-side {
+  flex: 1;
+}
+
+.amenities-header {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.amenities-header .section-title {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.amenities-intro {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.amenities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.amenity-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.amenity-list-item:hover {
+  transform: translateX(10px);
+  border-color: rgba(122, 154, 131, 0.4);
+  box-shadow: var(--shadow-md);
+}
+
+.amenity-icon-wrapper {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(122, 154, 131, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.amenity-icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.amenity-title {
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.amenity-desc {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .amenities-split-container {
+    flex-direction: column;
+  }
+  
+  .amenities-image-side {
+    width: 100%;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .amenities-main-img {
+    height: 400px;
+  }
+
+  .amenities-image-frame {
+    top: 1rem;
+    left: 1rem;
+  }
+}
