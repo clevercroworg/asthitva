@@ -26,6 +26,18 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+      
+      <div className="gallery-actions" style={{ textAlign: 'center', marginTop: '3rem' }}>
+        <a 
+          href="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-gold-solid"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}
+        >
+          See More in Gallery <span>→</span>
+        </a>
+      </div>
     </section>
   );
 };
