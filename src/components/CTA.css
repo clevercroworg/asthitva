@@ -148,5 +148,11 @@
   .cta-premium-actions {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-cta-primary, .btn-cta-secondary {
+    width: fit-content !important;
+    justify-content: center;
   }
 }
