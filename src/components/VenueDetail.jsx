@@ -174,14 +174,17 @@ const VenueDetail = ({ venueId, venueName }) => {
         </div>
 
         {/* Book Now CTA at bottom */}
-        <div className="venue-detail-cta">
-          <p>Ready to book {venueName}?</p>
-          <div className="venue-detail-cta-actions">
-            <a href="tel:+918904768299" className="btn-venue-book">
-              📞 +91 89047 68299
+        <div className="venue-detail-cta-box">
+          <div className="cta-box-content">
+            <h3 className="cta-box-title">Ready to book {venueName}?</h3>
+            <p className="cta-box-subtitle">Contact us to check availability and reserve your date.</p>
+          </div>
+          <div className="cta-box-actions">
+            <a href="tel:+918904768299" className="btn-cta-primary">
+              <span className="icon">📞</span> +91 89047 68299
             </a>
-            <a href="tel:+919513765355" className="btn-venue-learn">
-              📞 +91 9513765355
+            <a href="tel:+919513765355" className="btn-cta-secondary-dark">
+              <span className="icon">📞</span> +91 9513765355
             </a>
           </div>
         </div>

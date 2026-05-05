@@ -259,25 +259,63 @@
   color: var(--primary-dark);
 }
 
-/* Book Now CTA at bottom */
-.venue-detail-cta {
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
-}
-
-.venue-detail-cta p {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-}
-
-.venue-detail-cta-actions {
+/* Premium Book Now CTA Box */
+.venue-detail-cta-box {
+  margin-top: 3.5rem;
+  padding: 3rem 2.5rem;
+  background: linear-gradient(135deg, rgba(255, 145, 77, 0.04), rgba(175, 69, 3, 0.08));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 145, 77, 0.2);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cta-box-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cta-box-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.cta-box-subtitle {
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+
+.cta-box-actions {
+  display: flex;
   gap: 1rem;
+}
+
+.btn-cta-secondary-dark {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  background: white;
+  color: var(--primary-dark);
+  border: 2px solid var(--primary);
+}
+
+.btn-cta-secondary-dark:hover {
+  background: var(--primary-ultra-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 145, 77, 0.15);
 }
 
 /* Mobile */
@@ -315,9 +353,20 @@
     grid-template-columns: 1fr;
   }
 
-  .venue-detail-cta-actions {
+  .venue-detail-cta-box {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .cta-box-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-cta-primary, .btn-cta-secondary-dark {
+    width: 100%;
+    justify-content: center;
   }
 
   .capacity-main-card {
