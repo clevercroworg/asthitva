@@ -224,12 +224,13 @@
   box-shadow: 0 6px 16px rgba(122, 154, 131, 0.4);
 }
 
-/* Mobile: always side by side */
+/* Mobile: stack vertically */
 @media (max-width: 768px) {
   .venues-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 0 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 500px;
+    padding: 0 1rem;
   }
 
   .venue-info-side {
