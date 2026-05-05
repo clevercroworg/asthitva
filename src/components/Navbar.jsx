@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="top-bar">
+      <div className={`top-bar ${scrolled ? 'hidden' : ''}`}>
         <span>Premium event venue at Magadi Road</span>
       </div>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
