@@ -8,7 +8,7 @@ const Venues = () => {
     {
       id: 1,
       title: 'Venue 1',
-      tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
+      tagline: 'Open venue with 11500 sq ft of carpet area',
       capacity: 'Up to 800 guests',
       image: '/images/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
