@@ -137,6 +137,7 @@
 }
 
 .venue-tagline {
+  font-family: var(--font-sub);
   color: var(--text-light);
   font-size: 1.25rem;
   font-weight: 500;
@@ -177,10 +178,11 @@
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
-  padding: 0.55rem 1.3rem;
+  padding: 0.4rem 1.1rem;
   border: 2px solid var(--primary);
   border-radius: 30px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .btn-venue-learn:hover {
@@ -205,11 +207,12 @@
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
-  padding: 0.55rem 1.3rem;
+  padding: 0.4rem 1.1rem;
   border: 2px solid transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 145, 77, 0.3);
+  white-space: nowrap;
 }
 
 .btn-venue-book:hover {

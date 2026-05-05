@@ -1,182 +1,67 @@
 .floating-chat-wrapper {
   position: fixed;
-  bottom: 1.8rem;
-  right: 1.8rem;
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
 }
 
-.floating-chat-btn {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: white;
-  border: 2px solid white;
-  cursor: pointer;
+.whatsapp-pulsate-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 30px rgba(255, 145, 77, 0.45);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: premium-pulse 2.5s infinite;
-}
-
-.floating-chat-btn svg {
-  width: 28px;
-  height: 28px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  position: relative;
   transition: transform 0.3s ease;
+  z-index: 2;
 }
 
-.floating-chat-btn.open {
-  animation: none;
-  background: var(--text-dark);
-  border-color: var(--text-dark);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-  transform: rotate(90deg);
+.whatsapp-pulsate-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
 }
 
-.floating-chat-btn.open svg {
-  width: 24px;
-  height: 24px;
-  transform: rotate(-90deg);
+.whatsapp-pulsate-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #25D366;
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulsate 2s infinite ease-out;
 }
 
-.floating-chat-btn:hover {
-  transform: scale(1.05);
-}
-
-.floating-chat-btn.open:hover {
-  transform: rotate(90deg) scale(1.05);
-}
-
-@keyframes premium-pulse {
+@keyframes pulsate {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 145, 77, 0.7), 0 8px 30px rgba(255, 145, 77, 0.45);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(255, 145, 77, 0), 0 8px 30px rgba(255, 145, 77, 0.45);
+    transform: scale(1);
+    opacity: 0.8;
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 145, 77, 0), 0 8px 30px rgba(255, 145, 77, 0.45);
+    transform: scale(1.6);
+    opacity: 0;
   }
 }
 
-.chat-options {
-  position: absolute;
-  bottom: calc(100% + 1rem); /* Position above the main button */
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  opacity: 0;
-  transform: translateY(15px) scale(0.7);
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: flex-end; /* Align to the right so labels expand leftward */
-  right: 0;
-}
-
-.chat-options.show {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  pointer-events: all;
-}
-
-.chat-option {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-  background: transparent;
-  border: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: right center;
-}
-
-.chat-option-label {
-  background: white;
-  color: var(--text-dark);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateX(10px);
-  transition: all 0.3s ease 0.1s;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.chat-options.show .chat-option-label {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.chat-option-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.chat-option-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.chat-option.whatsapp .chat-option-icon {
-  background: #25D366;
-}
-
-.chat-option.call .chat-option-icon {
-  background: var(--primary-dark);
-}
-
-.chat-option:hover {
-  transform: scale(1.05);
-}
-
-.chat-option:hover .chat-option-icon {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .floating-chat-wrapper {
-    bottom: 1.2rem;
-    right: 1.2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
   }
-
-  .floating-chat-btn {
-    width: 58px;
-    height: 58px;
+  
+  .whatsapp-pulsate-btn {
+    width: 50px;
+    height: 50px;
   }
-
-  .floating-chat-btn svg {
+  
+  .whatsapp-pulsate-btn svg {
     width: 26px;
     height: 26px;
-  }
-
-  .chat-option-icon {
-    width: 48px;
-    height: 48px;
-  }
-
-  .chat-option-icon svg {
-    width: 22px;
-    height: 22px;
-  }
-
-  .chat-option-label {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
   }
 }

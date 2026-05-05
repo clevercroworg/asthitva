@@ -40,8 +40,8 @@
 }
 
 .venue-tab {
-  font-family: var(--font-body);
-  font-size: 1rem;
+  font-family: var(--font-sub);
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-light);
   background: none;
