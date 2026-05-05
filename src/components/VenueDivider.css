@@ -13,17 +13,17 @@
 
 .divider-line {
   flex: 1;
-  height: 1px;
-  background: var(--primary);
-  opacity: 0.3;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 145, 77, 0.5), transparent);
 }
 
 .divider-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-dark);
   white-space: nowrap;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 768px) {
