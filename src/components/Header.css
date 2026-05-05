@@ -1,5 +1,5 @@
 .header-title-section {
-  padding: 7rem 2rem 3rem;
+  padding: 4rem 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 35vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,36 +49,26 @@
   letter-spacing: 1px;
   line-height: 1.15;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  white-space: nowrap;
-}
-
-.header-tagline {
-  font-family: var(--font-body);
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 400;
-  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   .header-title-section {
-    padding: 6rem 1.5rem 2.5rem;
-    min-height: 28vh;
+    padding: 3rem 1rem;
+    min-height: 40vh;
     background-attachment: scroll;
   }
   .header-main-title {
-    font-size: 2.2rem;
-  }
-  .header-tagline {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .header-main-title {
-    font-size: 1.6rem;
+  .header-title-section {
+    min-height: 35vh;
   }
-  .header-tagline {
-    font-size: 0.95rem;
+  .header-main-title {
+    font-size: 1.8rem;
   }
 }
