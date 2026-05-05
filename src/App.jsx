@@ -36,11 +36,12 @@ function App() {
           <Gallery 
             venueName="venue2" 
             images={[
-              { src: '/images/venue-2/IMG_3553.jpg', className: 'gallery-large' },
+              { src: '/images/venue-2/IMG_3553.jpg', className: 'gallery-standard' },
               { src: '/images/venue-2/IMG_3554.jpg', className: 'gallery-standard' },
-              { src: '/images/venue-2/IMG_3560.jpg', className: 'gallery-tall' },
-              { src: '/images/venue-2/IMG20251212192041.jpg', className: 'gallery-wide' },
-              { src: '/images/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' }
+              { src: '/images/venue-2/IMG_3560.jpg', className: 'gallery-standard' },
+              { src: '/images/venue-2/IMG20251212192041.jpg', className: 'gallery-standard' },
+              { src: '/images/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' },
+              { src: '/images/venue-2/DJI_0054.JPG', className: 'gallery-standard' }
             ]}
             driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
           />
