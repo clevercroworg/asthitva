@@ -120,16 +120,37 @@ const VenueDetail = ({ venueId, venueName }) => {
                 </div>
                 <div className="capacity-details-grid">
                   <div className="capacity-detail-card">
-                    <h4>🍽️ Dining Capacity</h4>
-                    <p>{data.capacity.dining}</p>
+                    <div className="capacity-detail-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="capacity-detail-content">
+                      <h4>Dining Capacity</h4>
+                      <p>{data.capacity.dining}</p>
+                    </div>
                   </div>
                   <div className="capacity-detail-card">
-                    <h4>📐 Space</h4>
-                    <p>{data.capacity.carpet}</p>
+                    <div className="capacity-detail-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                      </svg>
+                    </div>
+                    <div className="capacity-detail-content">
+                      <h4>Space Area</h4>
+                      <p>{data.capacity.carpet}</p>
+                    </div>
                   </div>
-                  <div className="capacity-detail-card full-width">
-                    <h4>🪑 Dining Seating</h4>
-                    <p>{data.capacity.diningSeating}</p>
+                  <div className="capacity-detail-card">
+                    <div className="capacity-detail-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M11.412 15.655L9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457L3 3m5.457 5.457l7.086 7.086m0 0L21 21" />
+                      </svg>
+                    </div>
+                    <div className="capacity-detail-content">
+                      <h4>Dining Seating</h4>
+                      <p>{data.capacity.diningSeating}</p>
+                    </div>
                   </div>
                 </div>
               </div>
