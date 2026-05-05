@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
 
 :root {
-  --primary: #7a9a83; /* Premium Dusty Sage Green */
+  --primary: #7a9a83;
   --primary-light: #9cb9a4;
-  --primary-ultra-light: #eef3f0; /* Very soft pastel sage green for section backgrounds */
-  --text-dark: #2d3a31; /* Deep forest green for dark text */
+  --primary-dark: #5a7a63;
+  --primary-ultra-light: #eef3f0;
+  --text-dark: #2d3a31;
   --text-light: #6b7b70;
-  --bg-color: #fafbf9; /* Very slight warm green off-white */
+  --bg-color: #fafbf9;
   --card-bg: #ffffff;
   --border-color: #e2e8e3;
-  --font-main: 'Outfit', sans-serif;
+  --font-heading: 'Bodoni Moda', serif;
+  --font-body: 'DM Sans', sans-serif;
   --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -23,8 +25,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-body);
   background-color: var(--bg-color);
   background-image: radial-gradient(circle at 100% 0%, rgba(122, 154, 131, 0.05) 0%, transparent 50%),
                     radial-gradient(circle at 0% 100%, rgba(122, 154, 131, 0.03) 0%, transparent 50%);
@@ -35,6 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1.2;
 }
@@ -67,7 +74,19 @@ img {
   color: var(--text-dark);
   margin-bottom: 3rem;
   position: relative;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+
+.overline {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -79,6 +98,7 @@ img {
   transition: var(--transition);
   border: none;
   text-align: center;
+  font-family: var(--font-body);
 }
 
 .btn-primary {
@@ -96,6 +116,11 @@ img {
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 

@@ -9,21 +9,21 @@ const Venues = () => {
       id: 1,
       title: 'Venue 1',
       tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
-      capacity: 'Upto 600 guests',
-      dining: 'Separate section with 130 seating at once',
+      capacity: 'Up to 800 guests',
+      dining: 'Up to 200 Sqft',
       image: '/images/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
-      scrollTo: '#venue1-gallery',
+      detailLink: '#venue1-detail',
     },
     {
       id: 2,
       title: 'Venue 2',
       tagline: 'Elegant space with roof, moon lights and open sides',
-      capacity: 'Upto 300 guests',
-      dining: 'Upto 60 but can be expanded',
+      capacity: 'Up to 500 guests',
+      dining: 'Up to 120 Sqft',
       image: '/images/IMG20251212184540.jpg',
       videoId: 'dgWdi3zOOPY',
-      scrollTo: '#venue2-gallery',
+      detailLink: '#venue2-detail',
     }
   ];
 
@@ -33,6 +33,7 @@ const Venues = () => {
 
   return (
     <section id="venues" className="section venues-section">
+      <span className="overline" style={{ display: 'block', textAlign: 'center' }}>Choose Your Space</span>
       <h2 className="section-title">Our Premier Venues</h2>
       <div className="venues-grid">
         {venues.map((venue) => (
@@ -66,7 +67,7 @@ const Venues = () => {
               <p className="venue-tagline">{venue.tagline}</p>
               <div className="venue-details">
                 <div className="venue-detail-row">
-                  <span className="detail-label">Venue Capacity:</span>
+                  <span className="detail-label">Capacity:</span>
                   <span className="detail-value">{venue.capacity}</span>
                 </div>
                 <div className="venue-detail-row">
@@ -74,9 +75,14 @@ const Venues = () => {
                   <span className="detail-value">{venue.dining}</span>
                 </div>
               </div>
-              <a href={venue.scrollTo} className="venue-see-more">
-                See More <span className="arrow">↓</span>
-              </a>
+              <div className="venue-card-actions">
+                <a href={venue.detailLink} className="btn-venue-learn">
+                  Learn More <span className="arrow">↓</span>
+                </a>
+                <a href="tel:+918904768299" className="btn-venue-book">
+                  Book Now
+                </a>
+              </div>
             </div>
           </div>
         ))}

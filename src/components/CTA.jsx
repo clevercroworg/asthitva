@@ -6,16 +6,16 @@ const CTA = () => {
     <section id="contact" className="section cta-premium-section">
       <div className="cta-premium-overlay"></div>
       <div className="cta-premium-container">
-        <h2 className="cta-premium-title">Begin Your Journey With Us</h2>
-        <p className="cta-premium-subtitle">Experience the perfect blend of nature and luxury. Schedule a personalized venue tour and let us bring your vision to life.</p>
+        <h2 className="cta-premium-title">Plan Your Event at Asthitva Teak Meadows</h2>
+        <p className="cta-premium-subtitle">Call now to check availability and pricing.</p>
         
         <div className="cta-premium-actions">
-          <a href="tel:+919876543210" className="btn-gold-solid">
-            <span className="icon">📞</span> +91 98765 43210
+          <a href="tel:+918904768299" className="btn-gold-solid">
+            <span className="icon">📞</span> +91 89047 68299
           </a>
-          <button className="btn-gold-outline">
-            Request a Custom Quote
-          </button>
+          <a href="tel:+919513765355" className="btn-gold-outline">
+            <span className="icon">📞</span> +91 9513765355
+          </a>
         </div>
         
         <div className="cta-premium-footer">

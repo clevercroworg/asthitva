@@ -2,10 +2,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Venues from './components/Venues';
-import VenueDivider from './components/VenueDivider';
-import Gallery from './components/Gallery';
-import Amenities from './components/Amenities';
+import VenueDetail from './components/VenueDetail';
 import Info from './components/Info';
+import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
@@ -15,26 +14,22 @@ function App() {
       <Navbar />
       <Header />
       <main>
+        {/* Venue Selection Overview */}
         <Venues />
 
-        {/* Venue 1 */}
-        <VenueDivider title="Venue 1" id="venue1-gallery" />
-        <Gallery 
-          venueName="venue1" 
-          driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
-        />
-        <Amenities venueName="Venue 1" />
-        <Info venueName="Venue 1" />
+        {/* Venue 1 Detail Section */}
+        <VenueDetail venueId="venue1" venueName="Venue 1" />
 
-        {/* Venue 2 */}
-        <VenueDivider title="Venue 2" id="venue2-gallery" />
-        <Gallery 
-          venueName="venue2" 
-          driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
-        />
-        <Amenities venueName="Venue 2" />
-        <Info venueName="Venue 2" />
+        {/* Venue 2 Detail Section */}
+        <VenueDetail venueId="venue2" venueName="Venue 2" />
 
+        {/* Location & Google Map */}
+        <Info />
+
+        {/* Testimonials */}
+        <Testimonials />
+
+        {/* Final CTA */}
         <CTA />
       </main>
       <Footer />

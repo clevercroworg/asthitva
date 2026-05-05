@@ -1,9 +1,9 @@
 import React from 'react';
 import './Info.css';
 
-const Info = ({ venueName }) => {
+const Info = () => {
   return (
-    <section className="section info-map-section">
+    <section id="location" className="section info-map-section">
       <div className="info-map-container">
         
         <div className="info-map-left">
@@ -19,8 +19,9 @@ const Info = ({ venueName }) => {
               </div>
               <div>
                 <h4>Address</h4>
-                <p>63/1, Kachohalli Main Road, Opp. HP Petrol Pump</p>
-                <p>Kempegowdanagar, Byadarahalli</p>
+                <p>Asthitva Teak Meadows</p>
+                <p>63/1, Kachohalli Road, Opp. HP Petrol Bunk</p>
+                <p>Kempegowda Nagar, Byadarahalli</p>
                 <p>Bengaluru, Karnataka 560091</p>
               </div>
             </div>
@@ -42,13 +43,14 @@ const Info = ({ venueName }) => {
               </div>
               <div>
                 <h4>Contact</h4>
-                <p>+91 98765 43210</p>
+                <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
+                <p><a href="tel:+919513765355" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9513765355</a></p>
               </div>
             </div>
           </div>
 
           <a 
-            href="https://maps.app.goo.gl/asthitva-teak-meadows" 
+            href="https://www.google.com/maps/search/Asthitva+Teak+Meadows+63%2F1+Kachohalli+Road+Byadarahalli+Bengaluru+560091" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-gold-solid info-directions-btn"
@@ -59,14 +61,14 @@ const Info = ({ venueName }) => {
 
         <div className="info-map-right">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d77.45!3d12.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAyJzAwLjAiTiA3N8KwMjcnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=Asthitva+Teak+Meadows+63/1+Kachohalli+Road+Opp+HP+Petrol+Bunk+Kempegowda+Nagar+Byadarahalli+Bengaluru+560091&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0, borderRadius: '16px' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title={`${venueName} Location Map`}
+            title="Asthitva Teak Meadows Location Map"
           ></iframe>
         </div>
 
