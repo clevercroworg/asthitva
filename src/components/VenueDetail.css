@@ -341,9 +341,9 @@
 }
 
 .btn-cta-secondary-dark {
-  padding: 0.6rem 1.4rem;
+  padding: 0.9rem 2rem;
   border-radius: 50px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -354,7 +354,6 @@
   background: white;
   color: var(--primary-dark);
   border: 2px solid var(--primary);
-  white-space: nowrap;
 }
 
 .btn-cta-secondary-dark:hover {
