@@ -1,5 +1,5 @@
 .header-title-section {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 45vh;
+  min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,26 +49,36 @@
   letter-spacing: 1px;
   line-height: 1.15;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  width: 100%;
+  white-space: nowrap;
+}
+
+.header-tagline {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
   .header-title-section {
-    padding: 3rem 1rem;
-    min-height: 40vh;
+    padding: 6rem 1.5rem 2.5rem;
+    min-height: 28vh;
     background-attachment: scroll;
   }
   .header-main-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+  }
+  .header-tagline {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .header-title-section {
-    min-height: 35vh;
-  }
   .header-main-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .header-tagline {
+    font-size: 0.95rem;
   }
 }
