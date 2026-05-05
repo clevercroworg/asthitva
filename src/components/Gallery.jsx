@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Gallery.css';
 
 const Gallery = ({ venueName, images, driveLink }) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const defaultImages = [
     { src: '/images/IMG20251212184424.jpg', className: 'gallery-large' },
     { src: '/images/IMG20251212184445.jpg', className: 'gallery-standard' },
@@ -21,7 +23,7 @@ const Gallery = ({ venueName, images, driveLink }) => {
       </div>
       <div className="gallery-masonry">
         {displayImages.map((item, index) => (
-          <div key={index} className={`gallery-item ${item.className}`}>
+          <div key={index} className={`gallery-item ${item.className}`} onClick={() => setSelectedImage(item.src)}>
             <img src={item.src} alt={`${venueName} image ${index + 1}`} />
             <div className="gallery-overlay">
               <span className="plus-icon">+</span>
@@ -41,6 +43,13 @@ const Gallery = ({ venueName, images, driveLink }) => {
           >
             See More in Gallery <span>→</span>
           </a>
+        </div>
+      )}
+
+      {selectedImage && (
+        <div className="gallery-modal" onClick={() => setSelectedImage(null)}>
+          <button className="gallery-modal-close" onClick={(e) => { e.stopPropagation(); setSelectedImage(null); }}>&times;</button>
+          <img src={selectedImage} alt="Fullscreen View" className="gallery-modal-image" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </section>
