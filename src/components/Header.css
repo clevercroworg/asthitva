@@ -1,5 +1,5 @@
 .header-title-section {
-  padding: 10rem 2rem 5rem;
+  padding: 7rem 2rem 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 50vh;
+  min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(20, 30, 20, 0.65));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(30, 15, 5, 0.7));
   z-index: 1;
 }
 
@@ -32,52 +32,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .header-decorative-line {
-  width: 60px;
+  width: 50px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
 .header-main-title {
   font-family: var(--font-heading);
-  font-size: 3.8rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 700;
   color: #ffffff;
-  letter-spacing: 2px;
-  line-height: 1.1;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  line-height: 1.15;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .header-tagline {
   font-family: var(--font-body);
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 400;
   letter-spacing: 1px;
-  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .header-title-section {
-    padding: 8rem 1.5rem 4rem;
+    padding: 6rem 1.5rem 2.5rem;
+    min-height: 28vh;
     background-attachment: scroll;
   }
-  .header-main-title {
-    font-size: 2.5rem;
-  }
-  .header-tagline {
-    font-size: 1.05rem;
-  }
-}
-
-@media (max-width: 480px) {
   .header-main-title {
     font-size: 2rem;
   }
   .header-tagline {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-main-title {
+    font-size: 1.7rem;
+  }
+  .header-tagline {
+    font-size: 0.85rem;
   }
 }

@@ -10,10 +10,10 @@ const CTA = () => {
         <p className="cta-premium-subtitle">Call now to check availability and pricing.</p>
         
         <div className="cta-premium-actions">
-          <a href="tel:+918904768299" className="btn-gold-solid">
+          <a href="tel:+918904768299" className="btn-cta-primary">
             <span className="icon">📞</span> +91 89047 68299
           </a>
-          <a href="tel:+919513765355" className="btn-gold-outline">
+          <a href="tel:+919513765355" className="btn-cta-secondary">
             <span className="icon">📞</span> +91 9513765355
           </a>
         </div>

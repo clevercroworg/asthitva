@@ -1,32 +1,35 @@
 .venues-section {
-  background-color: var(--primary-ultra-light);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background: linear-gradient(180deg, var(--primary-ultra-light) 0%, var(--bg-color) 100%);
+  padding: 5rem 2rem;
+}
+
+.venues-inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .venues-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 2.5rem;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .venue-card-side {
   background: var(--card-bg);
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: 1px solid rgba(122, 154, 131, 0.1);
+  border: 1px solid rgba(255, 145, 77, 0.08);
   display: flex;
   flex-direction: column;
 }
 
 .venue-card-side:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-glow);
 }
 
 .venue-video-wrapper {
@@ -47,7 +50,6 @@
 .venue-iframe {
   width: 100%;
   height: 100%;
-  border-radius: 0;
   border: none;
 }
 
@@ -61,7 +63,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,16 +71,16 @@
 }
 
 .venue-video-wrapper:hover .video-overlay {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .glass-play-btn {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,8 +90,8 @@
 }
 
 .glass-play-btn:hover {
-  background: rgba(122, 154, 131, 0.8);
-  border-color: rgba(122, 154, 131, 1);
+  background: rgba(255, 145, 77, 0.8);
+  border-color: rgba(255, 145, 77, 1);
   transform: scale(1.1);
 }
 
@@ -97,23 +99,23 @@
   display: block;
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 16px solid white;
-  margin-left: 4px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 15px solid white;
+  margin-left: 3px;
 }
 
 .video-duration {
   position: absolute;
-  bottom: 12px;
-  right: 12px;
+  bottom: 10px;
+  right: 10px;
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 0.8rem;
-  padding: 4px 10px;
+  font-size: 0.75rem;
+  padding: 3px 10px;
   border-radius: 4px;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .venue-info-side {
@@ -122,49 +124,40 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .venue-title-side {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--text-dark);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
 .venue-tagline {
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-.venue-details {
+.venue-capacity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: var(--primary-ultra-light);
-  border-radius: 10px;
-  padding: 0.8rem;
+  border: 1px solid rgba(255, 145, 77, 0.2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-dark);
   margin-bottom: 1.2rem;
 }
 
-.venue-detail-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.4rem 0;
-  font-size: 0.85rem;
-}
-
-.venue-detail-row + .venue-detail-row {
-  border-top: 1px dashed var(--border-color);
-}
-
-.detail-label {
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.detail-value {
-  color: var(--text-light);
+.venue-capacity-badge svg {
+  color: var(--primary);
 }
 
 .venue-card-actions {
@@ -178,11 +171,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--primary);
+  color: var(--primary-dark);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
-  padding: 0.6rem 1.5rem;
+  padding: 0.55rem 1.3rem;
   border: 2px solid var(--primary);
   border-radius: 30px;
   transition: all 0.3s ease;
@@ -205,91 +198,67 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-decoration: none;
-  padding: 0.6rem 1.5rem;
-  border: 2px solid var(--primary);
+  padding: 0.55rem 1.3rem;
+  border: 2px solid transparent;
   border-radius: 30px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(122, 154, 131, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 145, 77, 0.3);
 }
 
 .btn-venue-book:hover {
-  background: var(--primary-dark, #5a7a63);
-  border-color: var(--primary-dark, #5a7a63);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(122, 154, 131, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 145, 77, 0.4);
 }
 
 /* Mobile: stack vertically */
 @media (max-width: 768px) {
+  .venues-section {
+    padding: 3rem 1rem;
+  }
+
   .venues-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     max-width: 500px;
-    padding: 0 1rem;
   }
 
   .venue-info-side {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .venue-title-side {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .venue-tagline {
-    font-size: 0.8rem;
-  }
-
-  .venue-details {
-    padding: 0.5rem;
-  }
-
-  .venue-detail-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.1rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .venue-card-actions {
     flex-direction: column;
-    gap: 0.5rem;
+    width: 100%;
   }
 
   .btn-venue-learn,
   .btn-venue-book {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     padding: 0.5rem 1rem;
+    justify-content: center;
   }
 
   .glass-play-btn {
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
   }
 
   .play-triangle {
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-left: 13px solid white;
-    margin-left: 3px;
-  }
-
-  .video-duration {
-    font-size: 0.7rem;
-    padding: 3px 6px;
-  }
-}
-
-@media (max-width: 400px) {
-  .venue-title-side {
-    font-size: 1rem;
-  }
-  .venue-tagline {
-    font-size: 0.75rem;
   }
 }

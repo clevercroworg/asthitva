@@ -1,0 +1,112 @@
+.floating-chat-wrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.floating-chat-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 25px rgba(255, 145, 77, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.floating-chat-btn.open {
+  animation: none;
+  background: var(--text-dark);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg);
+}
+
+.floating-chat-btn:hover {
+  transform: scale(1.08);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 6px 25px rgba(255, 145, 77, 0.4);
+  }
+  50% {
+    box-shadow: 0 6px 35px rgba(255, 145, 77, 0.6), 0 0 0 8px rgba(255, 145, 77, 0.1);
+  }
+}
+
+/* Chat Options */
+.chat-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  opacity: 0;
+  transform: translateY(10px) scale(0.8);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chat-options.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.chat-option {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.chat-option:hover {
+  transform: scale(1.1);
+}
+
+.chat-option.whatsapp {
+  background: #25D366;
+}
+
+.chat-option.whatsapp:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.chat-option.call {
+  background: var(--primary-dark);
+}
+
+.chat-option.call:hover {
+  box-shadow: 0 6px 20px rgba(175, 69, 3, 0.4);
+}
+
+@media (max-width: 480px) {
+  .floating-chat-wrapper {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .floating-chat-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .chat-option {
+    width: 44px;
+    height: 44px;
+  }
+}
