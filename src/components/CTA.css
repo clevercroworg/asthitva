@@ -1,7 +1,10 @@
 .cta-premium-section {
   position: relative;
   padding: 7rem 2rem;
-  background: linear-gradient(135deg, #2a1a0a, #1a0d02);
+  background-image: url('/images/IMG20251212184603.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +25,13 @@
 }
 
 .cta-premium-overlay {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(20, 10, 5, 0.85), rgba(42, 26, 10, 0.7));
+  z-index: 1;
 }
 
 .cta-premium-container {
