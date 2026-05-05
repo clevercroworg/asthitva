@@ -1,17 +1,17 @@
 .floating-chat-wrapper {
   position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1.8rem;
+  right: 1.8rem;
   z-index: 999;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .floating-chat-btn {
-  width: 56px;
-  height: 56px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
@@ -20,16 +20,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 25px rgba(255, 145, 77, 0.4);
+  box-shadow: 0 8px 30px rgba(255, 145, 77, 0.45);
   transition: all 0.3s ease;
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.floating-chat-btn svg {
+  width: 30px;
+  height: 30px;
 }
 
 .floating-chat-btn.open {
   animation: none;
   background: var(--text-dark);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
-  transform: rotate(0deg);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.floating-chat-btn.open svg {
+  width: 26px;
+  height: 26px;
 }
 
 .floating-chat-btn:hover {
@@ -38,20 +47,20 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 6px 25px rgba(255, 145, 77, 0.4);
+    box-shadow: 0 8px 30px rgba(255, 145, 77, 0.45);
   }
   50% {
-    box-shadow: 0 6px 35px rgba(255, 145, 77, 0.6), 0 0 0 8px rgba(255, 145, 77, 0.1);
+    box-shadow: 0 8px 40px rgba(255, 145, 77, 0.65), 0 0 0 12px rgba(255, 145, 77, 0.12);
   }
 }
 
-/* Chat Options */
+/* Chat Options — pop upward */
 .chat-options {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.8rem;
   opacity: 0;
-  transform: translateY(10px) scale(0.8);
+  transform: translateY(15px) scale(0.7);
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -63,19 +72,24 @@
 }
 
 .chat-option {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.chat-option svg {
+  width: 26px;
+  height: 26px;
 }
 
 .chat-option:hover {
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
 
 .chat-option.whatsapp {
@@ -83,7 +97,7 @@
 }
 
 .chat-option.whatsapp:hover {
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
 }
 
 .chat-option.call {
@@ -91,22 +105,32 @@
 }
 
 .chat-option.call:hover {
-  box-shadow: 0 6px 20px rgba(175, 69, 3, 0.4);
+  box-shadow: 0 8px 25px rgba(175, 69, 3, 0.45);
 }
 
 @media (max-width: 480px) {
   .floating-chat-wrapper {
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.2rem;
+    right: 1.2rem;
   }
 
   .floating-chat-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .floating-chat-btn svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .chat-option {
     width: 50px;
     height: 50px;
   }
 
-  .chat-option {
-    width: 44px;
-    height: 44px;
+  .chat-option svg {
+    width: 22px;
+    height: 22px;
   }
 }
