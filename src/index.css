@@ -72,17 +72,43 @@ img {
 
 .section-title {
   text-align: center;
-  font-size: 2.9rem;
+  font-size: 3rem;
   color: var(--text-dark);
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-heading);
+  letter-spacing: -0.5px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  border-radius: 50%;
+}
+
+.section-title::before {
+  content: '✦';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: var(--primary);
+  background: var(--bg-color);
+  padding: 0 10px;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
   .section-title {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 }
 

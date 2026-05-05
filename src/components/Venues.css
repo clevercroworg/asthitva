@@ -1,5 +1,7 @@
 .venues-section {
-  background: linear-gradient(180deg, var(--primary-ultra-light) 0%, var(--bg-color) 100%);
+  background: linear-gradient(180deg, var(--primary-ultra-light) 0%, var(--bg-color) 100%),
+              url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='none'/%3E%3Cpath d='M0 0h1v40H0zm0 0h40v1H0z' fill='rgba(255, 145, 77, 0.06)'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 40px 40px;
   padding: 5rem 2rem;
 }
 
