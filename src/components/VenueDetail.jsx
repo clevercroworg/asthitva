@@ -81,7 +81,7 @@ const VenueDetail = ({ venueId, venueName }) => {
   const tabs = [
     { id: 'capacity', label: 'Capacity' },
     { id: 'inclusions', label: 'Inclusions' },
-    { id: 'timing', label: 'Timing & Cost' },
+    { id: 'timing', label: 'Pricing' },
   ];
 
   return (
