@@ -32,8 +32,7 @@ const Venues = () => {
   return (
     <section id="venues" className="venues-section">
       <div className="venues-inner">
-        <span className="overline" style={{ display: 'block', textAlign: 'center' }}>Choose Your Space</span>
-        <h2 className="section-title">Our Venues</h2>
+        <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
         <div className="venues-grid">
           {venues.map((venue) => (
             <div key={venue.id} className="venue-card-side">
