@@ -42,7 +42,7 @@ function App() {
               { src: '/images/venue-2/IMG20251212192041.jpg', className: 'gallery-wide' },
               { src: '/images/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' }
             ]}
-            driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+            driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
           />
         </div>
 
