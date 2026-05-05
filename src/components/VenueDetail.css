@@ -341,9 +341,9 @@
 }
 
 .btn-cta-secondary-dark {
-  padding: 0.9rem 2rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -354,6 +354,7 @@
   background: white;
   color: var(--primary-dark);
   border: 2px solid var(--primary);
+  white-space: nowrap;
 }
 
 .btn-cta-secondary-dark:hover {
@@ -405,11 +406,12 @@
   
   .cta-box-actions {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
   .btn-cta-primary, .btn-cta-secondary-dark {
-    width: 100%;
+    width: fit-content !important;
     justify-content: center;
   }
 
