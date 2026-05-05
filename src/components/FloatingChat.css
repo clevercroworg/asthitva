@@ -4,9 +4,8 @@
   right: 1.8rem;
   z-index: 999;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .floating-chat-btn {
@@ -56,6 +55,8 @@
 
 /* Chat Options — pop upward */
 .chat-options {
+  position: absolute;
+  bottom: calc(100% + 1rem); /* Position above the main button */
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -63,6 +64,7 @@
   transform: translateY(15px) scale(0.7);
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 .chat-options.show {
