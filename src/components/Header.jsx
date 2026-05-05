@@ -7,7 +7,7 @@ const Header = () => {
       <div className="header-title-content animate-fade-in">
         <div className="header-decorative-line"></div>
         <h1 className="header-main-title">Asthitva Teak Meadows</h1>
-        <p className="header-tagline">Premium event venue at Magadi Road, Bengaluru</p>
+        <p className="header-tagline">Premium event venue at Magadi Road</p>
         <div className="header-decorative-line"></div>
       </div>
     </header>

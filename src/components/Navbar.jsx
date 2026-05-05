@@ -13,9 +13,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-container">
-        <a href="#" className="navbar-logo">Teak Meadows</a>
+    <>
+      <div className="top-bar">
+        <span>Premium event venue at Magadi Road</span>
+      </div>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className="navbar-container">
+          <a href="#" className="navbar-logo">Teak Meadows</a>
         
         {/* Desktop nav links */}
         <ul className="nav-links">
@@ -35,7 +39,8 @@ const Navbar = () => {
           +91 89047 68299
         </a>
       </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

@@ -37,6 +37,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-dark);
   line-height: 1.6;
+  font-size: 1.15rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }

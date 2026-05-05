@@ -197,8 +197,7 @@ const VenueDetail = ({ venueId, venueName }) => {
         {/* Book Now CTA at bottom */}
         <div className="venue-detail-cta-box">
           <div className="cta-box-content">
-            <h3 className="cta-box-title">Ready to book {venueName}?</h3>
-            <p className="cta-box-subtitle">Contact us to check availability and reserve your date.</p>
+            <h3 className="cta-box-title">Book {venueName}</h3>
           </div>
           <div className="cta-box-actions">
             <a href="tel:+918904768299" className="btn-cta-primary">
