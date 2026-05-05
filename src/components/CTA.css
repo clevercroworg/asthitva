@@ -72,9 +72,9 @@
 }
 
 .btn-cta-primary {
-  padding: 0.9rem 2rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -86,6 +86,7 @@
   color: white;
   border: none;
   box-shadow: 0 8px 25px rgba(255, 145, 77, 0.3);
+  white-space: nowrap;
 }
 
 .btn-cta-primary:hover {
@@ -94,9 +95,9 @@
 }
 
 .btn-cta-secondary {
-  padding: 0.9rem 2rem;
+  padding: 0.6rem 1.6rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -107,6 +108,7 @@
   background: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
 }
 
 .btn-cta-secondary:hover {
