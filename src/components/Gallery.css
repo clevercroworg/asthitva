@@ -18,35 +18,24 @@
 
 .gallery-masonry {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 200px;
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .gallery-item {
   position: relative;
-  border-radius: 14px;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
+  aspect-ratio: 1 / 1;
 }
 
-.gallery-large {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery-tall {
-  grid-row: span 2;
-  border-radius: 150px 150px 14px 14px; /* Organic Arch Shape */
-}
-
-.gallery-wide {
-  grid-column: span 2;
-}
-
+.gallery-large,
+.gallery-tall,
+.gallery-wide,
 .gallery-standard {
   grid-column: span 1;
   grid-row: span 1;
@@ -124,15 +113,8 @@
 
 @media (max-width: 576px) {
   .gallery-masonry {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
-  }
-  .gallery-large, .gallery-tall, .gallery-wide, .gallery-standard {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .gallery-tall {
-    border-radius: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
   }
 }
 
