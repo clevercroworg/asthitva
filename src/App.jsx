@@ -35,6 +35,13 @@ function App() {
         <div id="venue2-gallery">
           <Gallery 
             venueName="venue2" 
+            images={[
+              { src: '/images/venue-2/IMG_3553.jpg', className: 'gallery-large' },
+              { src: '/images/venue-2/IMG_3554.jpg', className: 'gallery-standard' },
+              { src: '/images/venue-2/IMG_3560.jpg', className: 'gallery-tall' },
+              { src: '/images/venue-2/IMG20251212192041.jpg', className: 'gallery-wide' },
+              { src: '/images/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' }
+            ]}
             driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
           />
         </div>
