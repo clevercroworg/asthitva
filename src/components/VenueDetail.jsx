@@ -169,8 +169,6 @@ const VenueDetail = ({ venueId, venueName }) => {
             </div>
           </div>
         </div>
-
-        </div>
       </div>
     </section>
   );
