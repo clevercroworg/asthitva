@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import FloatingChat from './components/FloatingChat';
+import VenueCTA from './components/VenueCTA';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
           />
         </div>
+        <VenueCTA venueName="Venue 1" phoneNumber1="+91 89047 68299" phoneNumber2="+91 9513765355" />
 
         {/* Venue 2 Detail Section */}
         <VenueDetail venueId="venue2" venueName="Venue 2" />
@@ -46,6 +48,7 @@ function App() {
             driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
           />
         </div>
+        <VenueCTA venueName="Venue 2" phoneNumber1="+91 89047 68299" phoneNumber2="+91 9513765355" />
 
         {/* Location & Google Map */}
         <Info />

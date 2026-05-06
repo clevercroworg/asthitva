@@ -170,19 +170,6 @@ const VenueDetail = ({ venueId, venueName }) => {
           </div>
         </div>
 
-        {/* Book Now CTA at bottom */}
-        <div className="venue-detail-cta-box">
-          <div className="cta-box-content">
-            <h3 className="cta-box-title">Book {venueName}</h3>
-          </div>
-          <div className="cta-box-actions">
-            <a href="tel:+918904768299" className="btn-cta-primary">
-              <span className="icon">📞</span> +91 89047 68299
-            </a>
-            <a href="tel:+919513765355" className="btn-cta-secondary-dark">
-              <span className="icon">📞</span> +91 9513765355
-            </a>
-          </div>
         </div>
       </div>
     </section>
