@@ -76,6 +76,14 @@ const VenueDetail = ({ venueId, venueName }) => {
     ),
   };
 
+  return (
+    <section id={`${venueId}-detail`} className="venue-detail-section">
+      <div className="venue-detail-container">
+        <div className="venue-detail-header">
+          <span className="overline">Explore</span>
+          <h2 className="section-title venue-detail-title">{venueName}</h2>
+        </div>
+
         <div className="venue-sections-content">
           {/* Capacity Section */}
           <div className="venue-section-block">
