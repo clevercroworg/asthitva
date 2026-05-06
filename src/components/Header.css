@@ -62,8 +62,8 @@
 
 @media (max-width: 768px) {
   .header-title-section {
-    padding: 6rem 1.5rem 2.5rem;
-    min-height: 28vh;
+    padding: 140px 1.5rem 3rem; /* Compensate for fixed mobile navbar */
+    min-height: 32vh;
     background-attachment: scroll;
   }
   .header-main-title {
