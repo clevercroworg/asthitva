@@ -3,7 +3,7 @@ import './CTA.css';
 
 const CTA = () => {
   return (
-    <section id="contact" className="section cta-premium-section">
+    <section id="contact" className="cta-premium-section">
       <div className="cta-premium-overlay"></div>
       <div className="cta-premium-container">
         <h2 className="cta-premium-title">Plan Your Event at Asthitva Teak Meadows</h2>
