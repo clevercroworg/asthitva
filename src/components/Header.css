@@ -1,5 +1,5 @@
 .header-title-section {
-  padding: 5rem 2rem;
+  padding: 160px 2rem 4rem; /* 160px top padding perfectly offsets the navbar */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 38vh;
+  min-height: 42vh;
   display: flex;
   align-items: center;
   justify-content: center;
