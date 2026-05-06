@@ -13,9 +13,6 @@ const CTA = () => {
           <a href="tel:+918904768299" className="btn-cta-primary">
             <span className="icon">📞</span> +91 89047 68299
           </a>
-          <a href="tel:+919513765355" className="btn-cta-secondary">
-            <span className="icon">📞</span> +91 9513765355
-          </a>
         </div>
         
         <div className="cta-premium-footer">

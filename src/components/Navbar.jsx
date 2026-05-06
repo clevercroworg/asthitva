@@ -28,7 +28,7 @@ const Navbar = () => {
           <li><a href="#venue1-gallery">Gallery</a></li>
           <li><a href="#location">Location</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="tel:+918904768299" className="nav-cta">Book Now</a></li>
+          <li><a href="tel:+918904768299" className="nav-cta">📞 +91 89047 68299</a></li>
         </ul>
 
         {/* Mobile phone button */}
