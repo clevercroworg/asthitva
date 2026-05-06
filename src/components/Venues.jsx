@@ -67,14 +67,6 @@ const Venues = () => {
                   </svg>
                   <span>{venue.capacity}</span>
                 </div>
-                <div className="venue-card-actions">
-                  <a href={venue.detailLink} className="btn-venue-learn">
-                    Learn More <span className="arrow">↓</span>
-                  </a>
-                  <a href="tel:+918904768299" className="btn-venue-book">
-                    Book Now
-                  </a>
-                </div>
               </div>
             </div>
           ))}
