@@ -85,6 +85,24 @@ const VenueDetail = ({ venueId, venueName }) => {
         </div>
 
         <div className="venue-sections-content">
+          {/* Timing & Cost Section */}
+          <div className="venue-section-block">
+            <h3 className="venue-section-heading">{data.timing.title}</h3>
+            <div className="timing-cost-container">
+              <div className="timing-slots">
+                {data.timing.slots.map((slot, idx) => (
+                  <div key={idx} className="timing-slot-card">
+                    <div className="slot-icon">{idx === 0 ? '☀️' : '🌙'}</div>
+                    <div className="slot-info">
+                      <p className="slot-label">{slot.label}</p>
+                      <p className="slot-price">{slot.price}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Capacity Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">Capacity & Space</h3>
@@ -148,24 +166,6 @@ const VenueDetail = ({ venueId, venueName }) => {
                   <p className="inclusion-name">{item.name}</p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          {/* Timing & Cost Section */}
-          <div className="venue-section-block">
-            <h3 className="venue-section-heading">{data.timing.title}</h3>
-            <div className="timing-cost-container">
-              <div className="timing-slots">
-                {data.timing.slots.map((slot, idx) => (
-                  <div key={idx} className="timing-slot-card">
-                    <div className="slot-icon">{idx === 0 ? '☀️' : '🌙'}</div>
-                    <div className="slot-info">
-                      <p className="slot-label">{slot.label}</p>
-                      <p className="slot-price">{slot.price}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>
