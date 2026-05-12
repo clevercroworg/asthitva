@@ -6,10 +6,10 @@ const VenueDetail = ({ venueId, venueName }) => {
     venue1: {
       tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
       capacity: {
-        venue: 'Up to 800 guests',
-        dining: 'Up to 200',
+        venue: '800 (Floating)',
+        dining: '200 (Dining)',
         carpet: '11,500 sq ft carpet area',
-        diningSeating: 'Separate dining section with 130 seating at once',
+        diningSeating: '300 (Seating)',
       },
       inclusions: [
         { name: 'All Furniture with Fabric', icon: 'chair' },
@@ -21,7 +21,7 @@ const VenueDetail = ({ venueId, venueName }) => {
         title: 'Introductory Price',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
-          { label: 'Eve (3 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
         ],
       },
     },
@@ -114,7 +114,7 @@ const VenueDetail = ({ venueId, venueName }) => {
                   </svg>
                 </div>
                 <div className="capacity-detail-content">
-                  <h4>Venue Capacity</h4>
+                  <h4>Floating Capacity</h4>
                   <p>{data.capacity.venue}</p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ const VenueDetail = ({ venueId, venueName }) => {
                   </svg>
                 </div>
                 <div className="capacity-detail-content">
-                  <h4>Dining Seating</h4>
+                  <h4>Seating Capacity</h4>
                   <p>{data.capacity.diningSeating}</p>
                 </div>
               </div>
