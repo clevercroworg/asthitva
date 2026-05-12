@@ -6,10 +6,10 @@ const VenueDetail = ({ venueId, venueName }) => {
     venue1: {
       tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
       capacity: {
-        venue: '800 (Floating)',
-        dining: '200 (Dining)',
+        venue: '800',
+        dining: '200',
         carpet: '11,500 sq ft carpet area',
-        diningSeating: '300 (Seating)',
+        diningSeating: '300',
       },
       inclusions: [
         { name: 'All Furniture with Fabric', icon: 'chair' },
