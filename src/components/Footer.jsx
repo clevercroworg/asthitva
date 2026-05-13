@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const allVenues = [
-  { key: 'teakmeadows', name: 'Asthitva Teak Meadows', sub: 'Magadi Road', path: '/' },
+  { key: 'teakmeadows', name: 'Asthitva Teak Meadows', sub: 'Magadi Road', path: '/magadi-road' },
   { key: 'muddainapalya', name: 'Asthitva The Venue', sub: 'Muddainapalya', path: '/muddainapalya' },
   { key: 'ullal', name: 'Asthitva Terrace Garden', sub: 'Ullal', path: '/ullal' },
   { key: 'rrnagar', name: 'Asthitva The Venue', sub: 'RR Nagar', path: '/rrnagar' },
@@ -16,6 +16,13 @@ const contactData = {
     address: '63/1, Kachohalli Road, Opp. HP Petrol Bunk, Kempegowda Nagar, Byadarahalli, Bengaluru 560091',
     phones: ['+91 89047 68299', '+91 9513765355'],
     copyright: 'Asthitva Teak Meadows',
+  },
+  home: {
+    brand: 'Asthitva',
+    tagline: 'Premium Event Venues Across Bengaluru',
+    address: 'Multiple Locations Across Bengaluru',
+    phones: ['+91 89047 68299', '+91 9535415379'],
+    copyright: 'Asthitva',
   },
   muddainapalya: {
     brand: 'Asthitva The Venue',
@@ -42,7 +49,7 @@ const contactData = {
 
 const Footer = ({ page = 'teakmeadows' }) => {
   const info = contactData[page] || contactData.teakmeadows;
-  const otherVenues = allVenues.filter(v => v.key !== page);
+  const otherVenues = page === 'home' ? allVenues : allVenues.filter(v => v.key !== page);
 
   return (
     <footer className="footer">

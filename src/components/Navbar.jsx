@@ -27,7 +27,7 @@ const Navbar = ({ logoText = "Teak Meadows", topBarText = "Premium event venue a
           <li><Link to="/muddainapalya">Muddainapalya</Link></li>
           <li><Link to="/ullal">Ullal</Link></li>
           <li><Link to="/rrnagar">RR Nagar</Link></li>
-          <li><Link to="/">Magadi Road</Link></li>
+          <li><Link to="/magadi-road">Magadi Road</Link></li>
           <li><a href="tel:+918904768299" className="nav-cta">📞 89047 68299</a></li>
         </ul>
 

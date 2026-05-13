@@ -95,12 +95,12 @@
 
 .footer-other-venues {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .footer-venues-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
 }
 
