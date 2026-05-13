@@ -25,7 +25,7 @@ function Ullal() {
 
   return (
     <div className="app">
-      <Navbar logoText="Ullal" topBarText="Premium event venue at Ullal" />
+      <Navbar logoText="Terrace Garden" topBarText="Premium event venue at Ullal" />
       <Header title="Asthitva Terrace Garden @ Ullal" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>

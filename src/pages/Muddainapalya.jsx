@@ -34,7 +34,7 @@ function Muddainapalya() {
 
   return (
     <div className="app">
-      <Navbar logoText="Muddainapalya" topBarText="Premium event venue at Muddayanapalya" />
+      <Navbar logoText="The Venue" topBarText="Premium event venue at Muddayanapalya" />
       <Header title="Asthitva The Venue @ Muddainapalya" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
