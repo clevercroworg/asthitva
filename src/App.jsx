@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import FloatingChat from './components/FloatingChat';
-import VenueCTA from './components/VenueCTA';
+
 
 function App() {
   const venuesData = [
@@ -52,7 +52,7 @@ function App() {
               driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
             />
           </div>
-          <VenueCTA venueName="Venue 1" phoneNumber1="+91 89047 68299" phoneNumber2="+91 9513765355" />
+
         </section>
 
         <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '2rem auto', width: '80%' }} />
@@ -75,7 +75,7 @@ function App() {
               driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
             />
           </div>
-          <VenueCTA venueName="Venue 2" phoneNumber1="+91 89047 68299" phoneNumber2="+91 9513765355" />
+
         </section>
 
         {/* Location & Google Map */}
