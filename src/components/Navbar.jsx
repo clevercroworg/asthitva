@@ -20,7 +20,10 @@ const Navbar = ({ logoText = "Teak Meadows", topBarText = "Premium event venue a
       </div>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">{logoText}</Link>
+          <Link to="/" className="navbar-logo">
+            <span className="navbar-logo-top">Asthitva</span>
+            <span className="navbar-logo-bottom">{logoText}</span>
+          </Link>
         
         {/* Desktop nav links */}
         <ul className="nav-links">
