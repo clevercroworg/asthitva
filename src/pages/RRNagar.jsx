@@ -56,7 +56,7 @@ function RRNagar() {
                 { src: '/images/rr-nagar/venue-1/5.webp', className: 'gallery-standard' },
                 { src: '/images/rr-nagar/venue-1/6.webp', className: 'gallery-standard' },
               ]}
-              driveLink="#"
+              driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
             />
           </div>
         </section>
@@ -70,7 +70,7 @@ function RRNagar() {
           <div id="venue2-gallery">
             <Gallery 
               venueName="venue2" 
-              driveLink="#"
+              driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
             />
           </div>
         </section>

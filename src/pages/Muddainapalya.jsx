@@ -56,7 +56,7 @@ function Muddainapalya() {
                 { src: '/images/muddainapalya/venue-1/5.jpg', className: 'gallery-standard' },
                 { src: '/images/muddainapalya/venue-1/6.jpg', className: 'gallery-standard' },
               ]}
-              driveLink="#"
+              driveLink="https://photos.google.com/share/AF1QipOOAh-lNItpGORkT7HFWHqQdmeYr9a_-KBHM6qOD5hsTpa2XakPVNQMT6aVePTloQ?key=Z0dTcFY0ejRlZEZpbXdIdzBwcXZCTG16V2g2cEt3"
             />
           </div>
         </section>
@@ -78,7 +78,7 @@ function Muddainapalya() {
                 { src: '/images/muddainapalya/venue-2/5.jpg', className: 'gallery-standard' },
                 { src: '/images/muddainapalya/venue-2/6.jpg', className: 'gallery-standard' },
               ]}
-              driveLink="#"
+              driveLink="https://photos.google.com/share/AF1QipOOAh-lNItpGORkT7HFWHqQdmeYr9a_-KBHM6qOD5hsTpa2XakPVNQMT6aVePTloQ?key=Z0dTcFY0ejRlZEZpbXdIdzBwcXZCTG16V2g2cEt3"
             />
           </div>
         </section>
