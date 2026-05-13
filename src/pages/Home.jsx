@@ -34,7 +34,7 @@ const venues = [
   },
   {
     key: 'rrnagar',
-    name: 'Asthitva The Venue',
+    name: 'Asthitva RR Nagar',
     location: 'RR Nagar',
     capacity: 'Up to 800 Guests',
     image: '/images/rr-nagar/venue-1/1.webp',

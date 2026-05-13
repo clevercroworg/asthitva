@@ -6,7 +6,7 @@ const allVenues = [
   { key: 'teakmeadows', name: 'Asthitva Teak Meadows', sub: 'Magadi Road', path: '/magadi-road' },
   { key: 'muddainapalya', name: 'Asthitva The Venue', sub: 'Muddainapalya', path: '/muddainapalya' },
   { key: 'ullal', name: 'Asthitva Terrace Garden', sub: 'Ullal', path: '/ullal' },
-  { key: 'rrnagar', name: 'Asthitva The Venue', sub: 'RR Nagar', path: '/rrnagar' },
+  { key: 'rrnagar', name: 'Asthitva RR Nagar', sub: 'RR Nagar', path: '/rrnagar' },
 ];
 
 const contactData = {
@@ -39,11 +39,11 @@ const contactData = {
     copyright: 'Asthitva Terrace Garden',
   },
   rrnagar: {
-    brand: 'Asthitva The Venue',
+    brand: 'Asthitva RR Nagar',
     tagline: 'RR Nagar, Bengaluru',
     address: 'Sy no.239, nxt to, Kenchena Halli Rd, Kalegowda Layout, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098',
     phones: ['+91 9535415379'],
-    copyright: 'Asthitva The Venue',
+    copyright: 'Asthitva RR Nagar',
   },
 };
 

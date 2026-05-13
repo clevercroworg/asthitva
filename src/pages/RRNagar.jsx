@@ -34,7 +34,7 @@ function RRNagar() {
 
   return (
     <div className="app">
-      <Navbar logoText="The Venue" topBarText="Premium event venue at RR Nagar" />
+      <Navbar logoText="RR Nagar" topBarText="Premium event venue at RR Nagar" />
       <Header title="Asthitva @ RR Nagar" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
