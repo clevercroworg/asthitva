@@ -34,7 +34,7 @@ const Amenities = ({ venueName }) => {
       <div className="amenities-split-container">
         
         <div className="amenities-image-side">
-          <img src="/images/IMG20251212184603.jpg" alt={`${venueName} Decoration`} className="amenities-main-img" />
+          <img src="/images/teak-meadows/IMG20251212184603.jpg" alt={`${venueName} Decoration`} className="amenities-main-img" />
           <div className="amenities-image-frame"></div>
         </div>
 

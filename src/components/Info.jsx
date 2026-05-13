@@ -1,7 +1,11 @@
 import React from 'react';
 import './Info.css';
 
-const Info = () => {
+const Info = ({ page = 'teakmeadows' }) => {
+  const isMuddainapalya = page === 'muddainapalya';
+  const isUllal = page === 'ullal';
+  const isRRNagar = page === 'rrnagar';
+
   return (
     <section id="location" className="section info-map-section">
       <div className="info-map-container">
@@ -19,10 +23,36 @@ const Info = () => {
               </div>
               <div>
                 <h4>Address</h4>
-                <p>Asthitva Teak Meadows</p>
-                <p>63/1, Kachohalli Road, Opp. HP Petrol Bunk</p>
-                <p>Kempegowda Nagar, Byadarahalli</p>
-                <p>Bengaluru, Karnataka 560091</p>
+                {isMuddainapalya ? (
+                  <>
+                    <p>Asthitva The Venue</p>
+                    <p>8/2, behind Mallathahalli Lake Road,</p>
+                    <p>near Sir M Vishveshwaraiah Layout, Muddayanapalya,</p>
+                    <p>8th block, Annapurneshwari Nagar,</p>
+                    <p>Bengaluru, Karnataka 560091</p>
+                  </>
+                ) : isUllal ? (
+                  <>
+                    <p>Asthitva No. 2090/12, 100 Feet Rd,</p>
+                    <p>opposite to MRPL petrol bunk,</p>
+                    <p>5th Block, Jnana Ganga Nagar, Ullal,</p>
+                    <p>Bengaluru, Karnataka 560110</p>
+                  </>
+                ) : isRRNagar ? (
+                  <>
+                    <p>Asthitva The Venue</p>
+                    <p>Sy no.239, nxt to, Kenchena Halli Rd,</p>
+                    <p>kalegowda layout, Rajarajeshwari Nagar,</p>
+                    <p>Bengaluru, Karnataka 560098</p>
+                  </>
+                ) : (
+                  <>
+                    <p>Asthitva Teak Meadows</p>
+                    <p>63/1, Kachohalli Road, Opp. HP Petrol Bunk</p>
+                    <p>Kempegowda Nagar, Byadarahalli</p>
+                    <p>Bengaluru, Karnataka 560091</p>
+                  </>
+                )}
               </div>
             </div>
 
@@ -43,14 +73,22 @@ const Info = () => {
               </div>
               <div>
                 <h4>Contact</h4>
-                <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
-                <p><a href="tel:+919513765355" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9513765355</a></p>
+                {isUllal || isRRNagar ? (
+                  <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
+                ) : (
+                  <>
+                    <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
+                    {!isMuddainapalya && (
+                      <p><a href="tel:+919513765355" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9513765355</a></p>
+                    )}
+                  </>
+                )}
               </div>
             </div>
           </div>
 
           <a 
-            href="https://www.google.com/maps/search/Asthitva+Teak+Meadows+63%2F1+Kachohalli+Road+Byadarahalli+Bengaluru+560091" 
+            href={isMuddainapalya ? "https://www.google.com/maps/search/Asthitva+The+Venue+Muddainapalya+Bangalore" : isUllal ? "https://www.google.com/maps/search/Asthitva+Terrace+Garden+Ullal+Bangalore" : isRRNagar ? "https://www.google.com/maps/search/Asthitva+RR+Nagar+Kenchena+Halli+Rd+Bangalore" : "https://www.google.com/maps/search/Asthitva+Teak+Meadows+63%2F1+Kachohalli+Road+Byadarahalli+Bengaluru+560091"} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-gold-solid info-directions-btn"
@@ -61,14 +99,14 @@ const Info = () => {
 
         <div className="info-map-right">
           <iframe
-            src="https://www.google.com/maps?q=Asthitva+Teak+Meadows+63/1+Kachohalli+Road+Opp+HP+Petrol+Bunk+Kempegowda+Nagar+Byadarahalli+Bengaluru+560091&output=embed"
+            src={isMuddainapalya ? "https://www.google.com/maps?q=Asthitva+The+Venue+Muddainapalya+Bangalore&output=embed" : isUllal ? "https://www.google.com/maps?q=Asthitva+Terrace+Garden+Ullal+Bangalore&output=embed" : isRRNagar ? "https://www.google.com/maps?q=Asthitva+RR+Nagar+Kenchena+Halli+Rd+Rajarajeshwari+Nagar+Bangalore&output=embed" : "https://www.google.com/maps?q=Asthitva+Teak+Meadows+63/1+Kachohalli+Road+Opp+HP+Petrol+Bunk+Kempegowda+Nagar+Byadarahalli+Bengaluru+560091&output=embed"}
             width="100%"
             height="100%"
             style={{ border: 0, borderRadius: '16px' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Asthitva Teak Meadows Location Map"
+            title={isMuddainapalya ? "Asthitva The Venue Location Map" : isUllal ? "Asthitva Terrace Garden Location Map" : isRRNagar ? "Asthitva RR Nagar Location Map" : "Asthitva Teak Meadows Location Map"}
           ></iframe>
         </div>
 

@@ -10,7 +10,7 @@ const Venues = () => {
       title: 'Venue 1',
       tagline: 'Open venue with 11500 sq ft of carpet area',
       capacity: 'Up to 800 guests',
-      image: '/images/IMG20251212184424.jpg',
+      image: '/images/teak-meadows/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
       detailLink: '#venue1-detail',
     },
@@ -19,7 +19,7 @@ const Venues = () => {
       title: 'Venue 2',
       tagline: 'Elegant space with roof, moon lights and open sides',
       capacity: 'Up to 500 guests',
-      image: '/images/IMG20251212184540.jpg',
+      image: '/images/teak-meadows/IMG20251212184540.jpg',
       videoId: 'dgWdi3zOOPY',
       detailLink: '#venue2-detail',
     }

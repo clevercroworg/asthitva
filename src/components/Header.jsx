@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ title = "Asthitva Teak Meadows" }) => {
   return (
     <header className="header-title-section">
       <div className="header-title-content animate-fade-in">
-        <h1 className="header-main-title">Asthitva Teak Meadows</h1>
+        <h1 className="header-main-title">{title}</h1>
       </div>
     </header>
   );

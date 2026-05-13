@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ logoText = "Teak Meadows", topBarText = "Premium event venue at Magadi Road" }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,20 +16,19 @@ const Navbar = () => {
   return (
     <>
       <div className={`top-bar ${scrolled ? 'hidden' : ''}`}>
-        <span>Premium event venue at Magadi Road</span>
+        <span>{topBarText}</span>
       </div>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
-          <a href="#" className="navbar-logo">Teak Meadows</a>
+          <Link to="/" className="navbar-logo">{logoText}</Link>
         
         {/* Desktop nav links */}
         <ul className="nav-links">
-          <li><a href="#venue1-detail">Venue 1</a></li>
-          <li><a href="#venue2-detail">Venue 2</a></li>
-          <li><a href="#venue1-gallery">Gallery</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="tel:+918904768299" className="nav-cta">📞 +91 89047 68299</a></li>
+          <li><Link to="/muddainapalya">Muddainapalya</Link></li>
+          <li><Link to="/ullal">Ullal</Link></li>
+          <li><Link to="/rrnagar">RR Nagar</Link></li>
+          <li><Link to="/">Magadi Road</Link></li>
+          <li><a href="tel:+918904768299" className="nav-cta">📞 89047 68299</a></li>
         </ul>
 
         {/* Mobile phone button */}
