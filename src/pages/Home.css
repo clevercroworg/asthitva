@@ -9,10 +9,11 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(26, 26, 26, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 145, 77, 0.1);
 }
 
 .home-nav-container {
@@ -36,9 +37,9 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: white;
+  color: var(--text-dark);
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.5rem 1.2rem;
   border: 1px solid rgba(255, 145, 77, 0.4);
   border-radius: 50px;
@@ -47,6 +48,7 @@
 
 .home-nav-call:hover {
   background: var(--primary);
+  color: white;
   border-color: var(--primary);
 }
 
