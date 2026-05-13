@@ -53,7 +53,7 @@ function Ullal() {
         {/* Final CTA */}
         <CTA page="ullal" />
       </main>
-      <Footer />
+      <Footer page="ullal" />
       <FloatingChat />
     </div>
   );

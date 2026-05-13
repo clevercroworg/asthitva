@@ -92,7 +92,7 @@ function Muddainapalya() {
         {/* Final CTA */}
         <CTA page="muddainapalya" />
       </main>
-      <Footer />
+      <Footer page="muddainapalya" />
       <FloatingChat />
     </div>
   );

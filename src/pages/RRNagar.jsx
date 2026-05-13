@@ -84,7 +84,7 @@ function RRNagar() {
         {/* Final CTA */}
         <CTA page="rrnagar" />
       </main>
-      <Footer />
+      <Footer page="rrnagar" />
       <FloatingChat />
     </div>
   );
