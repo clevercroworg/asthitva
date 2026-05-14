@@ -11,13 +11,22 @@ import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
 function Ullal() {
+  const galleryImages = [
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM.jpeg', className: 'gallery-large' },
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM (1).jpeg', className: 'gallery-standard' },
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.50 PM (1).jpeg', className: 'gallery-tall' },
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.50 PM (2).jpeg', className: 'gallery-wide' },
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.50 PM.jpeg', className: 'gallery-standard' },
+    { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.51 PM.jpeg', className: 'gallery-standard' }
+  ];
+
   const venuesData = [
     {
       id: 1,
       title: 'Upto 250 guest | Terrace Garden Venue',
       tagline: 'Serene rooftop escape blending lush greenery, ambient lighting, and open skies.',
       capacity: 'Upto 250 guest',
-      image: '/images/ullal/venue-1/1.jpg', 
+      image: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM.jpeg', 
       videoId: 'FH85MIyHZVs', 
       detailLink: '#venue1-detail',
     }
@@ -26,7 +35,7 @@ function Ullal() {
   return (
     <div className="app">
       <Navbar logoText="Terrace Garden" topBarText="Premium event venue at Ullal" />
-      <Header title="Asthitva Terrace Garden @ Ullal" />
+      <Header title="Asthitva Terrace Garden @ Ullal" bgImage="/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM.jpeg" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
           <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
@@ -39,6 +48,7 @@ function Ullal() {
           <div id="venue1-gallery">
             <Gallery 
               venueName="venue1" 
+              images={galleryImages}
               driveLink="#" // Placeholder
             />
           </div>
