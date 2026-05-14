@@ -10,5 +10,8 @@
     { "source": "/asthitva-teak-meadows/:path*", "destination": "/magadi-road", "permanent": true },
     { "source": "/asthitva-cozy-corner", "destination": "/", "permanent": true },
     { "source": "/asthitva-cozy-corner/:path*", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
