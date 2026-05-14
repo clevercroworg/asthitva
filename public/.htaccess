@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 301 Redirects for old URLs
+  RewriteRule ^muddainapalya-asthitva-the-venue/?(.*)$ /muddainapalya [R=301,L]
+  RewriteRule ^asthitva-terrace-garden/?(.*)$ /ullal [R=301,L]
+  RewriteRule ^rr-nagar-asthitva-the-venue/?(.*)$ /rrnagar [R=301,L]
+  RewriteRule ^asthitva-teak-meadows/?(.*)$ /magadi-road [R=301,L]
+  RewriteRule ^asthitva-cozy-corner/?(.*)$ / [R=301,L]
+
+  # Standard SPA routing (serve index.html for unknown paths)
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
