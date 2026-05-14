@@ -1,12 +1,14 @@
 {
   "redirects": [
-    { "source": "/muddainapalya-asthitva-the-venue/?(.*)", "destination": "/muddainapalya", "permanent": true },
-    { "source": "/asthitva-terrace-garden/?(.*)", "destination": "/ullal", "permanent": true },
-    { "source": "/rr-nagar-asthitva-the-venue/?(.*)", "destination": "/rrnagar", "permanent": true },
-    { "source": "/asthitva-teak-meadows/?(.*)", "destination": "/magadi-road", "permanent": true },
-    { "source": "/asthitva-cozy-corner/?(.*)", "destination": "/", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/muddainapalya-asthitva-the-venue", "destination": "/muddainapalya", "permanent": true },
+    { "source": "/muddainapalya-asthitva-the-venue/:path*", "destination": "/muddainapalya", "permanent": true },
+    { "source": "/asthitva-terrace-garden", "destination": "/ullal", "permanent": true },
+    { "source": "/asthitva-terrace-garden/:path*", "destination": "/ullal", "permanent": true },
+    { "source": "/rr-nagar-asthitva-the-venue", "destination": "/rrnagar", "permanent": true },
+    { "source": "/rr-nagar-asthitva-the-venue/:path*", "destination": "/rrnagar", "permanent": true },
+    { "source": "/asthitva-teak-meadows", "destination": "/magadi-road", "permanent": true },
+    { "source": "/asthitva-teak-meadows/:path*", "destination": "/magadi-road", "permanent": true },
+    { "source": "/asthitva-cozy-corner", "destination": "/", "permanent": true },
+    { "source": "/asthitva-cozy-corner/:path*", "destination": "/", "permanent": true }
   ]
 }
