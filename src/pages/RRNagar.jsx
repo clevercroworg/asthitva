@@ -18,7 +18,7 @@ function RRNagar() {
       tagline: 'Thoughtfully designed event venue offering a spacious, well-maintained setting.',
       capacity: 'Upto 800 guest',
       image: '/images/rr-nagar/venue-1/1.webp', 
-      videoSrc: '/images/rr-nagar/video/venue1-compressed.mp4', 
+      videoSrc: '/images/rr-nagar/venue-1/venue-1-compressed.mp4', 
       detailLink: '#venue1-detail',
     },
     {
@@ -27,7 +27,7 @@ function RRNagar() {
       tagline: 'Elegant space with roof, moon lights and open sides.',
       capacity: 'Upto 500 guest',
       image: '/images/rr-nagar/venue-1/4.webp', 
-      videoId: 'dgWdi3zOOPY', 
+      videoSrc: '/images/rr-nagar/venue-2/venue-2-compressed.mp4', 
       detailLink: '#venue2-detail',
     }
   ];
