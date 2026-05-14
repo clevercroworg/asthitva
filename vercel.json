@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/muddainapalya-asthitva-the-venue/?(.*)", "destination": "/muddainapalya", "permanent": true },
+    { "source": "/asthitva-terrace-garden/?(.*)", "destination": "/ullal", "permanent": true },
+    { "source": "/rr-nagar-asthitva-the-venue/?(.*)", "destination": "/rrnagar", "permanent": true },
+    { "source": "/asthitva-teak-meadows/?(.*)", "destination": "/magadi-road", "permanent": true },
+    { "source": "/asthitva-cozy-corner/?(.*)", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
