@@ -5,7 +5,7 @@ const FloatingChat = () => {
   return (
     <div className="floating-chat-wrapper">
       <a
-        href="https://wa.me/918904768299?text=Hi%2C%20I%27m%20interested%20in%20booking%20a%20venue%20at%20Asthitva%20Teak%20Meadows."
+        href="https://wa.me/918904768299?text=Hi%2C%20I%27m%20interested%20in%20booking%20at%20Asthitva"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-pulsate-btn"
