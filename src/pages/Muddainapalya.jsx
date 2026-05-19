@@ -27,7 +27,7 @@ function Muddainapalya() {
       tagline: 'Elegant space with roof, moon lights and open sides',
       capacity: 'Upto 300 guest',
       image: '/images/muddainapalya/venue-2/1.jpg', 
-      videoSrc: '/images/muddainapalya/video/venue-2-compressed.mp4', 
+      videoId: 'dgWdi3zOOPY', 
       detailLink: '#venue2-detail',
     }
   ];
