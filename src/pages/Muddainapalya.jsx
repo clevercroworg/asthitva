@@ -26,8 +26,8 @@ function Muddainapalya() {
       title: 'Venue 2',
       tagline: 'Elegant space with roof, moon lights and open sides',
       capacity: 'Upto 300 guest',
-      image: '/images/muddainapalya/venue-2/1.jpg', 
-      videoId: 'dgWdi3zOOPY', 
+      image: '/images/muddainapalya/venue-2/1.webp', 
+      videoId: 'tmMSkUJJ478', 
       detailLink: '#venue2-detail',
     }
   ];
@@ -71,14 +71,14 @@ function Muddainapalya() {
             <Gallery 
               venueName="venue2" 
               images={[
-                { src: '/images/muddainapalya/venue-2/1.jpg', className: 'gallery-standard' },
-                { src: '/images/muddainapalya/venue-2/2.jpg', className: 'gallery-standard' },
-                { src: '/images/muddainapalya/venue-2/3.jpg', className: 'gallery-standard' },
-                { src: '/images/muddainapalya/venue-2/4.jpg', className: 'gallery-standard' },
-                { src: '/images/muddainapalya/venue-2/5.jpg', className: 'gallery-standard' },
-                { src: '/images/muddainapalya/venue-2/6.jpg', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/1.webp', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/2.webp', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/3.webp', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/4.webp', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/5.webp', className: 'gallery-standard' },
+                { src: '/images/muddainapalya/venue-2/6.webp', className: 'gallery-standard' },
               ]}
-              driveLink="https://photos.google.com/share/AF1QipOOAh-lNItpGORkT7HFWHqQdmeYr9a_-KBHM6qOD5hsTpa2XakPVNQMT6aVePTloQ?key=Z0dTcFY0ejRlZEZpbXdIdzBwcXZCTG16V2g2cEt3"
+              driveLink="https://photos.app.goo.gl/TbZNPXAroLN5x1DK8"
             />
           </div>
         </section>

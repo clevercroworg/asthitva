@@ -26,7 +26,7 @@ function RRNagar() {
       title: 'Venue 2',
       tagline: 'Elegant space with roof, moon lights and open sides.',
       capacity: 'Upto 500 guest',
-      image: '/images/rr-nagar/venue-1/4.webp', 
+      image: '/images/rr-nagar/venue-2/1.webp', 
       videoSrc: '/images/rr-nagar/venue-2/venue-2-compressed.mp4', 
       detailLink: '#venue2-detail',
     }
@@ -56,7 +56,7 @@ function RRNagar() {
                 { src: '/images/rr-nagar/venue-1/5.webp', className: 'gallery-standard' },
                 { src: '/images/rr-nagar/venue-1/6.webp', className: 'gallery-standard' },
               ]}
-              driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+              driveLink="https://photos.app.goo.gl/9LwkrESXUCECMN917"
             />
           </div>
         </section>
@@ -70,7 +70,15 @@ function RRNagar() {
           <div id="venue2-gallery">
             <Gallery 
               venueName="venue2" 
-              driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+              images={[
+                { src: '/images/rr-nagar/venue-2/1.webp', className: 'gallery-standard' },
+                { src: '/images/rr-nagar/venue-2/2.webp', className: 'gallery-standard' },
+                { src: '/images/rr-nagar/venue-2/3.webp', className: 'gallery-standard' },
+                { src: '/images/rr-nagar/venue-2/4.webp', className: 'gallery-standard' },
+                { src: '/images/rr-nagar/venue-2/5.webp', className: 'gallery-standard' },
+                { src: '/images/rr-nagar/venue-2/6.webp', className: 'gallery-standard' },
+              ]}
+              driveLink="https://photos.app.goo.gl/qVCoZbtaBefgkJBcA"
             />
           </div>
         </section>
