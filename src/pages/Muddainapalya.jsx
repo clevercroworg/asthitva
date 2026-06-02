@@ -11,6 +11,10 @@ import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
 function Muddainapalya() {
+  React.useEffect(() => {
+    document.title = "Asthitva The Venue | Premium Event Venue | Muddainapalya, Bengaluru";
+  }, []);
+
   const venuesData = [
     {
       id: 1,

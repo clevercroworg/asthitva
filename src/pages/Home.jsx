@@ -68,6 +68,10 @@ const testimonials = [
 ];
 
 function Home() {
+  React.useEffect(() => {
+    document.title = "Asthitva — Premium Event Venues | Bengaluru";
+  }, []);
+
   return (
     <div className="home-page">
       {/* Minimal Navbar */}

@@ -11,6 +11,10 @@ import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
 function RRNagar() {
+  React.useEffect(() => {
+    document.title = "Asthitva RR Nagar | Premium Event Venue | RR Nagar, Bengaluru";
+  }, []);
+
   const venuesData = [
     {
       id: 1,

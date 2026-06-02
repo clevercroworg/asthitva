@@ -11,6 +11,10 @@ import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
 function TeakMeadows() {
+  React.useEffect(() => {
+    document.title = "Asthitva Teak Meadows | Premium Event Venue | Magadi Road, Bengaluru";
+  }, []);
+
   const venuesData = [
     {
       id: 1,

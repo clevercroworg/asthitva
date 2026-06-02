@@ -11,6 +11,10 @@ import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
 function Ullal() {
+  React.useEffect(() => {
+    document.title = "Asthitva Terrace Garden | Premium Event Venue | Ullal, Bengaluru";
+  }, []);
+
   const galleryImages = [
     { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM.jpeg', className: 'gallery-large' },
     { src: '/images/ullal/WhatsApp Image 2026-05-14 at 1.25.49 PM (1).jpeg', className: 'gallery-standard' },
