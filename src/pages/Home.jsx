@@ -28,7 +28,7 @@ const venues = [
     name: 'Asthitva Terrace Garden',
     location: 'Ullal',
     capacity: 'Up to 250 Guests',
-    image: '/images/teak-meadows/IMG20251212184603.jpg',
+    image: '/images/ullal/rooftop_0.jpg',
     path: '/ullal',
     tag: '1 Venue',
   },
