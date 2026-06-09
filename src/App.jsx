@@ -5,10 +5,13 @@ import TeakMeadows from './pages/TeakMeadows';
 import Muddainapalya from './pages/Muddainapalya';
 import Ullal from './pages/Ullal';
 import RRNagar from './pages/RRNagar';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/magadi-road" element={<TeakMeadows />} />
       <Route path="/muddainapalya" element={<Muddainapalya />} />
@@ -27,6 +30,7 @@ function App() {
       <Route path="/asthitva-cozy-corner" element={<Navigate replace to="/" />} />
       <Route path="/asthitva-cozy-corner/*" element={<Navigate replace to="/" />} />
     </Routes>
+    </>
   );
 }
 

@@ -7,6 +7,7 @@ import Gallery from '../components/Gallery';
 import Info from '../components/Info';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
@@ -67,6 +68,7 @@ function Ullal() {
         {/* Final CTA */}
         <CTA page="ullal" />
       </main>
+      <FAQ page="ullal" />
       <Footer page="ullal" />
       <FloatingChat />
     </div>

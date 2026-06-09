@@ -7,6 +7,7 @@ import Gallery from '../components/Gallery';
 import Info from '../components/Info';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
@@ -96,6 +97,7 @@ function Muddainapalya() {
         {/* Final CTA */}
         <CTA page="muddainapalya" />
       </main>
+      <FAQ page="muddainapalya" />
       <Footer page="muddainapalya" />
       <FloatingChat />
     </div>

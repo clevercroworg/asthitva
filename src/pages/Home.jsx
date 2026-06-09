@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
+import FAQ from '../components/FAQ';
 import './Home.css';
 
 const venues = [
@@ -170,6 +171,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQs */}
+      <FAQ page="home" />
 
       {/* Footer */}
       <Footer page="home" />
