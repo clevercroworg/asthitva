@@ -171,6 +171,130 @@ const faqData = {
       q: "How do I enquire about pricing for Asthitva Ullal?",
       a: "You can call or WhatsApp Asthitva to receive pricing, availability and booking details."
     }
+  ],
+  "wedding-venue-in-bangalore": [
+    {
+      q: "What type of wedding venues does Asthitva offer in Bangalore?",
+      a: "Asthitva offers a variety of wedding venues, including spacious outdoor lawns at Magadi Road (Teak Meadows), elegant semi-open and covered halls at RR Nagar and Muddainapalya, and an intimate rooftop Terrace Garden at Ullal."
+    },
+    {
+      q: "What is the guest capacity for weddings at Asthitva venues?",
+      a: "Our venues cater to different sizes. Asthitva Teak Meadows and RR Nagar can host up to 800 guests, Muddainapalya accommodates up to 600, and our Terrace Garden in Ullal is ideal for intimate weddings of up to 250 guests."
+    },
+    {
+      q: "Do you provide in-house catering and decor services?",
+      a: "We offer venue-only bookings, giving you complete flexibility to bring your own decorators and caterers. We can also share a curated list of trusted local vendors to assist with your wedding planning."
+    },
+    {
+      q: "Can we host pre-wedding rituals like Haldi and Mehendi?",
+      a: "Yes, all Asthitva locations feature dedicated, beautiful spaces perfectly suited for traditional pre-wedding events, photo sessions, and family gatherings."
+    }
+  ],
+  "reception-venue-in-bangalore": [
+    {
+      q: "Which Asthitva venues are best suited for hosting wedding receptions?",
+      a: "All Asthitva locations (Teak Meadows, RR Nagar, Muddainapalya, and Terrace Garden) have excellent layouts, spacious dining halls, and grand backdrops specifically designed for hosting memorable wedding receptions."
+    },
+    {
+      q: "Do you have separate dining areas for reception guests?",
+      a: "Yes, our venues feature large, dedicated dining zones and modern kitchen spaces that support smooth catering operations and comfortable guest dining."
+    },
+    {
+      q: "Can we customize the lighting and stage decoration for our reception?",
+      a: "Yes. Asthitva venues are highly decor-friendly and customizable, allowing you to set up customized stages, grand lighting, floral gates, and photo booths."
+    }
+  ],
+  "outdoor-wedding-venue-in-bangalore": [
+    {
+      q: "What open-air wedding venue options does Asthitva offer in Bangalore?",
+      a: "We offer scenic open-air lawns surrounded by greenery at Teak Meadows (Magadi Road) and an elegant rooftop Terrace Garden in Ullal. Both are perfect for nature-themed, photo-friendly weddings."
+    },
+    {
+      q: "What is the backup option if it rains during an outdoor event?",
+      a: "Our outdoor locations feature connected covered or semi-open dining halls and event shelters, providing a convenient and quick backup solution in case of weather changes."
+    },
+    {
+      q: "Are outdoor lawns suitable for evening reception events?",
+      a: "Yes, outdoor lawns are highly popular for evening events, offering a beautiful setup under ambient lighting, moon lights, and open skies."
+    }
+  ],
+  "birthday-party-venue-in-bangalore": [
+    {
+      q: "Which Asthitva venue is best for a private birthday party?",
+      a: "Asthitva Terrace Garden at Ullal is highly recommended for birthday parties due to its scenic rooftop setting and cozy atmosphere. For larger celebrations, our venues at Muddainapalya and RR Nagar are great fits."
+    },
+    {
+      q: "Can we set up custom themes and kids' game zones?",
+      a: "Yes, our party venues are extremely decor-friendly. We accommodate custom birthday theme stages, balloon arches, game stalls, food carts, and kids' activity setups."
+    },
+    {
+      q: "Is guest parking available for birthday events?",
+      a: "Yes, all Asthitva event locations provide parking facilities and easy accessibility to ensure a hassle-free visit for your birthday guests."
+    }
+  ],
+  "corporate-event-venue-in-bangalore": [
+    {
+      q: "What types of corporate events can be hosted at Asthitva?",
+      a: "Asthitva venues are fully equipped to host annual day functions, team dinners, corporate award nights, product launches, corporate parties, and networking events."
+    },
+    {
+      q: "Do you support professional AV setups, sound systems, and staging?",
+      a: "Yes, our venues offer spacious stage layouts, ample electrical points, and robust power backup support, making them perfect for professional AV setups, projectors, and branding banners."
+    },
+    {
+      q: "Are the corporate venues easily accessible for teams in Bangalore?",
+      a: "Yes, our venues are located near key hubs like RR Nagar, Magadi Road, and Muddainapalya, ensuring easy transit and ample parking for corporate attendees."
+    }
+  ],
+  "engagement-venue-in-bangalore": [
+    {
+      q: "Which Asthitva venue is ideal for a ring ceremony or engagement?",
+      a: "Asthitva Muddainapalya and the Ullal Terrace Garden are highly popular for ring ceremonies due to their cozy, warm, and intimate layouts. Teak Meadows and RR Nagar are also excellent for larger engagement parties."
+    },
+    {
+      q: "Are separate changing rooms provided for the bride and groom?",
+      a: "Yes, we offer comfortable, dedicated changing rooms at our venues to ensure the couple and family members can dress up conveniently in privacy."
+    }
+  ],
+  "party-venue-in-bangalore": [
+    {
+      q: "What types of private parties can we host at Asthitva?",
+      a: "You can host private family get-togethers, college farewells, anniversary parties, themed gatherings, and kitty parties. We have spaces ranging from intimate rooftops to large lawns."
+    },
+    {
+      q: "Is playing music or hiring a DJ allowed at the party venues?",
+      a: "Yes, playing music and setting up sound systems/DJs is permitted at our party venues, subject to local guidelines and timing regulations."
+    }
+  ],
+  "naming-ceremony-venue-in-bangalore": [
+    {
+      q: "Can we perform traditional cradling ceremonies and poojas?",
+      a: "Yes, all our venues are fully compatible with traditional setups. You can place cradle decorations, perform poojas/havans, and set up traditional seating arrangements."
+    },
+    {
+      q: "Are clean dining facilities available for naming ceremony lunches?",
+      a: "Yes, our venues are equipped with spacious, hygienic dining areas and modern kitchen sections to host naming ceremony lunches and buffet spreads."
+    }
+  ],
+  "baby-shower-venue-in-bangalore": [
+    {
+      q: "Do you host traditional Seemantha or baby shower functions?",
+      a: "Yes, we regularly host traditional Seemantha events. The spaces are designed to provide a comfortable, auspicious, and beautiful setting for the mother-to-be and family members."
+    },
+    {
+      q: "Is there comfortable seating and access for elderly guests?",
+      a: "Yes, our venues feature convenient ground-level accessibility (or elevator access) and comfortable seating spaces to ensure elderly family members are relaxed throughout the event."
+    }
+  ],
+  "family-function-venue-in-bangalore": [
+    {
+      q: "What types of family gatherings can be hosted at Asthitva?",
+      a: "You can host birthdays, naming ceremonies, baby showers, engagements, family lunches, anniversary dinners, and any other private family milestone events."
+    },
+    {
+      q: "How can we check availability and book a date?",
+      a: "You can easily check event date availability by calling or messaging our team on WhatsApp. We can then schedule a venue visit to show you the venue before booking."
+    }
   ]
 };
 

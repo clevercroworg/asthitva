@@ -98,6 +98,37 @@
   max-width: 700px;
 }
 
+.footer-event-types {
+  width: 100%;
+  max-width: 900px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 2rem;
+}
+
+.footer-events-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.8rem;
+}
+
+.footer-event-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.footer-event-link:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(255, 145, 77, 0.05);
+  transform: translateY(-1px);
+}
+
 .footer-venues-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));

@@ -80,6 +80,22 @@ const Footer = ({ page = 'teakmeadows' }) => {
             ))}
           </div>
         </div>
+
+        <div className="footer-event-types">
+          <h4>Venues by Event Type</h4>
+          <div className="footer-events-grid">
+            <Link to="/wedding-venue-in-bangalore/" className="footer-event-link">Wedding Venues</Link>
+            <Link to="/reception-venue-in-bangalore/" className="footer-event-link">Reception Venues</Link>
+            <Link to="/outdoor-wedding-venue-in-bangalore/" className="footer-event-link">Outdoor Weddings</Link>
+            <Link to="/birthday-party-venue-in-bangalore/" className="footer-event-link">Birthday Parties</Link>
+            <Link to="/corporate-event-venue-in-bangalore/" className="footer-event-link">Corporate Events</Link>
+            <Link to="/engagement-venue-in-bangalore/" className="footer-event-link">Engagement Venues</Link>
+            <Link to="/party-venue-in-bangalore/" className="footer-event-link">Party Venues</Link>
+            <Link to="/naming-ceremony-venue-in-bangalore/" className="footer-event-link">Naming Ceremonies</Link>
+            <Link to="/baby-shower-venue-in-bangalore/" className="footer-event-link">Baby Showers</Link>
+            <Link to="/family-function-venue-in-bangalore/" className="footer-event-link">Family Functions</Link>
+          </div>
+        </div>
       </div>
       
       <div className="footer-bottom">

@@ -5,6 +5,8 @@ import TeakMeadows from './pages/TeakMeadows';
 import Muddainapalya from './pages/Muddainapalya';
 import Ullal from './pages/Ullal';
 import RRNagar from './pages/RRNagar';
+import SEOEventPage from './pages/seo/SEOEventPage';
+import { pageConfigs } from './pages/seo/pageConfigs';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -17,6 +19,15 @@ function App() {
       <Route path="/muddainapalya" element={<Muddainapalya />} />
       <Route path="/ullal" element={<Ullal />} />
       <Route path="/rrnagar" element={<RRNagar />} />
+
+      {/* SEO Event Pages */}
+      {Object.keys(pageConfigs).map((key) => (
+        <Route 
+          key={key} 
+          path={`/${pageConfigs[key].slug}`} 
+          element={<SEOEventPage config={pageConfigs[key]} />} 
+        />
+      ))}
 
       {/* Redirects for old URLs */}
       <Route path="/muddainapalya-asthitva-the-venue" element={<Navigate replace to="/muddainapalya" />} />
