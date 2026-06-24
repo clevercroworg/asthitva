@@ -33,8 +33,8 @@ const venueInfo = {
   rrnagar: {
     name: 'Asthitva RR Nagar',
     location: 'RR Nagar, Bengaluru',
-    capacity: 'Up to 800 Guests',
-    image: '/images/rr-nagar/venue-1/1.webp',
+    capacity: 'Up to 700 Guests',
+    image: '/images/rr-nagar/venue-1/video-thumbnail.webp',
     path: '/rrnagar'
   }
 };

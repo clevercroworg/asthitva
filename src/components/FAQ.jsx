@@ -179,7 +179,7 @@ const faqData = {
     },
     {
       q: "What is the guest capacity for weddings at Asthitva venues?",
-      a: "Our venues cater to different sizes. Asthitva Teak Meadows and RR Nagar can host up to 800 guests, Muddainapalya accommodates up to 600, and our Terrace Garden in Ullal is ideal for intimate weddings of up to 250 guests."
+      a: "Our venues cater to different sizes. Asthitva Teak Meadows can host up to 800 guests, RR Nagar up to 700 guests, Muddainapalya accommodates up to 600, and our Terrace Garden in Ullal is ideal for intimate weddings of up to 250 guests."
     },
     {
       q: "Do you provide in-house catering and decor services?",
