@@ -7,6 +7,8 @@ import Ullal from './pages/Ullal';
 import RRNagar from './pages/RRNagar';
 import SEOEventPage from './pages/seo/SEOEventPage';
 import { pageConfigs } from './pages/seo/pageConfigs';
+import BlogList from './pages/blog/BlogList';
+import BlogDetail from './pages/blog/BlogDetail';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -19,6 +21,10 @@ function App() {
       <Route path="/muddainapalya" element={<Muddainapalya />} />
       <Route path="/ullal" element={<Ullal />} />
       <Route path="/rrnagar" element={<RRNagar />} />
+
+      {/* Blog Pages */}
+      <Route path="/blog" element={<BlogList />} />
+      <Route path="/blog/:slug" element={<BlogDetail />} />
 
       {/* SEO Event Pages */}
       {Object.keys(pageConfigs).map((key) => (
