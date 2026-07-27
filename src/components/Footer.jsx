@@ -35,7 +35,7 @@ const contactData = {
     brand: 'Asthitva Rooftop',
     tagline: 'Ullal, Bengaluru',
     address: 'Ullal Main Rd, Ullal, Bengaluru, Karnataka 560056',
-    phones: ['+91 9535415379'],
+    phones: ['+91 9535415379', '+91 81470 95583'],
     copyright: 'Asthitva Rooftop',
   },
   rrnagar: {

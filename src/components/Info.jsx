@@ -73,7 +73,12 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
               <div>
                 <h4>Contact</h4>
-                {isUllal || isRRNagar ? (
+                {isUllal ? (
+                  <>
+                    <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
+                    <p><a href="tel:+918147095583" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 81470 95583</a></p>
+                  </>
+                ) : isRRNagar ? (
                   <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
                 ) : (
                   <>
