@@ -5,7 +5,7 @@ import './Footer.css';
 const allVenues = [
   { key: 'teakmeadows', name: 'Asthitva Teak Meadows', sub: 'Magadi Road', path: '/magadi-road' },
   { key: 'muddainapalya', name: 'Asthitva The Venue', sub: 'Muddainapalya', path: '/muddainapalya' },
-  { key: 'ullal', name: 'Asthitva Terrace Garden', sub: 'Ullal', path: '/ullal' },
+  { key: 'ullal', name: 'Asthitva Rooftop', sub: 'Ullal', path: '/ullal' },
   { key: 'rrnagar', name: 'Asthitva RR Nagar', sub: 'RR Nagar', path: '/rrnagar' },
 ];
 
@@ -32,11 +32,11 @@ const contactData = {
     copyright: 'Asthitva The Venue',
   },
   ullal: {
-    brand: 'Asthitva Terrace Garden',
+    brand: 'Asthitva Rooftop',
     tagline: 'Ullal, Bengaluru',
     address: 'Ullal Main Rd, Ullal, Bengaluru, Karnataka 560056',
     phones: ['+91 9535415379'],
-    copyright: 'Asthitva Terrace Garden',
+    copyright: 'Asthitva Rooftop',
   },
   rrnagar: {
     brand: 'Asthitva RR Nagar',

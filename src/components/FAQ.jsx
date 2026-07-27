@@ -175,11 +175,11 @@ const faqData = {
   "wedding-venue-in-bangalore": [
     {
       q: "What type of wedding venues does Asthitva offer in Bangalore?",
-      a: "Asthitva offers a variety of wedding venues, including spacious outdoor lawns at Magadi Road (Teak Meadows), elegant semi-open and covered halls at RR Nagar and Muddainapalya, and an intimate rooftop Terrace Garden at Ullal."
+      a: "Asthitva offers a variety of wedding venues, including spacious outdoor lawns at Magadi Road (Teak Meadows), elegant semi-open and covered halls at RR Nagar and Muddainapalya, and an intimate venue at Asthitva Rooftop in Ullal."
     },
     {
       q: "What is the guest capacity for weddings at Asthitva venues?",
-      a: "Our venues cater to different sizes. Asthitva Teak Meadows can host up to 800 guests, RR Nagar up to 700 guests, Muddainapalya accommodates up to 600, and our Terrace Garden in Ullal is ideal for intimate weddings of up to 250 guests."
+      a: "Our venues cater to different sizes. Asthitva Teak Meadows can host up to 800 guests, RR Nagar up to 700 guests, Muddainapalya accommodates up to 600, and our Asthitva Rooftop venue in Ullal is ideal for intimate weddings of up to 250 guests."
     },
     {
       q: "Do you provide in-house catering and decor services?",
@@ -193,7 +193,7 @@ const faqData = {
   "reception-venue-in-bangalore": [
     {
       q: "Which Asthitva venues are best suited for hosting wedding receptions?",
-      a: "All Asthitva locations (Teak Meadows, RR Nagar, Muddainapalya, and Terrace Garden) have excellent layouts, spacious dining halls, and grand backdrops specifically designed for hosting memorable wedding receptions."
+      a: "All Asthitva locations (Teak Meadows, RR Nagar, Muddainapalya, and Asthitva Rooftop) have excellent layouts, spacious dining halls, and grand backdrops specifically designed for hosting memorable wedding receptions."
     },
     {
       q: "Do you have separate dining areas for reception guests?",
@@ -207,7 +207,7 @@ const faqData = {
   "outdoor-wedding-venue-in-bangalore": [
     {
       q: "What open-air wedding venue options does Asthitva offer in Bangalore?",
-      a: "We offer scenic open-air lawns surrounded by greenery at Teak Meadows (Magadi Road) and an elegant rooftop Terrace Garden in Ullal. Both are perfect for nature-themed, photo-friendly weddings."
+      a: "We offer scenic open-air lawns surrounded by greenery at Teak Meadows (Magadi Road) and an elegant Asthitva Rooftop in Ullal. Both are perfect for nature-themed, photo-friendly weddings."
     },
     {
       q: "What is the backup option if it rains during an outdoor event?",
@@ -221,7 +221,7 @@ const faqData = {
   "birthday-party-venue-in-bangalore": [
     {
       q: "Which Asthitva venue is best for a private birthday party?",
-      a: "Asthitva Terrace Garden at Ullal is highly recommended for birthday parties due to its scenic rooftop setting and cozy atmosphere. For larger celebrations, our venues at Muddainapalya and RR Nagar are great fits."
+      a: "Asthitva Rooftop at Ullal is highly recommended for birthday parties due to its scenic rooftop setting and cozy atmosphere. For larger celebrations, our venues at Muddainapalya and RR Nagar are great fits."
     },
     {
       q: "Can we set up custom themes and kids' game zones?",
@@ -249,7 +249,7 @@ const faqData = {
   "engagement-venue-in-bangalore": [
     {
       q: "Which Asthitva venue is ideal for a ring ceremony or engagement?",
-      a: "Asthitva Muddainapalya and the Ullal Terrace Garden are highly popular for ring ceremonies due to their cozy, warm, and intimate layouts. Teak Meadows and RR Nagar are also excellent for larger engagement parties."
+      a: "Asthitva Muddainapalya and the Asthitva Rooftop at Ullal are highly popular for ring ceremonies due to their cozy, warm, and intimate layouts. Teak Meadows and RR Nagar are also excellent for larger engagement parties."
     },
     {
       q: "Are separate changing rooms provided for the bride and groom?",

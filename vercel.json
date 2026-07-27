@@ -4,6 +4,8 @@
     { "source": "/muddainapalya-asthitva-the-venue/:path*", "destination": "/muddainapalya", "permanent": true },
     { "source": "/asthitva-terrace-garden", "destination": "/ullal", "permanent": true },
     { "source": "/asthitva-terrace-garden/:path*", "destination": "/ullal", "permanent": true },
+    { "source": "/asthitva-rooftop", "destination": "/ullal", "permanent": true },
+    { "source": "/asthitva-rooftop/:path*", "destination": "/ullal", "permanent": true },
     { "source": "/rr-nagar-asthitva-the-venue", "destination": "/rrnagar", "permanent": true },
     { "source": "/rr-nagar-asthitva-the-venue/:path*", "destination": "/rrnagar", "permanent": true },
     { "source": "/asthitva-teak-meadows", "destination": "/magadi-road", "permanent": true },

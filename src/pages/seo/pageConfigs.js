@@ -149,7 +149,7 @@ export const pageConfigs = {
         "Venue options for small and medium gatherings",
         "Dining arrangement options",
         "Decor-friendly spaces",
-        "Terrace garden option for private celebrations",
+        "Asthitva Rooftop option for private celebrations",
         "Easy access across Bengaluru locations",
         "Simple call or WhatsApp enquiry"
       ],
@@ -269,7 +269,7 @@ export const pageConfigs = {
       introTitle: "Celebrate Special Moments at Asthitva",
       introText: "Asthitva offers venue options in Bangalore for private parties, family celebrations, birthdays, anniversaries and corporate gatherings. Our venues are suitable for people looking for a comfortable and elegant space to celebrate important occasions with family, friends or colleagues.",
       suitabilityTitle: "Flexible Venue Options for Different Events",
-      suitabilityText: "From terrace garden celebrations to spacious event venues, Asthitva can help you choose a space based on the event type, guest count and preferred location.",
+      suitabilityText: "From rooftop celebrations to spacious event venues, Asthitva can help you choose a space based on the event type, guest count and preferred location.",
       whyChooseTitle: "Why Choose Asthitva for Your Party?",
       whyChooseBullets: [
         "Versatile open-air and semi-open structures",
@@ -288,7 +288,7 @@ export const pageConfigs = {
         "Small functions"
       ],
       locationTitle: "Location Advantage",
-      locationText: "Choose between the scenic skyline of our Ullal Terrace Garden, the spaciousness of Teak Meadows on Magadi Road, or central neighborhood venues in RR Nagar and Muddainapalya.",
+      locationText: "Choose between the scenic skyline of our Asthitva Rooftop in Ullal, the spaciousness of Teak Meadows on Magadi Road, or central neighborhood venues in RR Nagar and Muddainapalya.",
       ctaSectionTitle: "Looking for a party venue in Bangalore?",
       ctaSectionText: "Contact Asthitva to check availability and venue options.",
       ctaButtonText: "Check Availability"

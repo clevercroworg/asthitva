@@ -26,7 +26,7 @@ const venues = [
   },
   {
     key: 'ullal',
-    name: 'Asthitva Terrace Garden',
+    name: 'Asthitva Rooftop',
     location: 'Ullal',
     capacity: 'Up to 250 Guests',
     image: '/images/ullal/rooftop_0.jpg',

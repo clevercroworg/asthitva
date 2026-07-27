@@ -13,7 +13,7 @@ import FloatingChat from '../components/FloatingChat';
 
 function Ullal() {
   React.useEffect(() => {
-    document.title = "Asthitva Terrace Garden | Premium Event Venue | Ullal, Bengaluru";
+    document.title = "Asthitva Rooftop | Premium Event Venue | Ullal, Bengaluru";
   }, []);
 
   const galleryImages = [
@@ -28,7 +28,7 @@ function Ullal() {
   const venuesData = [
     {
       id: 1,
-      title: 'Upto 250 guest | Terrace Garden Venue',
+      title: 'Upto 250 guest | Asthitva Rooftop Venue',
       tagline: 'Serene rooftop escape blending lush greenery, ambient lighting, and open skies.',
       capacity: 'Upto 250 guest',
       image: '/images/ullal/rooftop_1.jpg', 
@@ -39,8 +39,8 @@ function Ullal() {
 
   return (
     <div className="app">
-      <Navbar logoText="Terrace Garden" topBarText="Premium event venue at Ullal" />
-      <Header title="Asthitva Terrace Garden @ Ullal" bgImage="/images/ullal/rooftop_0.jpg" />
+      <Navbar logoText="Asthitva Rooftop" topBarText="Premium event venue at Ullal" />
+      <Header title="Asthitva Rooftop @ Ullal" bgImage="/images/ullal/rooftop_0.jpg" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
           <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
@@ -49,7 +49,7 @@ function Ullal() {
         {/* --- Venue 1 Section --- */}
         <section style={{ marginBottom: '4rem' }}>
           <VenueVideo venue={venuesData[0]} hideVideoText={true} />
-          <VenueDetail venueId="venue1" venueName="Terrace Garden Venue" page="ullal" />
+          <VenueDetail venueId="venue1" venueName="Asthitva Rooftop Venue" page="ullal" />
           <div id="venue1-gallery">
             <Gallery 
               venueName="venue1" 

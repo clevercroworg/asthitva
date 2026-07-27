@@ -40,6 +40,8 @@ function App() {
       <Route path="/muddainapalya-asthitva-the-venue/*" element={<Navigate replace to="/muddainapalya" />} />
       <Route path="/asthitva-terrace-garden" element={<Navigate replace to="/ullal" />} />
       <Route path="/asthitva-terrace-garden/*" element={<Navigate replace to="/ullal" />} />
+      <Route path="/asthitva-rooftop" element={<Navigate replace to="/ullal" />} />
+      <Route path="/asthitva-rooftop/*" element={<Navigate replace to="/ullal" />} />
       <Route path="/rr-nagar-asthitva-the-venue" element={<Navigate replace to="/rrnagar" />} />
       <Route path="/rr-nagar-asthitva-the-venue/*" element={<Navigate replace to="/rrnagar" />} />
       <Route path="/asthitva-teak-meadows" element={<Navigate replace to="/magadi-road" />} />

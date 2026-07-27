@@ -24,7 +24,7 @@ const venueInfo = {
     path: '/muddainapalya'
   },
   ullal: {
-    name: 'Asthitva Terrace Garden',
+    name: 'Asthitva Rooftop',
     location: 'Ullal, Bengaluru',
     capacity: 'Up to 250 Guests',
     image: '/images/ullal/rooftop_0.jpg',
