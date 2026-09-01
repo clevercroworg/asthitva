@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw uncompressed video footage
+*.mov
+*.MOV
+*.raw

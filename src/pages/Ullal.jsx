@@ -32,7 +32,7 @@ function Ullal() {
       tagline: 'Serene rooftop escape blending lush greenery, ambient lighting, and open skies.',
       capacity: 'Upto 250 guest',
       image: '/images/ullal/rooftop_1.jpg', 
-      videoId: 'FH85MIyHZVs', 
+      videoSrc: '/images/ullal/video/rooftop-compressed.mp4', 
       detailLink: '#venue1-detail',
     }
   ];
