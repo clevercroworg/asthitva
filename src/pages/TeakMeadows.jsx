@@ -39,7 +39,7 @@ function TeakMeadows() {
 
   return (
     <div className="app">
-      <Navbar logoText="Teak Meadows" />
+      <Navbar logoText="Teak Meadows" phone="+91 89047 68299" />
       <Header title="Asthitva Teak Meadows" />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
