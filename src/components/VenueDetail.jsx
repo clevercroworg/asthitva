@@ -166,7 +166,40 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     },
   };
 
-  const data = page === 'muddainapalya' ? muddainapalyaData[venueId] : page === 'ullal' ? ullalData[venueId] : page === 'rrnagar' ? rrNagarData[venueId] : venueData[venueId];
+  const laBendicionData = {
+    venue1: {
+      tagline: 'Charming semi-outdoor venue with warm ambient lighting, elegant structures, and lush greenery',
+      capacity: {
+        venue: 'Up to 600 guests floating',
+        dining: '150 - 250 guests',
+        carpet: 'Spacious celebration space with covered roofing',
+        diningSeating: '150 - 200 guests',
+      },
+      inclusions: [
+        { name: 'All furniture with Fabric', icon: 'chair' },
+        { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
+        { name: 'Power back up', icon: 'power' },
+      ],
+      timing: {
+        title: 'Timing and Cost',
+        slots: [
+          { label: 'Day (6 AM - 3 PM)', price: '₹70,000 + GST' },
+          { label: 'Eve (3 PM - 12 AM)', price: '₹75,000 + GST' },
+        ],
+      },
+    },
+  };
+
+  const data = page === 'muddainapalya'
+    ? muddainapalyaData[venueId]
+    : page === 'ullal'
+    ? ullalData[venueId]
+    : page === 'rrnagar'
+    ? rrNagarData[venueId]
+    : (page === 'labendicion' || page === 'la-bendicion')
+    ? laBendicionData[venueId]
+    : venueData[venueId];
 
   const icons = {
     chair: (

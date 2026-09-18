@@ -7,6 +7,7 @@ const allVenues = [
   { key: 'muddainapalya', name: 'Asthitva The Venue', sub: 'Muddainapalya', path: '/muddainapalya' },
   { key: 'ullal', name: 'Asthitva Rooftop', sub: 'Ullal', path: '/ullal' },
   { key: 'rrnagar', name: 'Asthitva RR Nagar', sub: 'RR Nagar', path: '/rrnagar' },
+  { key: 'labendicion', name: 'Asthitva La Bendicion', sub: 'Sahakar Nagar', path: '/la-bendicion' },
 ];
 
 const contactData = {
@@ -44,6 +45,13 @@ const contactData = {
     address: 'Sy no.239, nxt to, Kenchena Halli Rd, Kalegowda Layout, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098',
     phones: ['+91 9535415379'],
     copyright: 'Asthitva RR Nagar',
+  },
+  labendicion: {
+    brand: 'Asthitva La Bendicion',
+    tagline: 'Sahakar Nagar / Kodigehalli, Bengaluru',
+    address: '957, 2nd Phase, Rajeev Gandhi Nagar, NTI Layout, Near Sahakar Nagar, Kodigehalli, Bengaluru 560097',
+    phones: ['+91 89047 68299', '+91 9535415379'],
+    copyright: 'Asthitva La Bendicion',
   },
 };
 

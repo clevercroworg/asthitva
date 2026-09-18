@@ -5,6 +5,7 @@ const Info = ({ page = 'teakmeadows' }) => {
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
+  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion';
 
   return (
     <section id="location" className="section info-map-section">
@@ -23,7 +24,14 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
               <div>
                 <h4>Address</h4>
-                {isMuddainapalya ? (
+                {isLaBendicion ? (
+                  <>
+                    <p>Asthitva La Bendicion</p>
+                    <p>957, 2nd Phase, Rajeev Gandhi Nagar,</p>
+                    <p>NTI Layout, Near Sahakar Nagar, Kodigehalli,</p>
+                    <p>Bengaluru, Karnataka 560097</p>
+                  </>
+                ) : isMuddainapalya ? (
                   <>
                     <p>Asthitva The Venue</p>
                     <p>8/2, behind Mallathahalli Lake Road,</p>
@@ -73,7 +81,9 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
               <div>
                 <h4>Contact</h4>
-                {isUllal ? (
+                {isLaBendicion ? (
+                  <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
+                ) : isUllal ? (
                   <p><a href="tel:+918147095583" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 81470 95583</a></p>
                 ) : isRRNagar ? (
                   <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
@@ -90,7 +100,7 @@ const Info = ({ page = 'teakmeadows' }) => {
           </div>
 
           <a 
-            href={isMuddainapalya ? "https://www.google.com/maps/search/Asthitva+The+Venue+Muddainapalya+Bangalore" : isUllal ? "https://www.google.com/maps/search/Asthitva+Rooftop+Ullal+Bangalore" : isRRNagar ? "https://www.google.com/maps/search/Asthitva+RR+Nagar+Kenchena+Halli+Rd+Bangalore" : "https://www.google.com/maps/search/Asthitva+Teak+Meadows+63%2F1+Kachohalli+Road+Byadarahalli+Bengaluru+560091"} 
+            href={isLaBendicion ? "https://share.google/R1P4n7aovaN1hfUaJ" : isMuddainapalya ? "https://www.google.com/maps/search/Asthitva+The+Venue+Muddainapalya+Bangalore" : isUllal ? "https://www.google.com/maps/search/Asthitva+Rooftop+Ullal+Bangalore" : isRRNagar ? "https://www.google.com/maps/search/Asthitva+RR+Nagar+Kenchena+Halli+Rd+Bangalore" : "https://www.google.com/maps/search/Asthitva+Teak+Meadows+63%2F1+Kachohalli+Road+Byadarahalli+Bengaluru+560091"} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-gold-solid info-directions-btn"
@@ -101,14 +111,14 @@ const Info = ({ page = 'teakmeadows' }) => {
 
         <div className="info-map-right">
           <iframe
-            src={isMuddainapalya ? "https://www.google.com/maps?q=Asthitva+The+Venue+Muddainapalya+Bangalore&output=embed" : isUllal ? "https://www.google.com/maps?q=Asthitva+Rooftop+Ullal+Bangalore&output=embed" : isRRNagar ? "https://www.google.com/maps?q=Asthitva+RR+Nagar+Kenchena+Halli+Rd+Rajarajeshwari+Nagar+Bangalore&output=embed" : "https://www.google.com/maps?q=Asthitva+Teak+Meadows+63/1+Kachohalli+Road+Opp+HP+Petrol+Bunk+Kempegowda+Nagar+Byadarahalli+Bengaluru+560091&output=embed"}
+            src={isLaBendicion ? "https://www.google.com/maps?q=ASTHITVA+LA+BENDICION+Bengaluru&output=embed" : isMuddainapalya ? "https://www.google.com/maps?q=Asthitva+The+Venue+Muddainapalya+Bangalore&output=embed" : isUllal ? "https://www.google.com/maps?q=Asthitva+Rooftop+Ullal+Bangalore&output=embed" : isRRNagar ? "https://www.google.com/maps?q=Asthitva+RR+Nagar+Kenchena+Halli+Rd+Rajarajeshwari+Nagar+Bangalore&output=embed" : "https://www.google.com/maps?q=Asthitva+Teak+Meadows+63/1+Kachohalli+Road+Opp+HP+Petrol+Bunk+Kempegowda+Nagar+Byadarahalli+Bengaluru+560091&output=embed"}
             width="100%"
             height="100%"
             style={{ border: 0, borderRadius: '16px' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title={isMuddainapalya ? "Asthitva The Venue Location Map" : isUllal ? "Asthitva Rooftop Location Map" : isRRNagar ? "Asthitva RR Nagar Location Map" : "Asthitva Teak Meadows Location Map"}
+            title={isLaBendicion ? "Asthitva La Bendicion Location Map" : isMuddainapalya ? "Asthitva The Venue Location Map" : isUllal ? "Asthitva Rooftop Location Map" : isRRNagar ? "Asthitva RR Nagar Location Map" : "Asthitva Teak Meadows Location Map"}
           ></iframe>
         </div>
 

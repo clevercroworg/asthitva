@@ -5,16 +5,17 @@ const CTA = ({ page = 'teakmeadows' }) => {
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
+  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion';
 
   return (
     <section id="contact" className="cta-premium-section">
       <div className="cta-premium-overlay"></div>
       <div className="cta-premium-container">
         <h2 className="cta-premium-title">
-          {isMuddainapalya || isUllal || isRRNagar ? "Plan Your Event With Us" : "Plan Your Event at Asthitva Teak Meadows"}
+          {isLaBendicion ? "Plan Your Event at Asthitva La Bendicion" : isMuddainapalya || isUllal || isRRNagar ? "Plan Your Event With Us" : "Plan Your Event at Asthitva Teak Meadows"}
         </h2>
         <p className="cta-premium-subtitle">
-          {isMuddainapalya || isUllal || isRRNagar ? "Reach out to check availability, schedule a venue visit, or get a personalized quote." : "Call now to check availability and pricing."}
+          {isLaBendicion || isMuddainapalya || isUllal || isRRNagar ? "Reach out to check availability, schedule a venue visit, or get a personalized quote." : "Call now to check availability and pricing."}
         </p>
         
         <div className="cta-premium-actions">

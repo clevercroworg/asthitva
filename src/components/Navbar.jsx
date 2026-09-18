@@ -23,6 +23,11 @@ const venuePhoneMap = {
     display: '89047 68299',
     full: '+91 89047 68299',
   },
+  labendicion: {
+    tel: '+918904768299',
+    display: '89047 68299',
+    full: '+91 89047 68299',
+  },
   default: {
     tel: '+918904768299',
     display: '89047 68299',
@@ -46,6 +51,7 @@ const resolvePhone = (phoneProp, pathname) => {
   if (path.includes('rrnagar')) return venuePhoneMap.rrnagar;
   if (path.includes('muddainapalya')) return venuePhoneMap.muddainapalya;
   if (path.includes('magadi-road') || path.includes('teak-meadows')) return venuePhoneMap.magadi;
+  if (path.includes('bendicion') || path.includes('sahakar-nagar')) return venuePhoneMap.labendicion;
   return venuePhoneMap.default;
 };
 
@@ -84,6 +90,7 @@ const Navbar = ({
           <li><Link to="/ullal">Ullal</Link></li>
           <li><Link to="/rrnagar">RR Nagar</Link></li>
           <li><Link to="/magadi-road">Magadi Road</Link></li>
+          <li><Link to="/la-bendicion">La Bendicion</Link></li>
           <li><a href={`tel:${phoneConfig.tel}`} className="nav-cta">📞 {phoneConfig.display}</a></li>
         </ul>
 

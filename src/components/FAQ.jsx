@@ -104,6 +104,32 @@ const faqData = {
       a: "You can contact Asthitva directly to check pricing, inclusions, date availability and venue visit options."
     }
   ],
+  labendicion: [
+    {
+      q: "Where is Asthitva La Bendicion located?",
+      a: "Asthitva La Bendicion is located at 957, 2nd Phase, Rajeev Gandhi Nagar, NTI Layout, near Sahakar Nagar and Kodigehalli in North Bengaluru."
+    },
+    {
+      q: "What is the guest capacity at Asthitva La Bendicion?",
+      a: "Asthitva La Bendicion comfortably accommodates up to 600 floating guests, with dedicated dining space for 150 to 250 guests."
+    },
+    {
+      q: "What events can be hosted at Asthitva La Bendicion?",
+      a: "The venue is ideal for weddings, receptions, engagement ceremonies, birthday parties, baby showers, corporate dinners, and festive family celebrations."
+    },
+    {
+      q: "What are the timings and pricing for Asthitva La Bendicion?",
+      a: "The Day slot runs from 6:00 AM to 3:00 PM (₹70,000 + GST) and the Evening slot runs from 3:00 PM to 12:00 AM (₹75,000 + GST)."
+    },
+    {
+      q: "What amenities and facilities are included with the venue booking?",
+      a: "Bookings include complete furniture with fabric, 2 fully furnished rooms for the host family, general and decorative lighting, and power backup."
+    },
+    {
+      q: "Can we schedule a venue visit before booking?",
+      a: "Yes. You can contact our team via phone (+91 89047 68299) or WhatsApp to schedule a site visit and discuss your event requirements."
+    }
+  ],
   muddainapalya: [
     {
       q: "Is Asthitva Muddainapalya a good venue for family events?",

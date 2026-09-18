@@ -42,6 +42,15 @@ const venues = [
     path: '/rrnagar',
     tag: '2 Venues',
   },
+  {
+    key: 'labendicion',
+    name: 'Asthitva La Bendicion',
+    location: 'Sahakar Nagar',
+    capacity: 'Up to 600 Guests',
+    image: '/images/la-bendicion/1.webp',
+    path: '/la-bendicion',
+    tag: '1 Venue',
+  },
 ];
 
 const testimonials = [
@@ -97,12 +106,12 @@ function Home() {
           <p className="home-hero-tagline">Where Every Celebration Finds Its Perfect Space</p>
           <div className="home-hero-stats">
             <div className="home-stat">
-              <span className="home-stat-number">4</span>
+              <span className="home-stat-number">5</span>
               <span className="home-stat-label">Locations</span>
             </div>
             <div className="home-stat-divider"></div>
             <div className="home-stat">
-              <span className="home-stat-number">7</span>
+              <span className="home-stat-number">8</span>
               <span className="home-stat-label">Venues</span>
             </div>
             <div className="home-stat-divider"></div>

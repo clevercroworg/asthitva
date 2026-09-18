@@ -5,6 +5,7 @@ import TeakMeadows from './pages/TeakMeadows';
 import Muddainapalya from './pages/Muddainapalya';
 import Ullal from './pages/Ullal';
 import RRNagar from './pages/RRNagar';
+import LaBendicion from './pages/LaBendicion';
 import SEOEventPage from './pages/seo/SEOEventPage';
 import { pageConfigs } from './pages/seo/pageConfigs';
 import BlogList from './pages/blog/BlogList';
@@ -21,6 +22,9 @@ function App() {
       <Route path="/muddainapalya" element={<Muddainapalya />} />
       <Route path="/ullal" element={<Ullal />} />
       <Route path="/rrnagar" element={<RRNagar />} />
+      <Route path="/la-bendicion" element={<LaBendicion />} />
+      <Route path="/sahakar-nagar" element={<Navigate replace to="/la-bendicion" />} />
+      <Route path="/asthitva-la-bendicion" element={<Navigate replace to="/la-bendicion" />} />
 
       {/* Blog Pages */}
       <Route path="/blog" element={<BlogList />} />
