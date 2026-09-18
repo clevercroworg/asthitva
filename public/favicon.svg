@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <!-- Crisp white background -->
+  <rect width="1000" height="1000" fill="#ffffff" />
+  
+  <!-- Lotus Emblem -->
+  <g fill="none" stroke="#111111" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center Petal: vertical pointed oval -->
+    <path d="M 500,105 C 440,210 430,340 500,440 C 570,340 560,210 500,105 Z" />
+    
+    <!-- Inner Flanking Petals (Left & Right) -->
+    <path d="M 485,420 C 440,320 385,220 348,162 C 315,225 320,330 472,448" />
+    <path d="M 515,420 C 560,320 615,220 652,162 C 685,225 680,330 528,448" />
+    
+    <!-- Mid Lateral Petals (Upper-Mid sweeping wings) -->
+    <path d="M 425,370 C 350,305 275,275 230,270 C 218,320 235,400 440,470" />
+    <path d="M 575,370 C 650,305 725,275 770,270 C 782,320 765,400 560,470" />
+    
+    <!-- Lower Outer Flared Petals (Bottom wings) -->
+    <path d="M 380,430 C 280,380 200,375 168,390 C 178,435 240,490 425,520" />
+    <path d="M 620,430 C 720,380 800,375 832,390 C 822,435 760,490 575,520" />
+    
+    <!-- Base Cradle Curve -->
+    <path d="M 325,515 C 415,538 585,538 675,515" stroke-width="18" />
+  </g>
+  
+  <!-- ASTHITVA Brand Title -->
+  <text x="500" y="660" 
+        font-family="'Avenir Next', 'Montserrat', 'Futura', -apple-system, sans-serif" 
+        font-size="132" 
+        font-weight="900" 
+        fill="#111111" 
+        letter-spacing="0.14em" 
+        text-anchor="middle">ASTHITVA</text>
+        
+  <!-- THE VENUE Subtitle -->
+  <text x="500" y="738" 
+        font-family="'Avenir Next', 'Montserrat', 'Futura', -apple-system, sans-serif" 
+        font-size="36" 
+        font-weight="700" 
+        fill="#1a1a1a" 
+        letter-spacing="0.52em" 
+        text-anchor="middle">THE VENUE</text>
+</svg>

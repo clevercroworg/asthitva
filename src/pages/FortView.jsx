@@ -53,7 +53,7 @@ function FortView() {
     <div className="app">
       <Navbar 
         logoText="Fort View" 
-        topBarText="Coming Soon — 3 Venues Complex near Electronic City" 
+        topBarText="Coming Soon — Electronic City" 
         phone="+91 89047 68299" 
       />
       <Header 
