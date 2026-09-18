@@ -43,7 +43,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         title: 'Introductory Price',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹60,000 + GST' },
-          { label: 'Eve (3 PM – 12 AM)', price: '₹65,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹65,000 + GST' },
         ],
       },
     },
@@ -66,8 +66,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹60,000 + GST' },
-          { label: 'Eve (3.30 PM - 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹60,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
         ],
       },
     },
@@ -88,8 +88,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹50,000 + GST' },
-          { label: 'Eve (3 PM - 12 AM)', price: '₹55,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
         ],
       },
     },
@@ -112,8 +112,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹50,000 + GST.' },
-          { label: 'Eve (3 PM - 12 AM)', price: '₹55,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST.' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
         ],
       },
     },
@@ -137,8 +137,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹70,000 + GST.' },
-          { label: 'Eve (3 PM - 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST.' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
         ],
       },
     },
@@ -159,8 +159,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹75,000 + GST' },
-          { label: 'Eve (3 PM - 12 AM)', price: '₹80,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹75,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹80,000 + GST' },
         ],
       },
     },
@@ -184,8 +184,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM - 3 PM)', price: '₹70,000 + GST' },
-          { label: 'Eve (3 PM - 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
+          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
         ],
       },
     },
@@ -210,7 +210,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         title: 'Pre-Booking & Inquiries',
         slots: [
           { label: 'Day Event (6 AM – 3 PM)', price: 'Inquire for Inaugural Offers' },
-          { label: 'Evening Event (3 PM – 12 AM)', price: 'Inquire for Inaugural Offers' },
+          { label: 'Evening Event (3:30 PM – 12 AM)', price: 'Inquire for Inaugural Offers' },
         ],
       },
     },

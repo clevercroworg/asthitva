@@ -78,8 +78,8 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
               <div>
                 <h4>Event Timings</h4>
-                <p>Day Event: 9:00 AM – 4:00 PM</p>
-                <p>Night Event: 5:00 PM – 12:00 AM</p>
+                <p>Day Event: 6:00 AM – 3:00 PM</p>
+                <p>Night Event: 3:30 PM – 12:00 AM</p>
               </div>
             </div>
 

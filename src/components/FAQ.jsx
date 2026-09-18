@@ -119,7 +119,7 @@ const faqData = {
     },
     {
       q: "What are the timings and pricing for Asthitva La Bendicion?",
-      a: "The Day slot runs from 6:00 AM to 3:00 PM (₹70,000 + GST) and the Evening slot runs from 3:00 PM to 12:00 AM (₹75,000 + GST)."
+      a: "The Day slot runs from 6:00 AM to 3:00 PM (₹70,000 + GST) and the Evening slot runs from 3:30 PM to 12:00 AM (₹75,000 + GST)."
     },
     {
       q: "What amenities and facilities are included with the venue booking?",
