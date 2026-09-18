@@ -51,6 +51,15 @@ const venues = [
     path: '/la-bendicion',
     tag: '1 Venue',
   },
+  {
+    key: 'fortview',
+    name: 'Asthitva Fort View',
+    location: 'Near Electronic City',
+    capacity: '3 Venues • Up to 1500 Guests',
+    image: '/images/fort-view/hero.webp',
+    path: '/fort-view',
+    tag: '3 Venues • Coming Soon',
+  },
 ];
 
 const testimonials = [

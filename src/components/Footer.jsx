@@ -8,6 +8,7 @@ const allVenues = [
   { key: 'ullal', name: 'Asthitva Rooftop', sub: 'Ullal', path: '/ullal' },
   { key: 'rrnagar', name: 'Asthitva RR Nagar', sub: 'RR Nagar', path: '/rrnagar' },
   { key: 'labendicion', name: 'Asthitva La Bendicion', sub: 'Sahakar Nagar', path: '/la-bendicion' },
+  { key: 'fortview', name: 'Asthitva Fort View', sub: 'Electronic City', path: '/fort-view' },
 ];
 
 const contactData = {
@@ -52,6 +53,13 @@ const contactData = {
     address: '957, 2nd Phase, Rajeev Gandhi Nagar, NTI Layout, Near Sahakar Nagar, Kodigehalli, Bengaluru 560097',
     phones: ['+91 89047 68299', '+91 9535415379'],
     copyright: 'Asthitva La Bendicion',
+  },
+  fortview: {
+    brand: 'Asthitva Fort View',
+    tagline: 'Near Electronic City / Hulimangala, Bengaluru',
+    address: 'Hulimangala Main Road, Bangipura, Near Electronic City Phase 1, Anekal, Bengaluru 560100',
+    phones: ['+91 89047 68299'],
+    copyright: 'Asthitva Fort View',
   },
 };
 

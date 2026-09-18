@@ -191,6 +191,31 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     },
   };
 
+  const fortViewData = {
+    venue1: {
+      tagline: '3 Distinct Venues with Sprawling Party Lawns, Dining Pavilions & Expansive Parking',
+      capacity: {
+        venue: 'Up to 1,500 guests (Across 3 Venues)',
+        dining: '400 - 600 guests seating',
+        carpet: 'Sprawling Celebration Complex (Lawn + Covered)',
+        diningSeating: 'Dedicated Banquet & Dining Areas',
+      },
+      inclusions: [
+        { name: '3 Distinct Event Venues', icon: 'chair' },
+        { name: 'Furnished Bridal & Groom Suites', icon: 'room' },
+        { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Back Up', icon: 'power' },
+      ],
+      timing: {
+        title: 'Pre-Booking & Inquiries',
+        slots: [
+          { label: 'Day Event (6 AM – 3 PM)', price: 'Inquire for Inaugural Offers' },
+          { label: 'Evening Event (3 PM – 12 AM)', price: 'Inquire for Inaugural Offers' },
+        ],
+      },
+    },
+  };
+
   const data = page === 'muddainapalya'
     ? muddainapalyaData[venueId]
     : page === 'ullal'
@@ -199,6 +224,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     ? rrNagarData[venueId]
     : (page === 'labendicion' || page === 'la-bendicion')
     ? laBendicionData[venueId]
+    : (page === 'fortview' || page === 'fort-view')
+    ? fortViewData[venueId]
     : venueData[venueId];
 
   const icons = {

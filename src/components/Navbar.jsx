@@ -28,6 +28,11 @@ const venuePhoneMap = {
     display: '89047 68299',
     full: '+91 89047 68299',
   },
+  fortview: {
+    tel: '+918904768299',
+    display: '89047 68299',
+    full: '+91 89047 68299',
+  },
   default: {
     tel: '+918904768299',
     display: '89047 68299',
@@ -52,11 +57,12 @@ const resolvePhone = (phoneProp, pathname) => {
   if (path.includes('muddainapalya')) return venuePhoneMap.muddainapalya;
   if (path.includes('magadi-road') || path.includes('teak-meadows')) return venuePhoneMap.magadi;
   if (path.includes('bendicion') || path.includes('sahakar-nagar')) return venuePhoneMap.labendicion;
+  if (path.includes('fort-view') || path.includes('fortview')) return venuePhoneMap.fortview;
   return venuePhoneMap.default;
 };
 
 const Navbar = ({ 
-  logoText = "Teak Meadows", 
+  logoText = "The Venue", 
   topBarText = "Premium event venue at Magadi Road",
   phone
 }) => {
@@ -91,6 +97,7 @@ const Navbar = ({
           <li><Link to="/rrnagar">RR Nagar</Link></li>
           <li><Link to="/magadi-road">Magadi Road</Link></li>
           <li><Link to="/la-bendicion">La Bendicion</Link></li>
+          <li><Link to="/fort-view">Fort View</Link></li>
           <li><a href={`tel:${phoneConfig.tel}`} className="nav-cta">📞 {phoneConfig.display}</a></li>
         </ul>
 

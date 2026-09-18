@@ -6,6 +6,7 @@ import Muddainapalya from './pages/Muddainapalya';
 import Ullal from './pages/Ullal';
 import RRNagar from './pages/RRNagar';
 import LaBendicion from './pages/LaBendicion';
+import FortView from './pages/FortView';
 import SEOEventPage from './pages/seo/SEOEventPage';
 import { pageConfigs } from './pages/seo/pageConfigs';
 import BlogList from './pages/blog/BlogList';
@@ -25,6 +26,8 @@ function App() {
       <Route path="/la-bendicion" element={<LaBendicion />} />
       <Route path="/sahakar-nagar" element={<Navigate replace to="/la-bendicion" />} />
       <Route path="/asthitva-la-bendicion" element={<Navigate replace to="/la-bendicion" />} />
+      <Route path="/fort-view" element={<FortView />} />
+      <Route path="/asthitva-fort-view" element={<Navigate replace to="/fort-view" />} />
 
       {/* Blog Pages */}
       <Route path="/blog" element={<BlogList />} />
