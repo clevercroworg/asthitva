@@ -33,10 +33,9 @@ function FortView() {
   }, []);
 
   const galleryImages = [
-    { src: '/images/fort-view/hero.webp', className: 'gallery-large' },
-    { src: '/images/fort-view/masterplan.webp', className: 'gallery-wide' },
-    { src: '/images/fort-view/elevation.webp', className: 'gallery-tall' },
-    { src: '/images/fort-view/render-full.webp', className: 'gallery-large' },
+    { src: '/images/fort-view/1.webp', className: 'gallery-large' },
+    { src: '/images/fort-view/2.webp', className: 'gallery-wide' },
+    { src: '/images/fort-view/3.webp', className: 'gallery-tall' },
   ];
 
   const venuesData = [
@@ -45,7 +44,7 @@ function FortView() {
       title: 'Asthitva Fort View (3 Venues Complex)',
       tagline: 'A premier 3-venue celebration destination with grand lawns, covered dining pavilions, and expansive parking.',
       capacity: 'Up to 1,500 Guests (Combined Across 3 Venues)',
-      image: '/images/fort-view/hero.webp',
+      image: '/images/fort-view/1.webp',
       detailLink: '#venue1-detail',
     }
   ];
@@ -59,7 +58,7 @@ function FortView() {
       />
       <Header 
         title="Asthitva Fort View — 3 Venues" 
-        bgImage="/images/fort-view/hero.webp" 
+        bgImage="/images/fort-view/3.webp" 
       />
       
       <main>
