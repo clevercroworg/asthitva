@@ -96,8 +96,8 @@ const Navbar = ({
           <li><Link to="/ullal">Ullal</Link></li>
           <li><Link to="/rrnagar">RR Nagar</Link></li>
           <li><Link to="/magadi-road">Magadi Road</Link></li>
-          <li><Link to="/la-bendicion">La Bendicion</Link></li>
-          <li><Link to="/fort-view">Fort View</Link></li>
+          <li><Link to="/la-bendicion">Sahakar Nagar</Link></li>
+          <li><Link to="/fort-view">Electronic City</Link></li>
           <li><a href={`tel:${phoneConfig.tel}`} className="nav-cta">📞 {phoneConfig.display}</a></li>
         </ul>
 

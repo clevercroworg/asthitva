@@ -27,6 +27,7 @@ function App() {
       <Route path="/sahakar-nagar" element={<Navigate replace to="/la-bendicion" />} />
       <Route path="/asthitva-la-bendicion" element={<Navigate replace to="/la-bendicion" />} />
       <Route path="/fort-view" element={<FortView />} />
+      <Route path="/electronic-city" element={<Navigate replace to="/fort-view" />} />
       <Route path="/asthitva-fort-view" element={<Navigate replace to="/fort-view" />} />
 
       {/* Blog Pages */}
