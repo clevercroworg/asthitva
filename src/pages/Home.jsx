@@ -10,7 +10,7 @@ const venues = [
     key: 'teakmeadows',
     name: 'Asthitva Teak Meadows',
     location: 'Magadi Road',
-    capacity: 'Up to 800 Guests',
+    capacity: '2 Venues • Up to 800 Guests',
     image: '/images/teak-meadows/IMG20251212184424.jpg',
     path: '/magadi-road',
     tag: '2 Venues',
@@ -19,7 +19,7 @@ const venues = [
     key: 'muddainapalya',
     name: 'Asthitva The Venue',
     location: 'Muddainapalya',
-    capacity: 'Up to 600 Guests',
+    capacity: '2 Venues • Up to 600 Guests',
     image: '/images/muddainapalya/venue-1/1.jpg',
     path: '/muddainapalya',
     tag: '2 Venues',
@@ -37,7 +37,7 @@ const venues = [
     key: 'rrnagar',
     name: 'Asthitva RR Nagar',
     location: 'RR Nagar',
-    capacity: 'Up to 700 Guests',
+    capacity: '2 Venues • Up to 700 Guests',
     image: '/images/rr-nagar/venue-1/video-thumbnail.webp',
     path: '/rrnagar',
     tag: '2 Venues',
@@ -115,12 +115,12 @@ function Home() {
           <p className="home-hero-tagline">Where Every Celebration Finds Its Perfect Space</p>
           <div className="home-hero-stats">
             <div className="home-stat">
-              <span className="home-stat-number">5</span>
+              <span className="home-stat-number">6</span>
               <span className="home-stat-label">Locations</span>
             </div>
             <div className="home-stat-divider"></div>
             <div className="home-stat">
-              <span className="home-stat-number">8</span>
+              <span className="home-stat-number">11</span>
               <span className="home-stat-label">Venues</span>
             </div>
             <div className="home-stat-divider"></div>
