@@ -147,7 +147,6 @@ function Home() {
         <div className="home-venues-header">
           <span className="overline">Our Locations</span>
           <h2 className="section-title">Choose Your Venue</h2>
-          <p className="home-venues-sub">Every Asthitva venue is crafted to make your celebrations unforgettable. Pick a location that suits your vision.</p>
         </div>
 
         <div className="home-venues-grid">
