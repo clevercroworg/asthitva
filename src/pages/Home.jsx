@@ -129,7 +129,6 @@ function Home() {
               <span className="home-stat-label">Events Hosted</span>
             </div>
           </div>
-          <a href="#venues" className="home-hero-cta">Explore Our Venues</a>
         </div>
       </section>
 
