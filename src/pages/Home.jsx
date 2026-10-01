@@ -87,14 +87,24 @@ const testimonials = [
 ];
 
 function Home() {
+  const [scrolled, setScrolled] = React.useState(false);
+
   React.useEffect(() => {
     document.title = "Asthitva — Premium Event Venues | Bengaluru";
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="home-page">
-      {/* Minimal Navbar */}
-      <nav className="home-nav">
+      {/* Minimal Navbar (Reveals on scroll) */}
+      <nav className={`home-nav ${scrolled ? 'visible' : ''}`}>
         <div className="home-nav-container">
           <Link to="/" className="home-nav-logo">Asthitva</Link>
           <a href="tel:+918904768299" className="home-nav-call">
