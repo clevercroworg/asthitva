@@ -32,7 +32,6 @@ function Muddainapalya() {
       image: '/images/muddainapalya/venue-1/1.jpg', 
       videoSrc: '/images/muddainapalya/video/venue1-compressed.mp4', 
       detailLink: '#venue1-detail',
-      highlights: ['🌱 10,000+ sq.ft Lawn', '🏛️ Grand Celebration Stage', '🍽️ Covered Dining Area', '🚗 Ample Parking Space'],
     },
     {
       id: 2,
@@ -45,7 +44,6 @@ function Muddainapalya() {
       image: '/images/muddainapalya/venue-2/1.webp', 
       videoId: 'tmMSkUJJ478', 
       detailLink: '#venue2-detail',
-      highlights: ['🌙 Moon Lighting Ambiance', '☂️ All-Weather Roof Structure', '💨 Open-Sided Natural Breeze', '✨ Ideal for Intimate Events'],
     }
   ];
 

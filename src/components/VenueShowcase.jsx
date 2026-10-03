@@ -65,17 +65,6 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
 
                   <p className="showcase-card-desc">{venue.tagline}</p>
 
-                  {/* Feature Highlights Pills */}
-                  {venue.highlights && (
-                    <div className="showcase-highlights-pills">
-                      {venue.highlights.map((highlight, i) => (
-                        <span key={i} className="showcase-feature-pill">
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
                   {/* Action CTA */}
                   <div className="showcase-card-action">
                     <button 
