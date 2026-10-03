@@ -119,11 +119,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
   return (
     <section className="venue-showcase-section" ref={sectionRef}>
       <div className="venue-showcase-header">
-        <span className="venue-showcase-overline">Choose Your Space</span>
         <h2 className="section-title">Our Premier Venues</h2>
-        <p className="venue-showcase-subtitle">
-          Compare our two distinct spaces below. Select either venue to explore its full video tour, detailed specs & photo gallery.
-        </p>
       </div>
 
       {/* Comparison Grid & Controls */}
