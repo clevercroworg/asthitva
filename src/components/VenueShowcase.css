@@ -39,6 +39,7 @@
 
 .venue-showcase-container {
   width: 100%;
+  position: relative;
 }
 
 /* --- Comparison Grid --- */
@@ -248,31 +249,35 @@
   box-shadow: 0 4px 15px rgba(255, 145, 77, 0.35);
 }
 
-.showcase-mobile-hint {
+/* --- Mobile Navigation Controls (Arrow buttons + Dots) --- */
+.showcase-mobile-nav {
   display: none;
 }
 
-/* --- Deep-Dive Switcher Bar --- */
+/* --- Deep-Dive Switcher Bar (Pristine Padding, No Clipping) --- */
 .venue-deepdive-header {
   text-align: center;
   margin: 1.5rem 0 2rem;
   scroll-margin-top: 80px;
+  padding: 0 1rem;
 }
 
 .venue-switcher-bar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.5rem;
+  gap: 6px;
+  padding: 6px;
   background: #ffffff;
   border-radius: 50px;
-  border: 1.5px solid rgba(255, 145, 77, 0.25);
+  border: 1.5px solid rgba(255, 145, 77, 0.3);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .venue-switcher-tab {
-  padding: 0.6rem 1.3rem;
+  padding: 0.65rem 1.4rem;
   border-radius: 50px;
   border: none;
   background: transparent;
@@ -281,7 +286,9 @@
   font-size: 0.92rem;
   color: var(--text-dark);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .venue-switcher-tab:hover {
@@ -291,7 +298,7 @@
 .venue-switcher-tab.active {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(255, 145, 77, 0.35);
+  box-shadow: 0 2px 10px rgba(255, 145, 77, 0.35);
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
@@ -306,7 +313,7 @@
 
 @media (max-width: 768px) {
   .venue-showcase-section {
-    padding: 2.5rem 1rem 1.5rem;
+    padding: 2.2rem 1rem 1.5rem;
   }
 
   /* Mobile Snap Peek Slider */
@@ -315,7 +322,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 1rem;
-    padding: 0.5rem 0.25rem 1.2rem;
+    padding: 0.5rem 0.25rem 0.8rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -331,29 +338,73 @@
     scroll-snap-align: center;
   }
 
-  .showcase-mobile-hint {
+  /* Mobile Arrow & Dot Controls */
+  .showcase-mobile-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.4rem;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 0.2rem;
+    gap: 1.2rem;
+    margin-top: 0.8rem;
   }
 
-  .venue-switcher-bar {
-    width: 95%;
-    max-width: 360px;
+  .showcase-nav-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1.5px solid rgba(255, 145, 77, 0.4);
+    color: var(--primary-dark);
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .showcase-nav-arrow:active {
+    transform: scale(0.92);
+    background: var(--primary);
+    color: #ffffff;
+  }
+
+  .showcase-dots-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .showcase-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e2d8ce;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .showcase-dot.active {
+    width: 22px;
+    border-radius: 10px;
+    background: var(--primary);
+  }
+
+  /* Switcher Bar on Tablet & Mobile (Zero Clipping) */
+  .venue-switcher-bar {
+    width: calc(100% - 1.5rem);
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px;
+    gap: 4px;
   }
 
   .venue-switcher-tab {
     flex: 1;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.82rem;
+    padding: 0.55rem 0.4rem;
+    font-size: 0.8rem;
     text-align: center;
-    white-space: nowrap;
+    border-radius: 40px;
   }
 }
 
@@ -373,16 +424,30 @@
 
   .showcase-card-desc {
     font-size: 0.88rem;
-    margin-bottom: 0.9rem;
-  }
-
-  .showcase-feature-pill {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.65rem;
+    margin-bottom: 1.1rem;
   }
 
   .showcase-action-btn {
     padding: 0.7rem 1rem;
     font-size: 0.88rem;
+  }
+
+  .venue-switcher-bar {
+    width: 100%;
+    max-width: 360px;
+    padding: 4px;
+    gap: 3px;
+  }
+
+  .venue-switcher-tab {
+    font-size: 0.74rem;
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .venue-switcher-tab {
+    font-size: 0.68rem;
+    padding: 0.45rem 0.2rem;
   }
 }

@@ -26,7 +26,7 @@ function Muddainapalya() {
       title: 'Venue 1',
       name: 'Venue 1 — Open Lawn Space',
       typeBadge: 'Open Lawn',
-      tag: '🌿 Venue 1',
+      tag: 'Venue 1',
       tagline: 'Asthitva The Venue open celebration lawn under the open sky with spacious banquet dining.',
       capacity: 'Up to 600 Guests',
       image: '/images/muddainapalya/venue-1/1.jpg', 
@@ -38,7 +38,7 @@ function Muddainapalya() {
       title: 'Venue 2',
       name: 'Venue 2 — Covered Hall Space',
       typeBadge: 'Covered Hall',
-      tag: '✨ Venue 2',
+      tag: 'Venue 2',
       tagline: 'Weather-proof elegant space with romantic moon lights, ambient chandeliers, and open-air breeze.',
       capacity: 'Up to 300 Guests',
       image: '/images/muddainapalya/venue-2/1.webp', 
@@ -68,7 +68,7 @@ function Muddainapalya() {
               onClick={() => setActiveVenue(1)}
               aria-label="View Venue 1 Details"
             >
-              🌿 Venue 1 Details
+              Venue 1 Details
             </button>
             <button 
               type="button"
@@ -76,7 +76,7 @@ function Muddainapalya() {
               onClick={() => setActiveVenue(2)}
               aria-label="View Venue 2 Details"
             >
-              ✨ Venue 2 Details
+              Venue 2 Details
             </button>
             <button 
               type="button"
@@ -84,7 +84,7 @@ function Muddainapalya() {
               onClick={() => setActiveVenue('all')}
               aria-label="View Both Venues"
             >
-              ⚡ View Both
+              View Both
             </button>
           </div>
         </div>
@@ -95,7 +95,7 @@ function Muddainapalya() {
             {activeVenue === 'all' && (
               <div style={{ textAlign: 'center', margin: '2rem 0 1.5rem' }}>
                 <h3 style={{ fontSize: '1.8rem', color: 'var(--primary-dark)', fontFamily: 'var(--font-heading)' }}>
-                  🌿 Venue 1 — Open Lawn Space
+                  Venue 1 — Open Lawn Space
                 </h3>
               </div>
             )}
@@ -128,7 +128,7 @@ function Muddainapalya() {
             {activeVenue === 'all' && (
               <div style={{ textAlign: 'center', margin: '2rem 0 1.5rem' }}>
                 <h3 style={{ fontSize: '1.8rem', color: 'var(--primary-dark)', fontFamily: 'var(--font-heading)' }}>
-                  ✨ Venue 2 — Covered Hall Space
+                  Venue 2 — Covered Hall Space
                 </h3>
               </div>
             )}
