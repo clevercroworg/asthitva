@@ -2,56 +2,122 @@ import React, { useEffect, useRef, useState } from 'react';
 import './VenueShowcase.css';
 
 const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
+  const sectionRef = useRef(null);
   const gridRef = useRef(null);
   const cardRefs = useRef({});
+  const [carouselVenue, setCarouselVenue] = useState(typeof activeVenue === 'number' ? activeVenue : 1);
   const [isUserInteracting, setIsUserInteracting] = useState(false);
+  const [isInView, setIsInView] = useState(true);
+  const interactionTimerRef = useRef(null);
 
-  // Auto-switch between Venue 1 and Venue 2 every 2 seconds
+  // Sync carousel with activeVenue if activeVenue changes externally (e.g. user clicked bottom switcher tab)
   useEffect(() => {
-    if (isUserInteracting) return;
-
-    const timer = setInterval(() => {
-      onSelectVenue((prev) => (prev === 1 ? 2 : 1));
-    }, 2000);
-
-    return () => clearInterval(timer);
-  }, [isUserInteracting, onSelectVenue]);
-
-  // Smoothly align the active card into center on mobile viewport
-  useEffect(() => {
-    if (gridRef.current && cardRefs.current[activeVenue]) {
-      const activeCard = cardRefs.current[activeVenue];
-      if (window.innerWidth <= 768 && activeCard) {
-        activeCard.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-          inline: 'center'
-        });
-      }
+    if (typeof activeVenue === 'number') {
+      setCarouselVenue(activeVenue);
     }
   }, [activeVenue]);
 
-  const handleManualSelect = (venueId) => {
+  // Pause auto-rotation temporarily during user interactions
+  const pauseAutoPlayTemporarily = () => {
     setIsUserInteracting(true);
-    onSelectVenue(venueId);
-    // Resume auto-rotation after 6 seconds of inactivity
-    setTimeout(() => {
+    if (interactionTimerRef.current) {
+      clearTimeout(interactionTimerRef.current);
+    }
+    interactionTimerRef.current = setTimeout(() => {
       setIsUserInteracting(false);
     }, 6000);
   };
 
+  useEffect(() => {
+    return () => {
+      if (interactionTimerRef.current) {
+        clearTimeout(interactionTimerRef.current);
+      }
+    };
+  }, []);
+
+  // Track viewport visibility with IntersectionObserver:
+  // If user scrolls down to video/gallery/nearby sections, pause timer completely so no actions occur off-screen!
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Auto-switch ONLY the showcase cards every 2 seconds (never touching the bottom section)
+  useEffect(() => {
+    if (isUserInteracting || !isInView) return;
+
+    const timer = setInterval(() => {
+      setCarouselVenue((prev) => (prev === 1 ? 2 : 1));
+    }, 2000);
+
+    return () => clearInterval(timer);
+  }, [isUserInteracting, isInView]);
+
+  // Smoothly center the active carousel card on mobile WITHOUT pulling the window scroll
+  useEffect(() => {
+    const container = gridRef.current;
+    const activeCard = cardRefs.current[carouselVenue];
+    if (container && activeCard && window.innerWidth <= 768) {
+      const cardRect = activeCard.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      const relativeLeft = cardRect.left - containerRect.left + container.scrollLeft;
+      const targetLeft = relativeLeft - (container.clientWidth - activeCard.clientWidth) / 2;
+      container.scrollTo({
+        left: Math.max(0, targetLeft),
+        behavior: 'smooth'
+      });
+    }
+  }, [carouselVenue]);
+
+  const handleCardClick = (venueId) => {
+    pauseAutoPlayTemporarily();
+    setCarouselVenue(venueId);
+    onSelectVenue(venueId);
+  };
+
+  const handleExploreClick = (venueId, e) => {
+    e.stopPropagation();
+    pauseAutoPlayTemporarily();
+    setCarouselVenue(venueId);
+    onSelectVenue(venueId);
+    const el = document.getElementById('venue-deepdive-section');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const handlePrev = (e) => {
     e.stopPropagation();
-    handleManualSelect(1);
+    pauseAutoPlayTemporarily();
+    setCarouselVenue(1);
   };
 
   const handleNext = (e) => {
     e.stopPropagation();
-    handleManualSelect(2);
+    pauseAutoPlayTemporarily();
+    setCarouselVenue(2);
+  };
+
+  const handleDotClick = (venueId, e) => {
+    e.stopPropagation();
+    pauseAutoPlayTemporarily();
+    setCarouselVenue(venueId);
   };
 
   return (
-    <section className="venue-showcase-section">
+    <section className="venue-showcase-section" ref={sectionRef}>
       <div className="venue-showcase-header">
         <span className="venue-showcase-overline">Choose Your Space</span>
         <h2 className="section-title">Our Premier Venues</h2>
@@ -63,24 +129,27 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
       {/* Comparison Grid & Controls */}
       <div 
         className="venue-showcase-container"
-        onMouseEnter={() => setIsUserInteracting(true)}
+        onMouseEnter={pauseAutoPlayTemporarily}
         onMouseLeave={() => setIsUserInteracting(false)}
+        onTouchStart={pauseAutoPlayTemporarily}
+        onTouchEnd={pauseAutoPlayTemporarily}
       >
         <div className="venue-showcase-grid" ref={gridRef}>
           {venues.map((venue) => {
-            const isSelected = activeVenue === venue.id;
+            const isCarouselActive = carouselVenue === venue.id;
+            const isDetailsActive = activeVenue === venue.id;
             return (
               <div 
                 key={venue.id}
                 ref={(el) => (cardRefs.current[venue.id] = el)}
-                className={`showcase-card ${isSelected ? 'is-selected' : ''}`}
-                onClick={() => handleManualSelect(venue.id)}
+                className={`showcase-card ${isCarouselActive ? 'is-selected' : ''}`}
+                onClick={() => handleCardClick(venue.id)}
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => { 
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    handleManualSelect(venue.id);
+                    handleCardClick(venue.id);
                   }
                 }}
                 aria-label={`Select ${venue.title}`}
@@ -100,7 +169,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
                   </div>
 
                   {/* Active Indicator on Image */}
-                  {isSelected && (
+                  {isCarouselActive && (
                     <div className="showcase-selected-pill">
                       <span>Selected Space</span>
                     </div>
@@ -122,17 +191,10 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
                   <div className="showcase-card-action">
                     <button 
                       type="button"
-                      className={`showcase-action-btn ${isSelected ? 'btn-active' : ''}`}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleManualSelect(venue.id);
-                        const el = document.getElementById('venue-deepdive-section');
-                        if (el) {
-                          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        }
-                      }}
+                      className={`showcase-action-btn ${isDetailsActive ? 'btn-active' : ''}`}
+                      onClick={(e) => handleExploreClick(venue.id, e)}
                     >
-                      {isSelected ? 'Viewing Details Below' : 'Explore Details & Video →'}
+                      {isDetailsActive ? 'Viewing Details Below' : 'Explore Details & Video →'}
                     </button>
                   </div>
                 </div>
@@ -145,7 +207,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
         <div className="showcase-mobile-nav">
           <button 
             type="button" 
-            className={`showcase-nav-arrow ${activeVenue === 1 ? 'arrow-active' : ''}`}
+            className={`showcase-nav-arrow ${carouselVenue === 1 ? 'arrow-active' : ''}`}
             onClick={handlePrev}
             aria-label="Previous Venue"
           >
@@ -158,8 +220,8 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
             {venues.map((v) => (
               <span 
                 key={v.id} 
-                className={`showcase-dot ${activeVenue === v.id ? 'active' : ''}`}
-                onClick={() => handleManualSelect(v.id)}
+                className={`showcase-dot ${carouselVenue === v.id ? 'active' : ''}`}
+                onClick={(e) => handleDotClick(v.id, e)}
                 title={v.title}
               />
             ))}
@@ -167,7 +229,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
 
           <button 
             type="button" 
-            className={`showcase-nav-arrow ${activeVenue === 2 ? 'arrow-active' : ''}`}
+            className={`showcase-nav-arrow ${carouselVenue === 2 ? 'arrow-active' : ''}`}
             onClick={handleNext}
             aria-label="Next Venue"
           >
