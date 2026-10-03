@@ -1,0 +1,14 @@
+# Vercel Ignore
+.git
+.gitignore
+node_modules
+dist
+dist-ssr
+*.local
+*.log
+
+# Raw uncompressed video footage
+*.mov
+*.MOV
+*.raw
+public/images/ullal/video/IMG_4598.MOV

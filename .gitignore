@@ -27,3 +27,5 @@ dist-ssr
 *.mov
 *.MOV
 *.raw
+.vercel
+.env*
