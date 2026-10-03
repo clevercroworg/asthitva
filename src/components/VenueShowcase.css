@@ -1,0 +1,406 @@
+/* ==========================================================
+   VENUE SHOWCASE — DUAL COMPARISON CARDS (OPTION 2)
+   ========================================================== */
+
+.venue-showcase-section {
+  padding: 3.5rem 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.venue-showcase-header {
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+
+.venue-showcase-overline {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+  padding: 0.3rem 0.9rem;
+  background: rgba(255, 145, 77, 0.1);
+  border: 1px solid rgba(255, 145, 77, 0.25);
+  border-radius: 50px;
+}
+
+.venue-showcase-subtitle {
+  font-family: var(--font-sub);
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 620px;
+  margin: 0.6rem auto 0;
+  line-height: 1.6;
+}
+
+.venue-showcase-container {
+  width: 100%;
+}
+
+/* --- Comparison Grid --- */
+.venue-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Individual Showcase Card --- */
+.showcase-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 145, 77, 0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.showcase-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 145, 77, 0.5);
+  box-shadow: 0 16px 40px rgba(255, 145, 77, 0.2);
+}
+
+.showcase-card.is-selected {
+  border-color: var(--primary);
+  box-shadow: 0 12px 35px rgba(255, 145, 77, 0.22);
+  background: linear-gradient(180deg, #ffffff 0%, #fffcf8 100%);
+}
+
+/* --- Media / Image Wrap --- */
+.showcase-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #111;
+}
+
+.showcase-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.showcase-card:hover .showcase-card-img {
+  transform: scale(1.05);
+}
+
+.showcase-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  pointer-events: none;
+}
+
+/* Media Badges */
+.showcase-badge-top-left {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+}
+
+.showcase-venue-badge {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.5px;
+}
+
+.showcase-badge-top-right {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+}
+
+.showcase-capacity-pill {
+  display: inline-block;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.showcase-selected-pill {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2e7d32;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+/* --- Card Body --- */
+.showcase-card-body {
+  padding: 1.5rem 1.6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.showcase-card-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.showcase-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+}
+
+.showcase-card-type {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--primary-dark);
+  background: rgba(255, 145, 77, 0.12);
+  padding: 0.22rem 0.65rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.showcase-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+/* Highlight Pills */
+.showcase-highlights-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.4rem;
+}
+
+.showcase-feature-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a4a4a;
+  background: #f7f3ee;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Action CTA */
+.showcase-card-action {
+  margin-top: auto;
+}
+
+.showcase-action-btn {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1.5px solid rgba(255, 145, 77, 0.35);
+  background: #fff8f2;
+  color: var(--primary-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.showcase-card:hover .showcase-action-btn {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 15px rgba(255, 145, 77, 0.3);
+}
+
+.showcase-action-btn.btn-active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(255, 145, 77, 0.35);
+}
+
+.showcase-mobile-hint {
+  display: none;
+}
+
+/* --- Deep-Dive Switcher Bar --- */
+.venue-deepdive-header {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+  scroll-margin-top: 80px;
+}
+
+.venue-switcher-bar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  background: #ffffff;
+  border-radius: 50px;
+  border: 1.5px solid rgba(255, 145, 77, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.venue-switcher-tab {
+  padding: 0.6rem 1.3rem;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.venue-switcher-tab:hover {
+  color: var(--primary-dark);
+}
+
+.venue-switcher-tab.active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 145, 77, 0.35);
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 900px) {
+  .venue-showcase-grid {
+    gap: 1.25rem;
+  }
+  .showcase-card-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .venue-showcase-section {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  /* Mobile Snap Peek Slider */
+  .venue-showcase-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0.5rem 0.25rem 1.2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .venue-showcase-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .showcase-card {
+    min-width: 84vw;
+    max-width: 84vw;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .showcase-mobile-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+  }
+
+  .venue-switcher-bar {
+    width: 95%;
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .venue-switcher-tab {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.82rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-card {
+    min-width: 88vw;
+    max-width: 88vw;
+  }
+
+  .showcase-card-body {
+    padding: 1.2rem;
+  }
+
+  .showcase-card-title {
+    font-size: 1.2rem;
+  }
+
+  .showcase-card-desc {
+    font-size: 0.88rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .showcase-feature-pill {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+  }
+
+  .showcase-action-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.88rem;
+  }
+}
