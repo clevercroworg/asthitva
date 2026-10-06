@@ -50,7 +50,10 @@ function Muddainapalya() {
   return (
     <div className="app">
       <Navbar logoText="The Venue" topBarText="Premium event venue at Muddayanapalya" phone="+91 89047 68299" />
-      <Header title="Asthitva The Venue @ Muddainapalya" />
+      <Header 
+        title="Asthitva The Venue @ Muddainapalya" 
+        bgImage="/images/muddainapalya/venue-1/1.jpg" 
+      />
       <main>
         {/* Dual Venue Comparison Showcase (Option 2) */}
         <VenueShowcase 

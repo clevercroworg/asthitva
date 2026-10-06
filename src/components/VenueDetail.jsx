@@ -92,6 +92,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         slots: [
           { label: '6 AM – 3 PM', price: '₹50,000 + GST' },
           { label: '3:30 PM – 12 AM', price: '₹55,000 + GST' },
+          { label: '6 AM – 12 AM', price: '₹90,000 + GST' },
+          { label: '3 PM – 3 PM', price: '₹1,00,000 + GST' },
         ],
       },
     },
