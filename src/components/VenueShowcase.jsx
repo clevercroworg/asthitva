@@ -119,7 +119,8 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
   return (
     <section className="venue-showcase-section" ref={sectionRef}>
       <div className="venue-showcase-header">
-        <h2 className="section-title">We have 2 premier venues: Venue 1, Venue 2</h2>
+        <span className="venue-showcase-overline">2 Premier Venues</span>
+        <h2 className="section-title">Venue 1 | Venue 2</h2>
       </div>
 
       {/* Comparison Grid & Controls */}
