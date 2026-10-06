@@ -50,46 +50,48 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
   };
   const muddainapalyaData = {
     venue1: {
-      tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
+      tagline: 'Beautiful open venue with expansive lawn and celebration area',
       capacity: {
-        venue: 'Upto 600 guest',
-        dining: 'Seperate Section with 130 seating at once',
-        carpet: '11,500 sq ft',
-        diningSeating: 'Flexible',
+        venue: '600',
+        dining: '120 at once',
       },
       inclusions: [
-        { name: 'Furniture with Fabric', icon: 'chair' },
-        { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: '2 Guest rooms', icon: 'room' },
+        { name: "All furniture's with fabric", icon: 'chair' },
         { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Fabric Canopy Or German Tent', icon: 'room' },
+        { name: 'Power Backup', icon: 'power' },
+        { name: 'Car Parking (100)', icon: 'parking' },
+        { name: 'Speaker with Mic', icon: 'audio' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM – 3 PM)', price: '₹60,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '6 AM – 3 PM', price: '₹60,000 + GST' },
+          { label: '3:30 PM – 12 AM', price: '₹75,000 + GST' },
+          { label: '6 AM – 12 AM', price: '₹1,00,000 + GST' },
+          { label: '3 PM – 3 PM', price: '₹1,25,000 + GST' },
         ],
       },
     },
     venue2: {
       tagline: 'Elegant Space with roof, moon lights and open sides',
       capacity: {
-        venue: 'Upto 300 guest',
-        dining: 'Upto 60 but can be expanded',
-        carpet: 'Space with roof',
-        diningSeating: 'Flexible',
+        venue: '300',
+        dining: '60 at once',
       },
       inclusions: [
-        { name: 'Furniture with Fabric', icon: 'chair' },
-        { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: '2 Guest rooms', icon: 'room' },
+        { name: "All furniture's with fabric", icon: 'chair' },
         { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: '6 - Air Circulators', icon: 'power' },
+        { name: 'Power Backup', icon: 'power' },
+        { name: 'Car Parking (100)', icon: 'parking' },
+        { name: 'Speaker with Mic', icon: 'audio' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
+          { label: '6 AM – 3 PM', price: '₹50,000 + GST' },
+          { label: '3:30 PM – 12 AM', price: '₹55,000 + GST' },
         ],
       },
     },
@@ -277,16 +279,17 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
       </svg>
     ),
+    parking: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.215-9.126M3.375 14.25h17.25m-17.25 0V9.75a2.25 2.25 0 012.25-2.25h11.25a2.25 2.25 0 012.25 2.25v4.5" />
+      </svg>
+    ),
   };
 
   const brochureMap = {
     teakmeadows: {
       venue1: '/images/brochures/teak-meadows-venue-1.jpg',
       venue2: '/images/brochures/teak-meadows-venue-2.jpg',
-    },
-    muddainapalya: {
-      venue1: '/images/brochures/muddainapalya-venue-1.jpg',
-      venue2: '/images/brochures/muddainapalya-venue-2.jpg',
     },
     rrnagar: {
       venue1: '/images/brochures/rr-nagar-venue-1.jpg',
@@ -295,24 +298,29 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
   };
 
   const brochureUrl = brochureMap[page]?.[venueId];
+  const isMuddainapalya = page === 'muddainapalya';
 
   return (
-    <section id={`${venueId}-detail`} className="venue-detail-section">
+    <section id={`${venueId}-detail`} className={`venue-detail-section ${isMuddainapalya ? 'compact-layout' : ''}`}>
       <div className="venue-detail-container">
-        <div className="venue-detail-header">
-          <span className="overline">Explore</span>
-          <h2 className="section-title venue-detail-title">{venueName}</h2>
-        </div>
+        {!isMuddainapalya && (
+          <div className="venue-detail-header">
+            <span className="overline">Explore</span>
+            <h2 className="section-title venue-detail-title">{venueName}</h2>
+          </div>
+        )}
 
         <div className="venue-sections-content">
           {/* Timing & Cost Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">{data.timing.title}</h3>
-            <div className="timing-cost-container">
-              <div className="timing-slots">
+            <div className={`timing-cost-container ${isMuddainapalya ? 'compact-timing' : ''}`}>
+              <div className={`timing-slots ${isMuddainapalya ? 'compact-slots' : ''}`}>
                 {data.timing.slots.map((slot, idx) => (
-                  <div key={idx} className="timing-slot-card">
-                    <div className="slot-icon">{idx === 0 ? '☀️' : '🌙'}</div>
+                  <div key={idx} className={`timing-slot-card ${isMuddainapalya ? 'compact' : ''}`}>
+                    {!isMuddainapalya && (
+                      <div className="slot-icon">{idx === 0 ? '☀️' : '🌙'}</div>
+                    )}
                     <div className="slot-info">
                       <p className="slot-label">{slot.label}</p>
                       <p className="slot-price">{slot.price}</p>
@@ -325,8 +333,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
 
           {/* Capacity Section */}
           <div className="venue-section-block">
-            <h3 className="venue-section-heading">Capacity & Space</h3>
-            <div className="capacity-showcase">
+            <h3 className="venue-section-heading">Capacity</h3>
+            <div className={`capacity-showcase ${isMuddainapalya ? 'compact-two-col' : ''}`}>
               <div className="capacity-detail-card highlighted">
                 <div className="capacity-detail-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
@@ -351,36 +359,40 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
                 </div>
               </div>
 
-              <div className="capacity-detail-card">
-                <div className="capacity-detail-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-                  </svg>
+              {!isMuddainapalya && data.capacity.carpet && (
+                <div className="capacity-detail-card">
+                  <div className="capacity-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                    </svg>
+                  </div>
+                  <div className="capacity-detail-content">
+                    <h4>Space Area</h4>
+                    <p>{data.capacity.carpet}</p>
+                  </div>
                 </div>
-                <div className="capacity-detail-content">
-                  <h4>Space Area</h4>
-                  <p>{data.capacity.carpet}</p>
-                </div>
-              </div>
+              )}
 
-              <div className="capacity-detail-card">
-                <div className="capacity-detail-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.412 15.655L9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457L3 3m5.457 5.457l7.086 7.086m0 0L21 21" />
-                  </svg>
+              {!isMuddainapalya && data.capacity.diningSeating && (
+                <div className="capacity-detail-card">
+                  <div className="capacity-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M11.412 15.655L9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457L3 3m5.457 5.457l7.086 7.086m0 0L21 21" />
+                    </svg>
+                  </div>
+                  <div className="capacity-detail-content">
+                    <h4>Seating Capacity</h4>
+                    <p>{data.capacity.diningSeating}</p>
+                  </div>
                 </div>
-                <div className="capacity-detail-content">
-                  <h4>Seating Capacity</h4>
-                  <p>{data.capacity.diningSeating}</p>
-                </div>
-              </div>
+              )}
             </div>
           </div>
 
           {/* Inclusions Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">Included Amenities</h3>
-            <div className="inclusions-grid">
+            <div className={`inclusions-grid ${isMuddainapalya ? 'compact-inclusions' : ''}`}>
               {data.inclusions.map((item, idx) => (
                 <div key={idx} className="inclusion-card">
                   <div className="inclusion-icon">
@@ -393,7 +405,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
           </div>
 
           {/* Brochure Download Block */}
-          {brochureUrl && (
+          {brochureUrl && !isMuddainapalya && (
             <div className="venue-detail-cta-box" style={{ marginTop: '3rem' }}>
               <div className="cta-box-content" style={{ textAlign: 'left' }}>
                 <h3 className="cta-box-title" style={{ fontSize: '1.8rem', marginBottom: '0.4rem' }}>Download Full Brochure</h3>

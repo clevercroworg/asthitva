@@ -78,27 +78,12 @@ function Muddainapalya() {
             >
               Venue 2 Details
             </button>
-            <button 
-              type="button"
-              className={`venue-switcher-tab ${activeVenue === 'all' ? 'active' : ''}`}
-              onClick={() => setActiveVenue('all')}
-              aria-label="View Both Venues"
-            >
-              View Both
-            </button>
           </div>
         </div>
 
         {/* --- Venue 1 Section --- */}
-        {(activeVenue === 1 || activeVenue === 'all') && (
+        {activeVenue === 1 && (
           <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
-            {activeVenue === 'all' && (
-              <div style={{ textAlign: 'center', margin: '2rem 0 1.5rem' }}>
-                <h3 style={{ fontSize: '1.8rem', color: 'var(--primary-dark)', fontFamily: 'var(--font-heading)' }}>
-                  Venue 1 — Open Lawn Space
-                </h3>
-              </div>
-            )}
             <VenueVideo venue={venuesData[0]} />
             <VenueDetail venueId="venue1" venueName="Venue 1" page="muddainapalya" />
             <div id="venue1-gallery">
@@ -118,20 +103,9 @@ function Muddainapalya() {
           </section>
         )}
 
-        {activeVenue === 'all' && (
-          <hr style={{ border: 'none', borderTop: '1px solid #e8dfd5', margin: '3rem auto', width: '80%' }} />
-        )}
-
         {/* --- Venue 2 Section --- */}
-        {(activeVenue === 2 || activeVenue === 'all') && (
+        {activeVenue === 2 && (
           <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
-            {activeVenue === 'all' && (
-              <div style={{ textAlign: 'center', margin: '2rem 0 1.5rem' }}>
-                <h3 style={{ fontSize: '1.8rem', color: 'var(--primary-dark)', fontFamily: 'var(--font-heading)' }}>
-                  Venue 2 — Covered Hall Space
-                </h3>
-              </div>
-            )}
             <VenueVideo venue={venuesData[1]} />
             <VenueDetail venueId="venue2" venueName="Venue 2" page="muddainapalya" />
             <div id="venue2-gallery">

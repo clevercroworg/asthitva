@@ -72,16 +72,18 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
             </div>
 
-            <div className="info-detail-item">
-              <div className="detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            {!isMuddainapalya && (
+              <div className="info-detail-item">
+                <div className="detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div>
+                  <h4>Event Timings</h4>
+                  <p>Day Event: 6:00 AM – 3:00 PM</p>
+                  <p>Night Event: 3:30 PM – 12:00 AM</p>
+                </div>
               </div>
-              <div>
-                <h4>Event Timings</h4>
-                <p>Day Event: 6:00 AM – 3:00 PM</p>
-                <p>Night Event: 3:30 PM – 12:00 AM</p>
-              </div>
-            </div>
+            )}
 
             <div className="info-detail-item">
               <div className="detail-icon">
