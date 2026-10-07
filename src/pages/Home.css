@@ -109,8 +109,8 @@
   justify-content: center;
   background-image: url('/images/teak-meadows/IMG20251212184603.jpg');
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center 60%;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 

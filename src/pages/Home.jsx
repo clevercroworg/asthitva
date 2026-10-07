@@ -20,7 +20,7 @@ const venues = [
     name: 'Asthitva The Venue',
     location: 'Muddainapalya',
     capacity: '2 Venues • Up to 600 Guests',
-    image: '/images/muddainapalya/venue-1/1.jpg',
+    image: '/images/muddainapalya/venue-1/venue-1-card.jpeg',
     path: '/muddainapalya',
     tag: '2 Venues',
   },
