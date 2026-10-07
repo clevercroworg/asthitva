@@ -42,8 +42,11 @@ function LaBendicion() {
     {
       id: 1,
       title: 'Asthitva La Bendicion Venue',
+      name: 'Asthitva La Bendicion — Celebration Space',
+      typeBadge: 'Semi-Outdoor Venue',
+      tag: 'Premier Venue',
       tagline: 'Charming semi-outdoor venue blending warm ambient lighting, elegant structures, and lush greenery.',
-      capacity: 'Up to 600 Guests (Floating)',
+      capacity: 'Up to 600 Guests',
       image: '/images/la-bendicion/1.webp',
       detailLink: '#venue1-detail',
     }
@@ -59,16 +62,17 @@ function LaBendicion() {
       <Header 
         title="Asthitva La Bendicion @ Sahakar Nagar" 
         bgImage="/images/la-bendicion/1.webp" 
+        bgPosition="center 60%"
       />
       
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
-          <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venue</h2>
+          <h2 className="section-title">Our Premier Venue</h2>
         </div>
 
         {/* --- Venue Section --- */}
         <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[0]} hideVideoText={true} />
+          <VenueVideo venue={venuesData[0]} />
           <VenueDetail venueId="venue1" venueName="Asthitva La Bendicion" page="labendicion" />
           <div id="venue1-detail"></div>
           <div id="venue1-gallery">

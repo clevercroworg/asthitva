@@ -17,20 +17,23 @@ function Ullal() {
   }, []);
 
   const galleryImages = [
-    { src: '/images/ullal/rooftop_0.jpg', className: 'gallery-large' },
-    { src: '/images/ullal/rooftop_1.jpg', className: 'gallery-standard' },
+    { src: '/images/ullal/rooftop_1.jpg', className: 'gallery-large' },
     { src: '/images/ullal/rooftop_2.jpg', className: 'gallery-tall' },
-    { src: '/images/ullal/rooftop_3.jpg', className: 'gallery-wide' },
-    { src: '/images/ullal/rooftop_4.jpg', className: 'gallery-standard' },
-    { src: '/images/ullal/rooftop_5.jpg', className: 'gallery-standard' }
+    { src: '/images/ullal/rooftop_6.jpg', className: 'gallery-wide' },
+    { src: '/images/ullal/rooftop_9.jpg', className: 'gallery-standard' },
+    { src: '/images/ullal/rooftop_12.jpg', className: 'gallery-standard' },
+    { src: '/images/ullal/rooftop_3.jpg', className: 'gallery-standard' }
   ];
 
   const venuesData = [
     {
       id: 1,
-      title: 'Upto 250 guest | Asthitva Rooftop Venue',
+      title: 'Asthitva Rooftop Venue',
+      name: 'Asthitva Rooftop — Terrace Celebration Space',
+      typeBadge: 'Rooftop Lawn',
+      tag: 'Rooftop Venue',
       tagline: 'Serene rooftop escape blending lush greenery, ambient lighting, and open skies.',
-      capacity: 'Upto 250 guest',
+      capacity: 'Up to 250 Guests',
       image: '/images/ullal/rooftop_1.jpg', 
       videoSrc: '/images/ullal/video/rooftop-compressed.mp4', 
       detailLink: '#venue1-detail',
@@ -40,15 +43,19 @@ function Ullal() {
   return (
     <div className="app">
       <Navbar logoText="Asthitva Rooftop" topBarText="Premium event venue at Ullal" phone="+91 81470 95583" />
-      <Header title="Asthitva Rooftop @ Ullal" bgImage="/images/ullal/rooftop_0.jpg" />
+      <Header 
+        title="Asthitva Rooftop @ Ullal" 
+        bgImage="/images/ullal/rooftop_1.jpg" 
+        bgPosition="center 60%" 
+      />
       <main>
         <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
-          <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
+          <h2 className="section-title">Our Premier Venue</h2>
         </div>
 
         {/* --- Venue 1 Section --- */}
         <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[0]} hideVideoText={true} />
+          <VenueVideo venue={venuesData[0]} />
           <VenueDetail venueId="venue1" venueName="Asthitva Rooftop Venue" page="ullal" />
           <div id="venue1-gallery">
             <Gallery 

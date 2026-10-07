@@ -60,8 +60,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: 'Beautiful open venue with expansive lawn and celebration area',
       capacity: {
-        venue: '600',
-        dining: '120 at once',
+        venue: '600 Guests (Floating)',
+        dining: '120 Guests (Seating)',
       },
       inclusions: [
         { name: '2 Guest rooms', icon: 'room' },
@@ -74,18 +74,18 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: '6 AM – 3 PM', price: '₹60,000 + GST' },
-          { label: '3:30 PM – 12 AM', price: '₹75,000 + GST' },
-          { label: '6 AM – 12 AM', price: '₹1,00,000 + GST' },
-          { label: '3 PM – 3 PM', price: '₹1,25,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹60,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,00,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,25,000 + GST' },
         ],
       },
     },
     venue2: {
       tagline: 'Elegant Space with roof, moon lights and open sides',
       capacity: {
-        venue: '300',
-        dining: '60 at once',
+        venue: '300 Guests (Floating)',
+        dining: '60 Guests (Seating)',
       },
       inclusions: [
         { name: '2 Guest rooms', icon: 'room' },
@@ -98,10 +98,10 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: '6 AM – 3 PM', price: '₹50,000 + GST' },
-          { label: '3:30 PM – 12 AM', price: '₹55,000 + GST' },
-          { label: '6 AM – 12 AM', price: '₹90,000 + GST' },
-          { label: '3 PM – 3 PM', price: '₹1,00,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹90,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,00,000 + GST' },
         ],
       },
     },
@@ -111,21 +111,26 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: 'An elegant rooftop venue with soft moon lighting and open-air sides',
       capacity: {
-        venue: 'Upto 250 guest',
-        dining: 'Upto 75',
+        venue: 'Up to 250 Guests (Floating)',
+        dining: '75 Guests (Dining)',
         carpet: 'Rooftop venue',
         diningSeating: 'Flexible',
       },
       inclusions: [
-        { name: 'All furniture with Fabric', icon: 'chair' },
         { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'Speaker with Mic / Audio', icon: 'audio' },
+        { name: 'Dedicated Parking Space', icon: 'parking' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST.' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹80,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,00,000 + GST' },
         ],
       },
     },
@@ -190,22 +195,26 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: 'Charming semi-outdoor venue with warm ambient lighting, elegant structures, and lush greenery',
       capacity: {
-        venue: 'Up to 600 guests floating',
-        dining: '150 - 250 guests',
+        venue: 'Up to 600 Guests (Floating)',
+        dining: '150 - 250 Guests (Dining)',
         carpet: 'Spacious celebration space with covered roofing',
         diningSeating: '150 - 200 guests',
       },
       inclusions: [
-        { name: 'All furniture with Fabric', icon: 'chair' },
         { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Power back up', icon: 'power' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'Speaker with Mic / Audio Support', icon: 'audio' },
+        { name: 'Ample Parking Available', icon: 'parking' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,00,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,25,000 + GST' },
         ],
       },
     },
@@ -215,8 +224,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: '3 Distinct Venues with Sprawling Party Lawns, Dining Pavilions & Expansive Parking',
       capacity: {
-        venue: 'Up to 1,500 guests (Across 3 Venues)',
-        dining: '400 - 600 guests seating',
+        venue: 'Up to 1,500 Guests (Across 3 Venues)',
+        dining: '400 - 600 Guests (Seating)',
         carpet: 'Sprawling Celebration Complex (Lawn + Covered)',
         diningSeating: 'Dedicated Banquet & Dining Areas',
       },
@@ -225,12 +234,16 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         { name: 'Furnished Bridal & Groom Suites', icon: 'room' },
         { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
         { name: '100% Power Back Up', icon: 'power' },
+        { name: 'DJ & Sound System Allowed', icon: 'audio' },
+        { name: 'Expansive Parking Area', icon: 'parking' },
       ],
       timing: {
-        title: 'Pre-Booking & Inquiries',
+        title: 'Timing and Cost',
         slots: [
-          { label: 'Day Event (6 AM – 3 PM)', price: 'Inquire for Inaugural Offers' },
-          { label: 'Evening Event (3:30 PM – 12 AM)', price: 'Inquire for Inaugural Offers' },
+          { label: 'Day (6 AM – 3 PM)', price: 'Inquire for Offers' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: 'Inquire for Offers' },
+          { label: '18 Hours (6 AM – 12 AM)', price: 'Inquire for Offers' },
+          { label: '24 Hours (3 PM – 3 PM)', price: 'Inquire for Offers' },
         ],
       },
     },
@@ -305,7 +318,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
   };
 
   const isMuddainapalya = page === 'muddainapalya';
-  const isCompactLayout = page === 'muddainapalya' || page === 'teakmeadows' || page === 'rrnagar';
+  const isCompactLayout = true;
 
   return (
     <section id={`${venueId}-detail`} className={`venue-detail-section ${isCompactLayout ? 'compact-layout' : ''}`}>
