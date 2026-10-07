@@ -304,18 +304,6 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     ),
   };
 
-  const brochureMap = {
-    teakmeadows: {
-      venue1: '/images/brochures/teak-meadows-venue-1.jpg',
-      venue2: '/images/brochures/teak-meadows-venue-2.jpg',
-    },
-    rrnagar: {
-      venue1: '/images/brochures/rr-nagar-venue-1.jpg',
-      venue2: '/images/brochures/rr-nagar-venue-2.jpg',
-    },
-  };
-
-  const brochureUrl = brochureMap[page]?.[venueId];
   const isMuddainapalya = page === 'muddainapalya';
   const isCompactLayout = page === 'muddainapalya' || page === 'teakmeadows' || page === 'rrnagar';
 
@@ -374,34 +362,6 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
                   <p>{data.capacity.dining}</p>
                 </div>
               </div>
-
-              {!isMuddainapalya && data.capacity.carpet && (
-                <div className="capacity-detail-card">
-                  <div className="capacity-detail-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-                    </svg>
-                  </div>
-                  <div className="capacity-detail-content">
-                    <h4>Space Area</h4>
-                    <p>{data.capacity.carpet}</p>
-                  </div>
-                </div>
-              )}
-
-              {!isMuddainapalya && data.capacity.diningSeating && (
-                <div className="capacity-detail-card">
-                  <div className="capacity-detail-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M11.412 15.655L9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457L3 3m5.457 5.457l7.086 7.086m0 0L21 21" />
-                    </svg>
-                  </div>
-                  <div className="capacity-detail-content">
-                    <h4>Seating Capacity</h4>
-                    <p>{data.capacity.diningSeating}</p>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
 
@@ -419,31 +379,6 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
               ))}
             </div>
           </div>
-
-          {/* Brochure Download Block */}
-          {brochureUrl && !isMuddainapalya && (
-            <div className="venue-detail-cta-box" style={{ marginTop: '3rem' }}>
-              <div className="cta-box-content" style={{ textAlign: 'left' }}>
-                <h3 className="cta-box-title" style={{ fontSize: '1.8rem', marginBottom: '0.4rem' }}>Download Full Brochure</h3>
-                <p className="cta-box-subtitle" style={{ margin: 0 }}>Get complete packages, pricing details, space layouts, and inclusions for {venueName}.</p>
-              </div>
-              <div className="cta-box-actions">
-                <a 
-                  href={brochureUrl} 
-                  download={`Asthitva-${page === 'teakmeadows' ? 'TeakMeadows' : page === 'muddainapalya' ? 'Muddainapalya' : 'RRNagar'}-${venueId === 'venue1' ? 'Venue1' : 'Venue2'}-Brochure.jpg`}
-                  className="btn-download-brochure"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="download-icon" style={{ marginRight: '8px' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                  </svg>
-                  Download Brochure
-                </a>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </section>
