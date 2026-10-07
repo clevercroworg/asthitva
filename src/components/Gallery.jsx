@@ -5,12 +5,12 @@ const Gallery = ({ venueName, images, driveLink }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const defaultImages = [
-    { src: '/images/teak-meadows/IMG20251212184424.jpg', className: 'gallery-large' },
-    { src: '/images/teak-meadows/IMG20251212184445.jpg', className: 'gallery-standard' },
-    { src: '/images/teak-meadows/IMG20251212184459.jpg', className: 'gallery-tall' },
-    { src: '/images/teak-meadows/IMG20251212184510.jpg', className: 'gallery-wide' },
-    { src: '/images/teak-meadows/IMG20251212184523.jpg', className: 'gallery-standard' },
-    { src: '/images/teak-meadows/IMG20251212184540.jpg', className: 'gallery-standard' }
+    { src: '/images/teak-meadows/latest/covered-hall-lit.jpg', className: 'gallery-standard' },
+    { src: '/images/teak-meadows/latest/water-pathway.jpg', className: 'gallery-standard' },
+    { src: '/images/teak-meadows/latest/fairy-umbrellas.jpg', className: 'gallery-standard' },
+    { src: '/images/teak-meadows/latest/mandap-night.jpg', className: 'gallery-standard' },
+    { src: '/images/teak-meadows/latest/entrance-arch.jpg', className: 'gallery-standard' },
+    { src: '/images/teak-meadows/latest/wedding-stage.jpg', className: 'gallery-standard' }
   ];
 
   const displayImages = images || defaultImages;

@@ -29,7 +29,7 @@ function TeakMeadows() {
       tag: 'Venue 1',
       tagline: 'Grand spaces and timeless celebrations with an expansive celebration lawn.',
       capacity: 'Up to 800 Guests',
-      image: '/images/teak-meadows/IMG20251212184424.jpg',
+      image: '/images/teak-meadows/latest/covered-hall-lit.jpg',
       videoId: 'FH85MIyHZVs',
       detailLink: '#venue1-detail',
     },
@@ -93,6 +93,14 @@ function TeakMeadows() {
             <div id="venue1-gallery">
               <Gallery 
                 venueName="venue1" 
+                images={[
+                  { src: '/images/teak-meadows/latest/covered-hall-lit.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/latest/water-pathway.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/latest/fairy-umbrellas.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/latest/mandap-night.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/latest/entrance-arch.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/latest/wedding-stage.jpg', className: 'gallery-standard' }
+                ]}
                 driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
               />
             </div>

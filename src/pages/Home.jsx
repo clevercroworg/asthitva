@@ -11,7 +11,7 @@ const venues = [
     name: 'Asthitva Teak Meadows',
     location: 'Magadi Road',
     capacity: '2 Venues • Up to 800 Guests',
-    image: '/images/teak-meadows/IMG20251212184424.jpg',
+    image: '/images/teak-meadows/latest/covered-hall-lit.jpg',
     path: '/magadi-road',
     tag: '2 Venues',
   },
