@@ -11,7 +11,11 @@ import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
+import VenueShowcase from '../components/VenueShowcase';
+
 function RRNagar() {
+  const [activeVenue, setActiveVenue] = React.useState(1);
+
   React.useEffect(() => {
     document.title = "Asthitva RR Nagar | Premium Event Venue | RR Nagar, Bengaluru";
   }, []);
@@ -20,18 +24,24 @@ function RRNagar() {
     {
       id: 1,
       title: 'Venue 1',
-      tagline: 'Thoughtfully designed event venue offering a spacious, well-maintained setting.',
-      capacity: '150 - 250 Seating | 700 Floating',
-      image: '/images/rr-nagar/venue-1/video-thumbnail.webp', 
+      name: 'Venue 1 — Premium Open Lawn',
+      typeBadge: 'Open Lawn',
+      tag: 'Venue 1',
+      tagline: 'A spacious outdoor venue for grand celebrations with dedicated dining space.',
+      capacity: 'Up to 1,000 Guests',
+      image: '/images/rr-nagar/venue-1/1.webp', 
       videoSrc: '/images/rr-nagar/venue-1/venue-1-compressed.mp4', 
       detailLink: '#venue1-detail',
     },
     {
       id: 2,
       title: 'Venue 2',
-      tagline: 'Elegant space with roof, moon lights and open sides.',
-      capacity: '150 - 250 Seating | 700 Floating',
-      image: '/images/rr-nagar/venue-2/video-thumbnail.webp', 
+      name: 'Venue 2 — Open Lawn & Covered Space',
+      typeBadge: 'Covered & Lawn',
+      tag: 'Venue 2',
+      tagline: 'Elegant space with roof, romantic moon lights, ambient lighting, and open sides.',
+      capacity: 'Up to 700 Guests',
+      image: '/images/rr-nagar/venue-2/2.webp', 
       videoSrc: '/images/rr-nagar/venue-2/venue-2-compressed.mp4', 
       detailLink: '#venue2-detail',
     }
@@ -40,53 +50,84 @@ function RRNagar() {
   return (
     <div className="app">
       <Navbar logoText="RR Nagar" topBarText="Premium event venue at RR Nagar" phone="+91 95354 15379" />
-      <Header title="Asthitva @ RR Nagar" />
+      <Header 
+        title="Asthitva The Venue @ RR Nagar" 
+        bgImage="/images/rr-nagar/venue-2/2.webp" 
+        bgPosition="center 65%" 
+      />
       <main>
-        <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
-          <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
+        {/* Dual Venue Comparison Showcase */}
+        <VenueShowcase 
+          venues={venuesData} 
+          activeVenue={activeVenue} 
+          onSelectVenue={setActiveVenue} 
+        />
+
+        {/* Deep-Dive Interactive Switcher */}
+        <div id="venue-deepdive-section" className="venue-deepdive-header">
+          <div className="venue-switcher-bar">
+            <button 
+              type="button"
+              className={`venue-switcher-tab ${activeVenue === 1 ? 'active' : ''}`}
+              onClick={() => setActiveVenue(1)}
+              aria-label="View Venue 1 Details"
+            >
+              Venue 1 Details
+            </button>
+            <button 
+              type="button"
+              className={`venue-switcher-tab ${activeVenue === 2 ? 'active' : ''}`}
+              onClick={() => setActiveVenue(2)}
+              aria-label="View Venue 2 Details"
+            >
+              Venue 2 Details
+            </button>
+          </div>
         </div>
 
         {/* --- Venue 1 Section --- */}
-        <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[0]} />
-          <VenueDetail venueId="venue1" venueName="Venue 1" page="rrnagar" />
-          <div id="venue1-gallery">
-            <Gallery 
-              venueName="venue1" 
-              images={[
-                { src: '/images/rr-nagar/venue-1/1.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-1/2.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-1/3.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-1/4.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-1/5.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-1/6.webp', className: 'gallery-standard' },
-              ]}
-              driveLink="https://photos.app.goo.gl/9LwkrESXUCECMN917"
-            />
-          </div>
-        </section>
-
-        <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '2rem auto', width: '80%' }} />
+        {activeVenue === 1 && (
+          <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
+            <VenueVideo venue={venuesData[0]} />
+            <VenueDetail venueId="venue1" venueName="Venue 1" page="rrnagar" />
+            <div id="venue1-gallery">
+              <Gallery 
+                venueName="venue1" 
+                images={[
+                  { src: '/images/rr-nagar/venue-1/1.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-1/2.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-1/3.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-1/4.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-1/5.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-1/6.webp', className: 'gallery-standard' },
+                ]}
+                driveLink="https://photos.app.goo.gl/9LwkrESXUCECMN917"
+              />
+            </div>
+          </section>
+        )}
 
         {/* --- Venue 2 Section --- */}
-        <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[1]} />
-          <VenueDetail venueId="venue2" venueName="Venue 2" page="rrnagar" />
-          <div id="venue2-gallery">
-            <Gallery 
-              venueName="venue2" 
-              images={[
-                { src: '/images/rr-nagar/venue-2/1.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-2/2.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-2/3.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-2/4.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-2/5.webp', className: 'gallery-standard' },
-                { src: '/images/rr-nagar/venue-2/6.webp', className: 'gallery-standard' },
-              ]}
-              driveLink="https://photos.app.goo.gl/qVCoZbtaBefgkJBcA"
-            />
-          </div>
-        </section>
+        {activeVenue === 2 && (
+          <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
+            <VenueVideo venue={venuesData[1]} />
+            <VenueDetail venueId="venue2" venueName="Venue 2" page="rrnagar" />
+            <div id="venue2-gallery">
+              <Gallery 
+                venueName="venue2" 
+                images={[
+                  { src: '/images/rr-nagar/venue-2/1.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-2/2.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-2/3.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-2/4.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-2/5.webp', className: 'gallery-standard' },
+                  { src: '/images/rr-nagar/venue-2/6.webp', className: 'gallery-standard' },
+                ]}
+                driveLink="https://photos.app.goo.gl/qVCoZbtaBefgkJBcA"
+              />
+            </div>
+          </section>
+        )}
 
         {/* Location & Google Map */}
         <Info page="rrnagar" />

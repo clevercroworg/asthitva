@@ -4,46 +4,54 @@ import './VenueDetail.css';
 const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
   const venueData = {
     venue1: {
-      tagline: 'Beautiful open venue with 11500 sq ft of carpet area',
+      tagline: 'Grand spaces and timeless celebrations with a premium open lawn',
       capacity: {
-        venue: '800',
-        dining: '200',
-        carpet: '11,500 sq ft carpet area',
-        diningSeating: '300',
+        venue: 'Up to 800 Guests (Floating)',
+        dining: '200 - 300 Guests (Seating)',
+        carpet: 'Premium Open Lawn',
+        diningSeating: '200 - 300 Guests',
       },
       inclusions: [
-        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Power Back Up', icon: 'power' },
+        { name: 'Ample Parking Available', icon: 'parking' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'DJ Allowed', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
-        title: 'Introductory Price',
+        title: 'Timing and Cost',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,10,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,30,000 + GST' },
         ],
       },
     },
     venue2: {
-      tagline: 'Elegant space with roof, moon lights and open sides',
+      tagline: 'Grand spaces and timeless celebrations with elegant covered space & lawn',
       capacity: {
-        venue: 'Up to 500 guests',
-        dining: 'Up to 120',
-        carpet: 'Elegant space with roof and open sides',
-        diningSeating: 'Dining for up to 60 guests, expandable',
+        venue: 'Up to 600 Guests (Floating)',
+        dining: '150 - 200 Guests (Seating)',
+        carpet: 'Premium Open Lawn',
+        diningSeating: '150 - 200 Guests',
       },
       inclusions: [
-        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Power Back Up', icon: 'power' },
+        { name: 'Ample Parking Available', icon: 'parking' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'DJ Allowed', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
-        title: 'Introductory Price',
+        title: 'Timing and Cost',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹60,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹65,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹65,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,00,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,25,000 + GST' },
         ],
       },
     },
@@ -125,46 +133,54 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
 
   const rrNagarData = {
     venue1: {
-      tagline: 'Elegant Space with roof, moon lights and open sides',
+      tagline: 'A spacious outdoor venue for grand celebrations',
       capacity: {
-        venue: 'Up to 700 guests',
-        dining: '150 - 250 guests',
-        carpet: 'Elegant Space',
-        diningSeating: '150 - 250 guests',
+        venue: '1,000 Guests (Floating)',
+        dining: '700 Guests (Seating)',
+        carpet: 'Premium Open Lawn',
+        diningSeating: 'Dedicated Dining Space',
       },
       inclusions: [
-        { name: 'All furniture with Fabric', icon: 'chair' },
-        { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Power back up', icon: 'power' },
+        { name: '9 Guest Rooms Available', icon: 'room' },
+        { name: 'Ample Parking Facility', icon: 'parking' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'DJ Allowed', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST.' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,10,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,30,000 + GST' },
         ],
       },
     },
     venue2: {
-      tagline: 'Elegant Space with roof, moon lights and open sides',
+      tagline: 'Premium open lawn event space for every celebration',
       capacity: {
-        venue: 'Up to 700 guests',
-        dining: '150 - 250 guests',
-        carpet: 'Elegant Space',
-        diningSeating: '150 - 250 guests',
+        venue: 'Up to 700 Guests (Floating)',
+        dining: '150 - 250 Guests (Seating)',
+        carpet: 'Premium Open Lawn',
+        diningSeating: '150 - 250 Guests',
       },
       inclusions: [
-        { name: 'All furniture with Fabric', icon: 'chair' },
         { name: '2 Fully Furnished Rooms', icon: 'room' },
-        { name: 'General Lighting & Decorative Lighting', icon: 'light' },
-        { name: 'Power back up', icon: 'power' },
+        { name: 'Ample Parking Available', icon: 'parking' },
+        { name: 'General & Decorative Lighting', icon: 'light' },
+        { name: '100% Power Backup', icon: 'power' },
+        { name: 'DJ Allowed', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
         title: 'Timing and Cost',
         slots: [
           { label: 'Day (6 AM – 3 PM)', price: '₹75,000 + GST' },
-          { label: 'Eve (3:30 PM – 12 AM)', price: '₹80,000 + GST' },
+          { label: 'Evening (3 PM – 10 PM)', price: '₹80,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,20,000 + GST' },
+          { label: '24 Hours (6 AM – 6 AM)', price: '₹1,40,000 + GST' },
         ],
       },
     },
@@ -301,11 +317,12 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
 
   const brochureUrl = brochureMap[page]?.[venueId];
   const isMuddainapalya = page === 'muddainapalya';
+  const isCompactLayout = page === 'muddainapalya' || page === 'teakmeadows' || page === 'rrnagar';
 
   return (
-    <section id={`${venueId}-detail`} className={`venue-detail-section ${isMuddainapalya ? 'compact-layout' : ''}`}>
+    <section id={`${venueId}-detail`} className={`venue-detail-section ${isCompactLayout ? 'compact-layout' : ''}`}>
       <div className="venue-detail-container">
-        {!isMuddainapalya && (
+        {!isCompactLayout && (
           <div className="venue-detail-header">
             <span className="overline">Explore</span>
             <h2 className="section-title venue-detail-title">{venueName}</h2>
@@ -316,13 +333,10 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
           {/* Timing & Cost Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">{data.timing.title}</h3>
-            <div className={`timing-cost-container ${isMuddainapalya ? 'compact-timing' : ''}`}>
-              <div className={`timing-slots ${isMuddainapalya ? 'compact-slots' : ''}`}>
+            <div className={`timing-cost-container ${isCompactLayout ? 'compact-timing' : ''}`}>
+              <div className={`timing-slots ${isCompactLayout ? 'compact-slots' : ''}`}>
                 {data.timing.slots.map((slot, idx) => (
-                  <div key={idx} className={`timing-slot-card ${isMuddainapalya ? 'compact' : ''}`}>
-                    {!isMuddainapalya && (
-                      <div className="slot-icon">{idx === 0 ? '☀️' : '🌙'}</div>
-                    )}
+                  <div key={idx} className={`timing-slot-card ${isCompactLayout ? 'compact' : ''}`}>
                     <div className="slot-info">
                       <p className="slot-label">{slot.label}</p>
                       <p className="slot-price">{slot.price}</p>
@@ -336,7 +350,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
           {/* Capacity Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">Capacity</h3>
-            <div className={`capacity-showcase ${isMuddainapalya ? 'compact-two-col' : ''}`}>
+            <div className={`capacity-showcase ${isCompactLayout ? 'compact-two-col' : ''}`}>
               <div className="capacity-detail-card highlighted">
                 <div className="capacity-detail-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
@@ -394,7 +408,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
           {/* Inclusions Section */}
           <div className="venue-section-block">
             <h3 className="venue-section-heading">Included Amenities</h3>
-            <div className={`inclusions-grid ${isMuddainapalya ? 'compact-inclusions' : ''}`}>
+            <div className={`inclusions-grid ${isCompactLayout ? 'compact-inclusions' : ''}`}>
               {data.inclusions.map((item, idx) => (
                 <div key={idx} className="inclusion-card">
                   <div className="inclusion-icon">

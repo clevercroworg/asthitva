@@ -29,7 +29,7 @@ function Muddainapalya() {
       tag: 'Venue 1',
       tagline: 'Asthitva The Venue open celebration lawn under the open sky with spacious banquet dining.',
       capacity: 'Up to 600 Guests',
-      image: '/images/muddainapalya/venue-1/1.jpg', 
+      image: '/images/muddainapalya/venue-1/venue-1-card.jpeg', 
       videoSrc: '/images/muddainapalya/video/venue1-compressed.mp4', 
       detailLink: '#venue1-detail',
     },
@@ -41,7 +41,7 @@ function Muddainapalya() {
       tag: 'Venue 2',
       tagline: 'Weather-proof elegant space with romantic moon lights, ambient chandeliers, and open-air breeze.',
       capacity: 'Up to 300 Guests',
-      image: '/images/muddainapalya/venue-2/1.webp', 
+      image: '/images/muddainapalya/venue-2/venue-2-card.jpeg', 
       videoId: 'tmMSkUJJ478', 
       detailLink: '#venue2-detail',
     }
@@ -52,7 +52,8 @@ function Muddainapalya() {
       <Navbar logoText="The Venue" topBarText="Premium event venue at Muddayanapalya" phone="+91 89047 68299" />
       <Header 
         title="Asthitva The Venue @ Muddainapalya" 
-        bgImage="/images/muddainapalya/venue-1/1.jpg" 
+        bgImage="/images/muddainapalya/muddainapalya-header.jpeg" 
+        bgPosition="center 60%"
       />
       <main>
         {/* Dual Venue Comparison Showcase (Option 2) */}
@@ -93,6 +94,8 @@ function Muddainapalya() {
               <Gallery 
                 venueName="venue1" 
                 images={[
+                  { src: '/images/muddainapalya/venue-1/venue-1-card.jpeg', className: 'gallery-standard' },
+                  { src: '/images/muddainapalya/muddainapalya-header.jpeg', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-1/1.jpg', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-1/2.jpg', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-1/3.jpg', className: 'gallery-standard' },
@@ -115,6 +118,7 @@ function Muddainapalya() {
               <Gallery 
                 venueName="venue2" 
                 images={[
+                  { src: '/images/muddainapalya/venue-2/venue-2-card.jpeg', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-2/1.webp', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-2/2.webp', className: 'gallery-standard' },
                   { src: '/images/muddainapalya/venue-2/3.webp', className: 'gallery-standard' },

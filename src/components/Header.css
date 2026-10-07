@@ -5,9 +5,9 @@
   overflow: hidden;
   background-image: url('/images/teak-meadows/IMG20251212184603.jpg');
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 42vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -11,7 +11,11 @@ import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
 
+import VenueShowcase from '../components/VenueShowcase';
+
 function TeakMeadows() {
+  const [activeVenue, setActiveVenue] = React.useState(1);
+
   React.useEffect(() => {
     document.title = "Asthitva Teak Meadows | Premium Event Venue | Magadi Road, Bengaluru";
   }, []);
@@ -20,8 +24,11 @@ function TeakMeadows() {
     {
       id: 1,
       title: 'Venue 1',
-      tagline: 'Open venue with 11500 sq ft of carpet area',
-      capacity: 'Up to 800 guests',
+      name: 'Venue 1 — Premium Open Lawn',
+      typeBadge: 'Open Lawn',
+      tag: 'Venue 1',
+      tagline: 'Grand spaces and timeless celebrations with an expansive celebration lawn.',
+      capacity: 'Up to 800 Guests',
       image: '/images/teak-meadows/IMG20251212184424.jpg',
       videoId: 'FH85MIyHZVs',
       detailLink: '#venue1-detail',
@@ -29,9 +36,12 @@ function TeakMeadows() {
     {
       id: 2,
       title: 'Venue 2',
-      tagline: 'Elegant space with roof, moon lights and open sides',
-      capacity: 'Up to 500 guests',
-      image: '/images/teak-meadows/IMG20251212184540.jpg',
+      name: 'Venue 2 — Covered Space & Lawn',
+      typeBadge: 'Covered & Lawn',
+      tag: 'Venue 2',
+      tagline: 'Elegant space with roof, moon lights, ambient lighting, and open sides.',
+      capacity: 'Up to 600 Guests',
+      image: '/images/teak-meadows/venue-2/IMG_3553.jpg',
       videoId: 'dgWdi3zOOPY',
       detailLink: '#venue2-detail',
     }
@@ -39,55 +49,86 @@ function TeakMeadows() {
 
   return (
     <div className="app">
-      <Navbar logoText="Teak Meadows" phone="+91 89047 68299" />
-      <Header title="Asthitva Teak Meadows" />
+      <Navbar logoText="Teak Meadows" topBarText="Premium event venue at Magadi Road" phone="+91 89047 68299" />
+      <Header 
+        title="Asthitva Teak Meadows" 
+        bgImage="/images/teak-meadows/IMG20251212184603.jpg"
+        bgPosition="center 60%" 
+      />
       <main>
-        <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
-          <h2 className="section-title" style={{ whiteSpace: 'nowrap' }}>Our Premier Venues</h2>
+        {/* Dual Venue Comparison Showcase */}
+        <VenueShowcase 
+          venues={venuesData} 
+          activeVenue={activeVenue} 
+          onSelectVenue={setActiveVenue} 
+        />
+
+        {/* Deep-Dive Interactive Switcher */}
+        <div id="venue-deepdive-section" className="venue-deepdive-header">
+          <div className="venue-switcher-bar">
+            <button 
+              type="button"
+              className={`venue-switcher-tab ${activeVenue === 1 ? 'active' : ''}`}
+              onClick={() => setActiveVenue(1)}
+              aria-label="View Venue 1 Details"
+            >
+              Venue 1 Details
+            </button>
+            <button 
+              type="button"
+              className={`venue-switcher-tab ${activeVenue === 2 ? 'active' : ''}`}
+              onClick={() => setActiveVenue(2)}
+              aria-label="View Venue 2 Details"
+            >
+              Venue 2 Details
+            </button>
+          </div>
         </div>
 
         {/* --- Venue 1 Section --- */}
-        <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[0]} />
-          <VenueDetail venueId="venue1" venueName="Venue 1" />
-          <div id="venue1-gallery">
-            <Gallery 
-              venueName="venue1" 
-              driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
-            />
-          </div>
-        </section>
-
-        <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '2rem auto', width: '80%' }} />
+        {activeVenue === 1 && (
+          <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
+            <VenueVideo venue={venuesData[0]} />
+            <VenueDetail venueId="venue1" venueName="Venue 1" page="teakmeadows" />
+            <div id="venue1-gallery">
+              <Gallery 
+                venueName="venue1" 
+                driveLink="https://photos.app.goo.gl/1A7UFvi9FdaLYPLr5"
+              />
+            </div>
+          </section>
+        )}
 
         {/* --- Venue 2 Section --- */}
-        <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[1]} />
-          <VenueDetail venueId="venue2" venueName="Venue 2" />
-          <div id="venue2-gallery">
-            <Gallery 
-              venueName="venue2" 
-              images={[
-                { src: '/images/teak-meadows/venue-2/IMG_3553.jpg', className: 'gallery-standard' },
-                { src: '/images/teak-meadows/venue-2/IMG_3554.jpg', className: 'gallery-standard' },
-                { src: '/images/teak-meadows/venue-2/IMG_3560.jpg', className: 'gallery-standard' },
-                { src: '/images/teak-meadows/venue-2/IMG20251212192041.jpg', className: 'gallery-standard' },
-                { src: '/images/teak-meadows/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' },
-                { src: '/images/teak-meadows/venue-2/DJI_0054.JPG', className: 'gallery-standard' }
-              ]}
-              driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
-            />
-          </div>
-        </section>
+        {activeVenue === 2 && (
+          <section className="venue-detail-block" style={{ marginBottom: '4rem' }}>
+            <VenueVideo venue={venuesData[1]} />
+            <VenueDetail venueId="venue2" venueName="Venue 2" page="teakmeadows" />
+            <div id="venue2-gallery">
+              <Gallery 
+                venueName="venue2" 
+                images={[
+                  { src: '/images/teak-meadows/venue-2/IMG_3553.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/venue-2/IMG_3554.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/venue-2/IMG_3560.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/venue-2/IMG20251212192041.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/venue-2/IMG20251212192142.jpg', className: 'gallery-standard' },
+                  { src: '/images/teak-meadows/venue-2/DJI_0054.JPG', className: 'gallery-standard' }
+                ]}
+                driveLink="https://photos.google.com/share/AF1QipMwYSsmnBCGUZQWYMYjgZAdVtYbEibB8StGyTP_Jpc5kW-5YssYNNj5J2_J5oaGLg?key=azh2dG02anBPSzVOSndWc2I3aFlWUHM2akU2dFpn"
+              />
+            </div>
+          </section>
+        )}
 
         {/* Location & Google Map */}
-        <Info />
+        <Info page="teakmeadows" />
 
         {/* Testimonials */}
         <Testimonials />
 
         {/* Final CTA */}
-        <CTA />
+        <CTA page="teakmeadows" />
       </main>
       <FAQ page="teakmeadows" />
       <Footer />

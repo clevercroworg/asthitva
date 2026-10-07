@@ -1,8 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({ title = "Asthitva Teak Meadows", bgImage }) => {
-  const style = bgImage ? { backgroundImage: `url("${bgImage}")` } : {};
+const Header = ({ title = "Asthitva Teak Meadows", bgImage, bgPosition }) => {
+  const style = {
+    ...(bgImage ? { backgroundImage: `url("${bgImage}")` } : {}),
+    ...(bgPosition ? { backgroundPosition: bgPosition } : {}),
+  };
   
   return (
     <header className="header-title-section" style={style}>
