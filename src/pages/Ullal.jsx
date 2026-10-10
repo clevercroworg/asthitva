@@ -17,12 +17,12 @@ function Ullal() {
   }, []);
 
   const galleryImages = [
-    { src: '/images/ullal/rooftop_1.jpg', className: 'gallery-large' },
-    { src: '/images/ullal/rooftop_2.jpg', className: 'gallery-tall' },
-    { src: '/images/ullal/rooftop_6.jpg', className: 'gallery-wide' },
-    { src: '/images/ullal/rooftop_9.jpg', className: 'gallery-standard' },
-    { src: '/images/ullal/rooftop_12.jpg', className: 'gallery-standard' },
-    { src: '/images/ullal/rooftop_3.jpg', className: 'gallery-standard' }
+    { src: '/images/ullal/video-cover.jpeg', className: 'gallery-large' },
+    { src: '/images/ullal/header.jpeg', className: 'gallery-tall' },
+    { src: '/images/ullal/rooftop_1.jpg', className: 'gallery-wide' },
+    { src: '/images/ullal/rooftop_2.jpg', className: 'gallery-standard' },
+    { src: '/images/ullal/rooftop_6.jpg', className: 'gallery-standard' },
+    { src: '/images/ullal/rooftop_9.jpg', className: 'gallery-standard' }
   ];
 
   const venuesData = [
@@ -34,7 +34,7 @@ function Ullal() {
       tag: 'Rooftop Venue',
       tagline: 'Serene rooftop escape blending lush greenery, ambient lighting, and open skies.',
       capacity: 'Up to 250 Guests',
-      image: '/images/ullal/rooftop_1.jpg', 
+      image: '/images/ullal/video-cover.jpeg', 
       videoSrc: '/images/ullal/video/rooftop-compressed.mp4', 
       detailLink: '#venue1-detail',
     }
@@ -45,7 +45,7 @@ function Ullal() {
       <Navbar logoText="Asthitva Rooftop" topBarText="Premium event venue at Ullal" phone="+91 81470 95583" />
       <Header 
         title="Asthitva Rooftop @ Ullal" 
-        bgImage="/images/ullal/rooftop_1.jpg" 
+        bgImage="/images/ullal/header.jpeg" 
         bgPosition="center 60%" 
       />
       <main>

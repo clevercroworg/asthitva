@@ -29,7 +29,7 @@ function TeakMeadows() {
       tag: 'Venue 1',
       tagline: 'Grand spaces and timeless celebrations with an expansive celebration lawn.',
       capacity: 'Up to 800 Guests',
-      image: '/images/teak-meadows/latest/covered-hall-lit.jpg',
+      image: '/images/teak-meadows/venue-1-cover.jpeg',
       videoId: 'FH85MIyHZVs',
       detailLink: '#venue1-detail',
     },
@@ -52,7 +52,7 @@ function TeakMeadows() {
       <Navbar logoText="Teak Meadows" topBarText="Premium event venue at Magadi Road" phone="+91 89047 68299" />
       <Header 
         title="Asthitva Teak Meadows" 
-        bgImage="/images/teak-meadows/IMG20251212184603.jpg"
+        bgImage="/images/teak-meadows/header.jpeg"
         bgPosition="center 60%" 
       />
       <main>
@@ -94,6 +94,7 @@ function TeakMeadows() {
               <Gallery 
                 venueName="venue1" 
                 images={[
+                  { src: '/images/teak-meadows/venue-1-cover.jpeg', className: 'gallery-standard' },
                   { src: '/images/teak-meadows/latest/covered-hall-lit.jpg', className: 'gallery-standard' },
                   { src: '/images/teak-meadows/latest/water-pathway.jpg', className: 'gallery-standard' },
                   { src: '/images/teak-meadows/latest/fairy-umbrellas.jpg', className: 'gallery-standard' },

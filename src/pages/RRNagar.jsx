@@ -29,7 +29,7 @@ function RRNagar() {
       tag: 'Venue 1',
       tagline: 'A spacious outdoor venue for grand celebrations with dedicated dining space.',
       capacity: 'Up to 1,000 Guests',
-      image: '/images/rr-nagar/venue-1/1.webp', 
+      image: '/images/rr-nagar/venue-1/video-cover.jpeg', 
       videoSrc: '/images/rr-nagar/venue-1/venue-1-compressed.mp4', 
       detailLink: '#venue1-detail',
     },
@@ -41,7 +41,7 @@ function RRNagar() {
       tag: 'Venue 2',
       tagline: 'Elegant space with roof, romantic moon lights, ambient lighting, and open sides.',
       capacity: 'Up to 700 Guests',
-      image: '/images/rr-nagar/venue-2/2.webp', 
+      image: '/images/rr-nagar/venue-2/video-cover.jpeg', 
       videoSrc: '/images/rr-nagar/venue-2/venue-2-compressed.mp4', 
       detailLink: '#venue2-detail',
     }
@@ -52,8 +52,8 @@ function RRNagar() {
       <Navbar logoText="RR Nagar" topBarText="Premium event venue at RR Nagar" phone="+91 95354 15379" />
       <Header 
         title="Asthitva The Venue @ RR Nagar" 
-        bgImage="/images/rr-nagar/venue-2/2.webp" 
-        bgPosition="center 65%" 
+        bgImage="/images/rr-nagar/header.jpeg" 
+        bgPosition="center 60%" 
       />
       <main>
         {/* Dual Venue Comparison Showcase */}
@@ -94,6 +94,7 @@ function RRNagar() {
               <Gallery 
                 venueName="venue1" 
                 images={[
+                  { src: '/images/rr-nagar/venue-1/video-cover.jpeg', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-1/1.webp', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-1/2.webp', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-1/3.webp', className: 'gallery-standard' },
@@ -116,6 +117,7 @@ function RRNagar() {
               <Gallery 
                 venueName="venue2" 
                 images={[
+                  { src: '/images/rr-nagar/venue-2/video-cover.jpeg', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-2/1.webp', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-2/2.webp', className: 'gallery-standard' },
                   { src: '/images/rr-nagar/venue-2/3.webp', className: 'gallery-standard' },
