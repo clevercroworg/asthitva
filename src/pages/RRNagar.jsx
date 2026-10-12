@@ -28,7 +28,7 @@ function RRNagar() {
       typeBadge: 'Open Lawn',
       tag: 'Venue 1',
       tagline: 'A spacious outdoor venue for grand celebrations with dedicated dining space.',
-      capacity: 'Up to 1,000 Guests',
+      capacity: 'Up to 700 Guests',
       image: '/images/rr-nagar/venue-1/video-cover.jpeg', 
       videoSrc: '/images/rr-nagar/venue-1/venue-1-compressed.mp4', 
       detailLink: '#venue1-detail',

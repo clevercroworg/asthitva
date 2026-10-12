@@ -7,16 +7,16 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       tagline: 'Grand spaces and timeless celebrations with a premium open lawn',
       capacity: {
         venue: 'Up to 800 Guests (Floating)',
-        dining: '200 - 300 Guests (Seating)',
+        dining: '200 Guests (Seating)',
         carpet: 'Premium Open Lawn',
-        diningSeating: '200 - 300 Guests',
+        diningSeating: '200 Guests',
       },
       inclusions: [
         { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: 'Ample Parking Available', icon: 'parking' },
         { name: 'General & Decorative Lighting', icon: 'light' },
         { name: '100% Power Backup', icon: 'power' },
-        { name: 'DJ Allowed', icon: 'audio' },
         { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
@@ -33,16 +33,16 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       tagline: 'Grand spaces and timeless celebrations with elegant covered space & lawn',
       capacity: {
         venue: 'Up to 600 Guests (Floating)',
-        dining: '150 - 200 Guests (Seating)',
+        dining: '120 Guests (Seating)',
         carpet: 'Premium Open Lawn',
-        diningSeating: '150 - 200 Guests',
+        diningSeating: '120 Guests',
       },
       inclusions: [
         { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: 'Ample Parking Available', icon: 'parking' },
         { name: 'General & Decorative Lighting', icon: 'light' },
         { name: '100% Power Backup', icon: 'power' },
-        { name: 'DJ Allowed', icon: 'audio' },
         { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
@@ -112,7 +112,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       tagline: 'An elegant rooftop venue with soft moon lighting and open-air sides',
       capacity: {
         venue: 'Up to 250 Guests (Floating)',
-        dining: '75 Guests (Dining)',
+        dining: '90 Guests (Dining)',
         carpet: 'Rooftop venue',
         diningSeating: 'Flexible',
       },
@@ -140,17 +140,17 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: 'A spacious outdoor venue for grand celebrations',
       capacity: {
-        venue: '1,000 Guests (Floating)',
-        dining: '700 Guests (Seating)',
+        venue: 'Up to 700 Guests (Floating)',
+        dining: '190 Guests (Dining at once)',
         carpet: 'Premium Open Lawn',
-        diningSeating: 'Dedicated Dining Space',
+        diningSeating: '190 Guests',
       },
       inclusions: [
-        { name: '9 Guest Rooms Available', icon: 'room' },
+        { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: 'Ample Parking Facility', icon: 'parking' },
         { name: 'General & Decorative Lighting', icon: 'light' },
         { name: '100% Power Backup', icon: 'power' },
-        { name: 'DJ Allowed', icon: 'audio' },
         { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
@@ -167,16 +167,16 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       tagline: 'Premium open lawn event space for every celebration',
       capacity: {
         venue: 'Up to 700 Guests (Floating)',
-        dining: '150 - 250 Guests (Seating)',
+        dining: '170 Guests (Dining at once)',
         carpet: 'Premium Open Lawn',
-        diningSeating: '150 - 250 Guests',
+        diningSeating: '170 Guests',
       },
       inclusions: [
         { name: '2 Fully Furnished Rooms', icon: 'room' },
+        { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: 'Ample Parking Available', icon: 'parking' },
         { name: 'General & Decorative Lighting', icon: 'light' },
         { name: '100% Power Backup', icon: 'power' },
-        { name: 'DJ Allowed', icon: 'audio' },
         { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
       ],
       timing: {
@@ -196,9 +196,9 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       tagline: 'Charming semi-outdoor venue with warm ambient lighting, elegant structures, and lush greenery',
       capacity: {
         venue: 'Up to 600 Guests (Floating)',
-        dining: '150 - 250 Guests (Dining)',
+        dining: '150 Guests (Dining)',
         carpet: 'Spacious celebration space with covered roofing',
-        diningSeating: '150 - 200 guests',
+        diningSeating: '150 Guests',
       },
       inclusions: [
         { name: '2 Fully Furnished Rooms', icon: 'room' },
@@ -231,10 +231,10 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
       },
       inclusions: [
         { name: '3 Distinct Event Venues', icon: 'chair' },
-        { name: 'Furnished Bridal & Groom Suites', icon: 'room' },
+        { name: '2 Furnished Bridal & Groom Suites', icon: 'room' },
         { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
         { name: '100% Power Back Up', icon: 'power' },
-        { name: 'DJ & Sound System Allowed', icon: 'audio' },
+        { name: 'Speaker with Mic / Audio Support', icon: 'audio' },
         { name: 'Expansive Parking Area', icon: 'parking' },
       ],
       timing: {
