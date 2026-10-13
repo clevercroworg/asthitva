@@ -102,14 +102,14 @@
 /* --- Hero (Compact Header Banner) --- */
 .home-hero {
   position: relative;
-  min-height: 44vh;
-  padding: 3.5rem 2rem 2.8rem;
+  min-height: 52vh;
+  padding: 4.5rem 2rem 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url('/images/home-header.jpeg');
   background-size: cover;
-  background-position: center 50%;
+  background-position: center 42%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -119,8 +119,8 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(30, 15, 5, 0.72) 100%
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(25, 12, 5, 0.58) 100%
   );
   z-index: 1;
 }
@@ -218,10 +218,27 @@
   flex-shrink: 0;
 }
 
+@media (min-width: 1200px) {
+  .home-hero {
+    min-height: 56vh;
+    padding: 5rem 2rem 4rem;
+    background-position: center 38%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-hero {
+    min-height: 58vh;
+    padding: 5.5rem 2rem 4.5rem;
+    background-position: center 36%;
+  }
+}
+
 @media (max-width: 768px) {
   .home-hero {
     padding: 2.8rem 1.5rem 2.2rem;
     min-height: 38vh;
+    background-position: center 45%;
     background-attachment: scroll;
   }
   .home-hero-title { font-size: 3rem; }
