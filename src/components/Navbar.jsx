@@ -4,9 +4,9 @@ import './Navbar.css';
 
 const venuePhoneMap = {
   ullal: {
-    tel: '+918147095583',
-    display: '81470 95583',
-    full: '+91 81470 95583',
+    tel: '+918904768299',
+    display: '89047 68299',
+    full: '+91 89047 68299',
   },
   rrnagar: {
     tel: '+919535415379',

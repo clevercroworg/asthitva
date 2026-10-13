@@ -94,7 +94,7 @@ const Info = ({ page = 'teakmeadows' }) => {
                 {isLaBendicion || isFortView ? (
                   <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : isUllal ? (
-                  <p><a href="tel:+918147095583" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 81470 95583</a></p>
+                  <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : isRRNagar ? (
                   <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
                 ) : (

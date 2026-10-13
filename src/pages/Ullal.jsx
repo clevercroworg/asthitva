@@ -42,7 +42,7 @@ function Ullal() {
 
   return (
     <div className="app">
-      <Navbar logoText="Asthitva Rooftop" topBarText="Premium event venue at Ullal" phone="+91 81470 95583" />
+      <Navbar logoText="Asthitva Rooftop" topBarText="Premium event venue at Ullal" phone="+91 89047 68299" />
       <Header 
         title="Asthitva Rooftop @ Ullal" 
         bgImage="/images/ullal/header.jpeg" 

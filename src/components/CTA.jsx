@@ -20,8 +20,8 @@ const CTA = ({ page = 'teakmeadows' }) => {
         
         <div className="cta-premium-actions">
           {isUllal ? (
-            <a href="tel:+918147095583" className="btn-cta-primary">
-              <span className="icon">📞</span> +91 81470 95583
+            <a href="tel:+918904768299" className="btn-cta-primary">
+              <span className="icon">📞</span> +91 89047 68299
             </a>
           ) : isRRNagar ? (
             <a href="tel:+919535415379" className="btn-cta-primary">
