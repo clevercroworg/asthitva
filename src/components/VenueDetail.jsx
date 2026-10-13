@@ -205,7 +205,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         { name: 'All Furniture with Fabric', icon: 'chair' },
         { name: 'General & Decorative Lighting', icon: 'light' },
         { name: '100% Power Backup', icon: 'power' },
-        { name: 'Speaker with Mic / Audio Support', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
         { name: 'Ample Parking Available', icon: 'parking' },
       ],
       timing: {
@@ -234,7 +234,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
         { name: '2 Furnished Bridal & Groom Suites', icon: 'room' },
         { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
         { name: '100% Power Back Up', icon: 'power' },
-        { name: 'Speaker with Mic / Audio Support', icon: 'audio' },
+        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
         { name: 'Expansive Parking Area', icon: 'parking' },
       ],
       timing: {
