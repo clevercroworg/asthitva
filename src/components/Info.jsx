@@ -5,8 +5,8 @@ const Info = ({ page = 'teakmeadows' }) => {
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
-  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion';
-  const isFortView = page === 'fortview' || page === 'fort-view';
+  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion' || page === 'sahakar-nagar';
+  const isFortView = page === 'fortview' || page === 'fort-view' || page === 'electronic-city';
 
   return (
     <section id="location" className="section info-map-section">

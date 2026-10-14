@@ -7,8 +7,8 @@ const allVenues = [
   { key: 'muddainapalya', name: 'Asthitva The Venue', sub: 'Muddainapalya', path: '/muddainapalya' },
   { key: 'ullal', name: 'Asthitva Rooftop', sub: 'Ullal', path: '/ullal' },
   { key: 'rrnagar', name: 'Asthitva RR Nagar', sub: 'RR Nagar', path: '/rrnagar' },
-  { key: 'labendicion', name: 'Asthitva La Bendicion', sub: 'Sahakar Nagar', path: '/la-bendicion' },
-  { key: 'fortview', name: 'Asthitva Fort View', sub: 'Electronic City', path: '/fort-view' },
+  { key: 'labendicion', name: 'Asthitva La Bendicion', sub: 'Sahakar Nagar', path: '/sahakar-nagar' },
+  { key: 'fortview', name: 'Asthitva Fort View', sub: 'Electronic City', path: '/electronic-city' },
 ];
 
 const contactData = {

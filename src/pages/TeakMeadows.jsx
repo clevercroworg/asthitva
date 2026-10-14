@@ -51,7 +51,7 @@ function TeakMeadows() {
     <div className="app">
       <Navbar logoText="Teak Meadows" topBarText="Premium event venue at Magadi Road" phone="+91 89047 68299" />
       <Header 
-        title="Asthitva Teak Meadows" 
+        title="Asthitva Teak Meadows @ Magadi Road" 
         bgImage="/images/teak-meadows/header.jpeg"
         bgPosition="center 60%" 
       />

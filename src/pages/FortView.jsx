@@ -29,7 +29,7 @@ function FortView() {
       canonicalEl.rel = 'canonical';
       document.head.appendChild(canonicalEl);
     }
-    canonicalEl.href = "https://asthitva.in/fort-view";
+    canonicalEl.href = "https://asthitva.in/electronic-city";
   }, []);
 
   const galleryImages = [
@@ -57,7 +57,7 @@ function FortView() {
         phone="+91 89047 68299" 
       />
       <Header 
-        title="Asthitva Fort View — 3 Venues" 
+        title="Asthitva Fort View @ Electronic City" 
         bgImage="/images/fort-view/3.webp" 
       />
       

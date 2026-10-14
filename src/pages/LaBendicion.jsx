@@ -29,7 +29,7 @@ function LaBendicion() {
       canonicalEl.rel = 'canonical';
       document.head.appendChild(canonicalEl);
     }
-    canonicalEl.href = "https://asthitva.in/la-bendicion";
+    canonicalEl.href = "https://asthitva.in/sahakar-nagar";
   }, []);
 
   const galleryImages = [

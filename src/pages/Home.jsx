@@ -48,7 +48,7 @@ const venues = [
     location: 'Sahakar Nagar',
     capacity: 'Up to 600 Guests',
     image: '/images/la-bendicion/1.webp',
-    path: '/la-bendicion',
+    path: '/sahakar-nagar',
     tag: '1 Venue',
   },
   {
@@ -57,7 +57,7 @@ const venues = [
     location: 'Near Electronic City',
     capacity: '3 Venues • Up to 1500 Guests',
     image: '/images/fort-view/1.webp',
-    path: '/fort-view',
+    path: '/electronic-city',
     tag: '3 Venues • Coming Soon',
   },
 ];

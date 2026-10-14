@@ -5,7 +5,7 @@ const CTA = ({ page = 'teakmeadows' }) => {
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
-  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion';
+  const isLaBendicion = page === 'labendicion' || page === 'la-bendicion' || page === 'sahakar-nagar';
 
   return (
     <section id="contact" className="cta-premium-section">

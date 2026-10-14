@@ -57,7 +57,7 @@ const resolvePhone = (phoneProp, pathname) => {
   if (path.includes('muddainapalya')) return venuePhoneMap.muddainapalya;
   if (path.includes('magadi-road') || path.includes('teak-meadows')) return venuePhoneMap.magadi;
   if (path.includes('bendicion') || path.includes('sahakar-nagar')) return venuePhoneMap.labendicion;
-  if (path.includes('fort-view') || path.includes('fortview')) return venuePhoneMap.fortview;
+  if (path.includes('fort-view') || path.includes('fortview') || path.includes('electronic-city')) return venuePhoneMap.fortview;
   return venuePhoneMap.default;
 };
 
@@ -96,8 +96,8 @@ const Navbar = ({
           <li><Link to="/ullal">Ullal</Link></li>
           <li><Link to="/rrnagar">RR Nagar</Link></li>
           <li><Link to="/magadi-road">Magadi Road</Link></li>
-          <li><Link to="/la-bendicion">Sahakar Nagar</Link></li>
-          <li><Link to="/fort-view">Electronic City</Link></li>
+          <li><Link to="/sahakar-nagar">Sahakar Nagar</Link></li>
+          <li><Link to="/electronic-city">Electronic City</Link></li>
           <li><a href={`tel:${phoneConfig.tel}`} className="nav-cta">📞 {phoneConfig.display}</a></li>
         </ul>
 

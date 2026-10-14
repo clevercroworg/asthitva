@@ -23,12 +23,16 @@ function App() {
       <Route path="/muddainapalya" element={<Muddainapalya />} />
       <Route path="/ullal" element={<Ullal />} />
       <Route path="/rrnagar" element={<RRNagar />} />
-      <Route path="/la-bendicion" element={<LaBendicion />} />
-      <Route path="/sahakar-nagar" element={<Navigate replace to="/la-bendicion" />} />
-      <Route path="/asthitva-la-bendicion" element={<Navigate replace to="/la-bendicion" />} />
-      <Route path="/fort-view" element={<FortView />} />
-      <Route path="/electronic-city" element={<Navigate replace to="/fort-view" />} />
-      <Route path="/asthitva-fort-view" element={<Navigate replace to="/fort-view" />} />
+      <Route path="/sahakar-nagar" element={<LaBendicion />} />
+      <Route path="/la-bendicion" element={<Navigate replace to="/sahakar-nagar" />} />
+      <Route path="/la-bendicion/*" element={<Navigate replace to="/sahakar-nagar" />} />
+      <Route path="/asthitva-la-bendicion" element={<Navigate replace to="/sahakar-nagar" />} />
+      <Route path="/asthitva-la-bendicion/*" element={<Navigate replace to="/sahakar-nagar" />} />
+      <Route path="/electronic-city" element={<FortView />} />
+      <Route path="/fort-view" element={<Navigate replace to="/electronic-city" />} />
+      <Route path="/fort-view/*" element={<Navigate replace to="/electronic-city" />} />
+      <Route path="/asthitva-fort-view" element={<Navigate replace to="/electronic-city" />} />
+      <Route path="/asthitva-fort-view/*" element={<Navigate replace to="/electronic-city" />} />
 
       {/* Blog Pages */}
       <Route path="/blog" element={<BlogList />} />

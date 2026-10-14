@@ -255,9 +255,9 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     ? ullalData[venueId]
     : page === 'rrnagar'
     ? rrNagarData[venueId]
-    : (page === 'labendicion' || page === 'la-bendicion')
+    : (page === 'labendicion' || page === 'la-bendicion' || page === 'sahakar-nagar')
     ? laBendicionData[venueId]
-    : (page === 'fortview' || page === 'fort-view')
+    : (page === 'fortview' || page === 'fort-view' || page === 'electronic-city')
     ? fortViewData[venueId]
     : venueData[venueId];
 

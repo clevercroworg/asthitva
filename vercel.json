@@ -11,7 +11,15 @@
     { "source": "/asthitva-teak-meadows", "destination": "/magadi-road", "permanent": true },
     { "source": "/asthitva-teak-meadows/:path*", "destination": "/magadi-road", "permanent": true },
     { "source": "/asthitva-cozy-corner", "destination": "/", "permanent": true },
-    { "source": "/asthitva-cozy-corner/:path*", "destination": "/", "permanent": true }
+    { "source": "/asthitva-cozy-corner/:path*", "destination": "/", "permanent": true },
+    { "source": "/la-bendicion", "destination": "/sahakar-nagar", "permanent": true },
+    { "source": "/la-bendicion/:path*", "destination": "/sahakar-nagar", "permanent": true },
+    { "source": "/asthitva-la-bendicion", "destination": "/sahakar-nagar", "permanent": true },
+    { "source": "/asthitva-la-bendicion/:path*", "destination": "/sahakar-nagar", "permanent": true },
+    { "source": "/fort-view", "destination": "/electronic-city", "permanent": true },
+    { "source": "/fort-view/:path*", "destination": "/electronic-city", "permanent": true },
+    { "source": "/asthitva-fort-view", "destination": "/electronic-city", "permanent": true },
+    { "source": "/asthitva-fort-view/:path*", "destination": "/electronic-city", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
