@@ -16,7 +16,7 @@ const contactData = {
     brand: 'Teak Meadows',
     tagline: 'By Asthitva @ Magadi Road, Bengaluru',
     address: '63/1, Kachohalli Road, Opp. HP Petrol Bunk, Kempegowda Nagar, Byadarahalli, Bengaluru 560091',
-    phones: ['+91 89047 68299', '+91 9513765355'],
+    phones: ['+91 95354 15379'],
     copyright: 'Asthitva Teak Meadows',
   },
   home: {

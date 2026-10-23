@@ -2,6 +2,7 @@ import React from 'react';
 import './Info.css';
 
 const Info = ({ page = 'teakmeadows' }) => {
+  const isTeakMeadows = page === 'teakmeadows' || page === 'magadi-road' || page === 'magadi';
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
@@ -91,12 +92,14 @@ const Info = ({ page = 'teakmeadows' }) => {
               </div>
               <div>
                 <h4>Contact</h4>
-                {isLaBendicion || isFortView ? (
+                {isTeakMeadows ? (
+                  <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 95354 15379</a></p>
+                ) : isLaBendicion || isFortView ? (
                   <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : isUllal ? (
                   <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : isRRNagar ? (
-                  <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9535415379</a></p>
+                  <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 95354 15379</a></p>
                 ) : (
                   <>
                     <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>

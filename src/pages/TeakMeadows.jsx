@@ -49,7 +49,7 @@ function TeakMeadows() {
 
   return (
     <div className="app">
-      <Navbar logoText="Teak Meadows" topBarText="Premium event venue at Magadi Road" phone="+91 89047 68299" />
+      <Navbar logoText="Teak Meadows" topBarText="Premium event venue at Magadi Road" phone="+91 95354 15379" />
       <Header 
         title="Asthitva Teak Meadows @ Magadi Road" 
         bgImage="/images/teak-meadows/header.jpeg"

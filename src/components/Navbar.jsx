@@ -19,9 +19,9 @@ const venuePhoneMap = {
     full: '+91 89047 68299',
   },
   magadi: {
-    tel: '+918904768299',
-    display: '89047 68299',
-    full: '+91 89047 68299',
+    tel: '+919535415379',
+    display: '95354 15379',
+    full: '+91 95354 15379',
   },
   labendicion: {
     tel: '+918904768299',

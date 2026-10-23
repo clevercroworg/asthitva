@@ -2,6 +2,7 @@ import React from 'react';
 import './CTA.css';
 
 const CTA = ({ page = 'teakmeadows' }) => {
+  const isTeakMeadows = page === 'teakmeadows' || page === 'magadi-road' || page === 'magadi';
   const isMuddainapalya = page === 'muddainapalya';
   const isUllal = page === 'ullal';
   const isRRNagar = page === 'rrnagar';
@@ -19,13 +20,17 @@ const CTA = ({ page = 'teakmeadows' }) => {
         </p>
         
         <div className="cta-premium-actions">
-          {isUllal ? (
+          {isTeakMeadows ? (
+            <a href="tel:+919535415379" className="btn-cta-primary">
+              <span className="icon">📞</span> +91 95354 15379
+            </a>
+          ) : isUllal ? (
             <a href="tel:+918904768299" className="btn-cta-primary">
               <span className="icon">📞</span> +91 89047 68299
             </a>
           ) : isRRNagar ? (
             <a href="tel:+919535415379" className="btn-cta-primary">
-              <span className="icon">📞</span> +91 9535415379
+              <span className="icon">📞</span> +91 95354 15379
             </a>
           ) : (
             <>
@@ -34,7 +39,7 @@ const CTA = ({ page = 'teakmeadows' }) => {
               </a>
               {isMuddainapalya && (
                 <a href="tel:+919535415379" className="btn-cta-primary" style={{ marginLeft: '1rem' }}>
-                  <span className="icon">📞</span> +91 9535415379
+                  <span className="icon">📞</span> +91 95354 15379
                 </a>
               )}
             </>
