@@ -100,13 +100,10 @@ const Info = ({ page = 'teakmeadows' }) => {
                   <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : isRRNagar ? (
                   <p><a href="tel:+919535415379" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 95354 15379</a></p>
+                ) : isMuddainapalya ? (
+                  <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 ) : (
-                  <>
-                    <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
-                    {!isMuddainapalya && (
-                      <p><a href="tel:+919513765355" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 9513765355</a></p>
-                    )}
-                  </>
+                  <p><a href="tel:+918904768299" style={{ color: 'var(--primary)', fontWeight: 600 }}>+91 89047 68299</a></p>
                 )}
               </div>
             </div>
