@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
-import VenueVideo from '../components/VenueVideo';
 import VenueDetail from '../components/VenueDetail';
 import Gallery from '../components/Gallery';
 import Info from '../components/Info';
@@ -10,8 +9,11 @@ import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingChat from '../components/FloatingChat';
+import VenueShowcase from '../components/VenueShowcase';
 
 function FortView() {
+  const [activeVenue, setActiveVenue] = useState(1);
+
   useEffect(() => {
     document.title = "Asthitva Fort View | 3 Venues (Coming Soon) | Electronic City, Bengaluru";
 
@@ -21,7 +23,7 @@ function FortView() {
       metaDescriptionEl.name = 'description';
       document.head.appendChild(metaDescriptionEl);
     }
-    metaDescriptionEl.content = "Discover Asthitva Fort View near Electronic City / Hulimangala, Bengaluru. A grand 3-venue destination featuring celebration lawns, dining pavilions, and dedicated parking. Coming Soon!";
+    metaDescriptionEl.content = "Discover Asthitva Fort View near Electronic City / Hulimangala, Bengaluru. Three event spaces — Venue 1, Venue 2 and Pool View — for weddings, receptions, parties and celebrations. Coming Soon!";
 
     let canonicalEl = document.querySelector('link[rel="canonical"]');
     if (!canonicalEl) {
@@ -32,22 +34,47 @@ function FortView() {
     canonicalEl.href = "https://asthitva.in/electronic-city";
   }, []);
 
-  const galleryImages = [
-    { src: '/images/fort-view/1.webp', className: 'gallery-large' },
-    { src: '/images/fort-view/2.webp', className: 'gallery-wide' },
-    { src: '/images/fort-view/3.webp', className: 'gallery-tall' },
-  ];
-
+  // Placeholder photos until the venue photos and Google Photos links are shared
   const venuesData = [
     {
       id: 1,
-      title: 'Asthitva Fort View (3 Venues Complex)',
-      tagline: 'A premier 3-venue celebration destination with grand lawns, covered dining pavilions, and expansive parking.',
-      capacity: 'Up to 1,500 Guests (Combined Across 3 Venues)',
+      title: 'Venue 1',
+      name: 'Venue 1',
+      tag: 'Venue 1',
+      tagline: 'Grand celebration venue at Asthitva Fort View.',
+      capacity: 'From ₹70,000 + GST',
       image: '/images/fort-view/1.webp',
-      detailLink: '#venue1-detail',
-    }
+      venueId: 'venue1',
+      gallery: [{ src: '/images/fort-view/1.webp', className: 'gallery-standard' }],
+      driveLink: null,
+    },
+    {
+      id: 2,
+      title: 'Venue 2',
+      name: 'Venue 2',
+      tag: 'Venue 2',
+      tagline: 'Elegant celebration venue at Asthitva Fort View.',
+      capacity: 'From ₹50,000 + GST',
+      image: '/images/fort-view/2.webp',
+      venueId: 'venue2',
+      gallery: [{ src: '/images/fort-view/2.webp', className: 'gallery-standard' }],
+      driveLink: null,
+    },
+    {
+      id: 3,
+      title: 'Pool View',
+      name: 'Pool View',
+      tag: 'Pool View',
+      tagline: 'Poolside celebration space at Asthitva Fort View.',
+      capacity: 'From ₹35,000 + GST',
+      image: '/images/fort-view/3.webp',
+      venueId: 'poolview',
+      gallery: [{ src: '/images/fort-view/3.webp', className: 'gallery-standard' }],
+      driveLink: null,
+    },
   ];
+
+  const active = venuesData.find((v) => v.id === activeVenue);
 
   return (
     <div className="app">
@@ -62,35 +89,38 @@ function FortView() {
       />
       
       <main>
-        <div style={{ textAlign: 'center', margin: '3rem 0 1rem 0' }}>
-          <span className="overline" style={{ 
-            color: 'var(--primary)', 
-            fontWeight: 700, 
-            letterSpacing: '0.15em', 
-            textTransform: 'uppercase',
-            background: 'var(--primary-ultra-light)',
-            padding: '6px 16px',
-            borderRadius: '20px',
-            fontSize: '0.85rem'
-          }}>
-            Grand Launch • Coming Soon
-          </span>
-          <h2 className="section-title" style={{ marginTop: '1rem' }}>Architectural Masterplan & Venues</h2>
-          <p style={{ color: '#666', maxWidth: '650px', margin: '0.5rem auto 2rem auto', fontSize: '1rem', lineHeight: '1.6' }}>
-            Sprawling celebration complex featuring 3 distinct venue zones, dedicated dining pavilions, bridal suites, and a massive parking area.
-          </p>
+        {/* Venue 1 / Venue 2 / Pool View Showcase */}
+        <VenueShowcase 
+          venues={venuesData} 
+          activeVenue={activeVenue} 
+          onSelectVenue={setActiveVenue} 
+        />
+
+        {/* Deep-Dive Interactive Switcher */}
+        <div id="venue-deepdive-section" className="venue-deepdive-header">
+          <div className="venue-switcher-bar">
+            {venuesData.map((v) => (
+              <button 
+                key={v.id}
+                type="button"
+                className={`venue-switcher-tab ${activeVenue === v.id ? 'active' : ''}`}
+                onClick={() => setActiveVenue(v.id)}
+                aria-label={`View ${v.title} Details`}
+              >
+                {v.title} Details
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* --- Venue Section --- */}
-        <section style={{ marginBottom: '4rem' }}>
-          <VenueVideo venue={venuesData[0]} hideVideoText={true} />
-          <VenueDetail venueId="venue1" venueName="Asthitva Fort View" page="fortview" />
-          <div id="venue1-detail"></div>
-          <div id="venue1-gallery">
+        {/* --- Active Venue Section --- */}
+        <section key={active.id} className="venue-detail-block" style={{ marginBottom: '4rem' }}>
+          <VenueDetail venueId={active.venueId} venueName={active.title} page="fortview" />
+          <div id={`${active.venueId}-gallery`}>
             <Gallery 
-              venueName="Asthitva Fort View" 
-              images={galleryImages}
-              driveLink="https://www.google.com/maps?q=12.8361246,77.6327969&z=17&hl=en"
+              venueName={active.venueId} 
+              images={active.gallery}
+              driveLink={active.driveLink}
             />
           </div>
         </section>

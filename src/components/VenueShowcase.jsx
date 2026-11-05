@@ -59,11 +59,11 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
     if (isUserInteracting || !isInView) return;
 
     const timer = setInterval(() => {
-      setCarouselVenue((prev) => (prev === 1 ? 2 : 1));
+      setCarouselVenue((prev) => (prev % venues.length) + 1);
     }, 2000);
 
     return () => clearInterval(timer);
-  }, [isUserInteracting, isInView]);
+  }, [isUserInteracting, isInView, venues.length]);
 
   // Smoothly center the active carousel card on mobile WITHOUT pulling the window scroll
   useEffect(() => {
@@ -101,13 +101,13 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
   const handlePrev = (e) => {
     e.stopPropagation();
     pauseAutoPlayTemporarily();
-    setCarouselVenue(1);
+    setCarouselVenue((prev) => (prev > 1 ? prev - 1 : venues.length));
   };
 
   const handleNext = (e) => {
     e.stopPropagation();
     pauseAutoPlayTemporarily();
-    setCarouselVenue(2);
+    setCarouselVenue((prev) => (prev % venues.length) + 1);
   };
 
   const handleDotClick = (venueId, e) => {
@@ -119,8 +119,8 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
   return (
     <section className="venue-showcase-section" ref={sectionRef}>
       <div className="venue-showcase-header">
-        <span className="venue-showcase-overline">2 Premier Venues</span>
-        <h2 className="section-title">Venue 1 | Venue 2</h2>
+        <span className="venue-showcase-overline">{venues.length} Premier Venues</span>
+        <h2 className="section-title">{venues.map((v) => v.title).join(' | ')}</h2>
       </div>
 
       {/* Comparison Grid & Controls */}
@@ -131,7 +131,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
         onTouchStart={pauseAutoPlayTemporarily}
         onTouchEnd={pauseAutoPlayTemporarily}
       >
-        <div className="venue-showcase-grid" ref={gridRef}>
+        <div className="venue-showcase-grid" ref={gridRef} style={{ gridTemplateColumns: `repeat(${venues.length}, 1fr)` }}>
           {venues.map((venue) => {
             const isCarouselActive = carouselVenue === venue.id;
             const isDetailsActive = activeVenue === venue.id;
@@ -226,7 +226,7 @@ const VenueShowcase = ({ venues, activeVenue, onSelectVenue }) => {
 
           <button 
             type="button" 
-            className={`showcase-nav-arrow ${carouselVenue === 2 ? 'arrow-active' : ''}`}
+            className={`showcase-nav-arrow ${carouselVenue === venues.length ? 'arrow-active' : ''}`}
             onClick={handleNext}
             aria-label="Next Venue"
           >

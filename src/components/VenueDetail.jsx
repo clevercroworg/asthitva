@@ -220,30 +220,60 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     },
   };
 
+  const fortViewInclusions = [
+    { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
+    { name: '100% Power Back Up', icon: 'power' },
+    { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
+    { name: 'Expansive Parking Area', icon: 'parking' },
+  ];
+
   const fortViewData = {
     venue1: {
-      tagline: '3 Distinct Venues with Sprawling Party Lawns, Dining Pavilions & Expansive Parking',
+      tagline: 'Grand celebration venue at Asthitva Fort View',
       capacity: {
-        venue: 'Up to 1,500 Guests (Across 3 Venues)',
-        dining: '400 - 600 Guests (Seating)',
-        carpet: 'Sprawling Celebration Complex (Lawn + Covered)',
-        diningSeating: 'Dedicated Banquet & Dining Areas',
+        venue: 'Contact us for details',
+        dining: 'Contact us for details',
       },
-      inclusions: [
-        { name: '3 Distinct Event Venues', icon: 'chair' },
-        { name: '2 Furnished Bridal & Groom Suites', icon: 'room' },
-        { name: 'Warm Ambient & Decorative Lighting', icon: 'light' },
-        { name: '100% Power Back Up', icon: 'power' },
-        { name: 'Outside Catering & Decorators Allowed', icon: 'chair' },
-        { name: 'Expansive Parking Area', icon: 'parking' },
-      ],
+      inclusions: fortViewInclusions,
       timing: {
         title: 'Timing and Cost',
         slots: [
-          { label: 'Day (6 AM – 3 PM)', price: 'Inquire for Offers' },
-          { label: 'Evening (3:30 PM – 12 AM)', price: 'Inquire for Offers' },
-          { label: '18 Hours (6 AM – 12 AM)', price: 'Inquire for Offers' },
-          { label: '24 Hours (3 PM – 3 PM)', price: 'Inquire for Offers' },
+          { label: 'Day (6 AM – 3 PM)', price: '₹70,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹75,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹1,10,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,30,000 + GST' },
+        ],
+      },
+    },
+    venue2: {
+      tagline: 'Elegant celebration venue at Asthitva Fort View',
+      capacity: {
+        venue: 'Contact us for details',
+        dining: 'Contact us for details',
+      },
+      inclusions: fortViewInclusions,
+      timing: {
+        title: 'Timing and Cost',
+        slots: [
+          { label: 'Day (6 AM – 3 PM)', price: '₹50,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹55,000 + GST' },
+          { label: '18 Hours (6 AM – 12 AM)', price: '₹90,000 + GST' },
+          { label: '24 Hours (3 PM – 3 PM)', price: '₹1,00,000 + GST' },
+        ],
+      },
+    },
+    poolview: {
+      tagline: 'Poolside celebration space at Asthitva Fort View',
+      capacity: {
+        venue: 'Contact us for details',
+        dining: 'Contact us for details',
+      },
+      inclusions: fortViewInclusions,
+      timing: {
+        title: 'Timing and Cost',
+        slots: [
+          { label: 'Day (6 AM – 3 PM)', price: '₹35,000 + GST' },
+          { label: 'Evening (3:30 PM – 12 AM)', price: '₹40,000 + GST' },
         ],
       },
     },

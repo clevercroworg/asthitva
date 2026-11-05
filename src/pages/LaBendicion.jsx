@@ -50,7 +50,7 @@ function LaBendicion() {
       tag: 'Premier Venue',
       tagline: 'Charming semi-outdoor venue blending warm ambient lighting, elegant structures, and lush greenery.',
       capacity: 'Up to 600 Guests',
-      image: '/images/la-bendicion/1.webp',
+      image: '/images/la-bendicion/gallery-4.webp',
       videoSrc: '/images/la-bendicion/video/venue-compressed.mp4',
       objectFit: 'contain',
       detailLink: '#venue1-detail',
