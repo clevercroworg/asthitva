@@ -231,8 +231,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue1: {
       tagline: 'Grand celebration venue at Asthitva Fort View',
       capacity: {
-        venue: 'Contact us for details',
-        dining: 'Contact us for details',
+        venue: 'Up to 600 Guests (Floating)',
+        dining: '150 Guests (Dining)',
       },
       inclusions: fortViewInclusions,
       timing: {
@@ -248,8 +248,8 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     venue2: {
       tagline: 'Elegant celebration venue at Asthitva Fort View',
       capacity: {
-        venue: 'Contact us for details',
-        dining: 'Contact us for details',
+        venue: 'Up to 300 Guests (Floating)',
+        dining: '100 Guests (Dining)',
       },
       inclusions: fortViewInclusions,
       timing: {
@@ -265,8 +265,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
     poolview: {
       tagline: 'Poolside celebration space at Asthitva Fort View',
       capacity: {
-        venue: 'Contact us for details',
-        dining: 'Contact us for details',
+        venue: 'Up to 100 Guests (Floating)',
       },
       inclusions: fortViewInclusions,
       timing: {
@@ -394,6 +393,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
                 </div>
               </div>
 
+              {data.capacity.dining && (
               <div className="capacity-detail-card highlighted">
                 <div className="capacity-detail-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
@@ -405,6 +405,7 @@ const VenueDetail = ({ venueId, venueName, page = 'teakmeadows' }) => {
                   <p>{data.capacity.dining}</p>
                 </div>
               </div>
+              )}
             </div>
           </div>
 
