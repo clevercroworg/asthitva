@@ -33,9 +33,12 @@ function LaBendicion() {
   }, []);
 
   const galleryImages = [
-    { src: '/images/la-bendicion/1.webp', className: 'gallery-large' },
-    { src: '/images/la-bendicion/2.webp', className: 'gallery-tall' },
-    { src: '/images/la-bendicion/3.webp', className: 'gallery-wide' },
+    { src: '/images/la-bendicion/gallery-1.webp', className: 'gallery-standard' },
+    { src: '/images/la-bendicion/gallery-2.webp', className: 'gallery-standard' },
+    { src: '/images/la-bendicion/gallery-3.webp', className: 'gallery-standard' },
+    { src: '/images/la-bendicion/gallery-4.webp', className: 'gallery-standard' },
+    { src: '/images/la-bendicion/gallery-5.webp', className: 'gallery-standard' },
+    { src: '/images/la-bendicion/gallery-6.webp', className: 'gallery-standard' },
   ];
 
   const venuesData = [
