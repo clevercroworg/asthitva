@@ -30,7 +30,7 @@ const VenueVideo = ({ venue }) => {
                 controls
                 autoPlay
                 playsInline
-                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px 16px 0 0' }}
+                style={{ width: '100%', height: '100%', objectFit: venue.objectFit || 'cover', backgroundColor: '#000', borderRadius: '16px 16px 0 0' }}
               />
             ) : (
               <iframe 

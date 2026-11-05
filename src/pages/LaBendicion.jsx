@@ -48,6 +48,8 @@ function LaBendicion() {
       tagline: 'Charming semi-outdoor venue blending warm ambient lighting, elegant structures, and lush greenery.',
       capacity: 'Up to 600 Guests',
       image: '/images/la-bendicion/1.webp',
+      videoSrc: '/images/la-bendicion/video/venue-compressed.mp4',
+      objectFit: 'contain',
       detailLink: '#venue1-detail',
     }
   ];
@@ -79,7 +81,7 @@ function LaBendicion() {
             <Gallery 
               venueName="Asthitva La Bendicion" 
               images={galleryImages}
-              driveLink="https://share.google/R1P4n7aovaN1hfUaJ"
+              driveLink="https://photos.app.goo.gl/YZMFYbD7D1duPNPz8"
             />
           </div>
         </section>
